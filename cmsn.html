@@ -3,13 +3,33 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <title>💗 Chúc em iu sinh nhật vui vẻ 💗</title>
+    
     <style type="text/css">
       body {
         margin: 0;
         overflow: hidden;
-        background:black;
-        
+        animation-name: background-change;
+        animation: background-change 2s infinite;
+;
+
       }
+      @keyframes background-change {
+  0% {
+    background-color: rgb(226, 104, 104);
+  }
+  25% {
+    background-color: rgb(236, 141, 196);
+  }
+  50% {
+    background-color: rgb(223, 90, 112);
+  }
+  75% {
+    background-color: rgb(231, 116, 116);
+  }
+  100% {
+    background-color: rgb(255, 173, 173);
+  }
+}
       canvas {
         position: absolute;
         width: 100%;
@@ -95,14 +115,14 @@
         left: 50%;
         transform: translate(-50%, -50%);
         margin-top: -20px;
-        font-size: 46px;
-        color: #f36464;
+        font-size: 20px;
+        
       }
     </style>
   </head>
   <body>
     <canvas id="pinkboard" width="1490" height="763"></canvas>
-    <div id="name">Chúc em iu sinh nhật vui vẻ 💛💚</div>
+    <div id="name">Chúc em iu sinh nhật vui vẻ 💖🎂</div>
     <canvas id="canvas" width="1490" height="731"></canvas>
 
     <script type="text/javascript">
@@ -452,7 +472,7 @@
           }
           context.closePath();
           // create the fill
-          context.fillStyle = "#ea80b0";
+          context.fillStyle = "red";
           context.fill();
           // create the image
           var image = new Image();
@@ -505,7 +525,7 @@
         }, 10);
       })(document.getElementById("pinkboard"));
 
-      // 参考：https://blog.csdn.net/weixin_57038822/article/details/121644240
+      
     </script>
   
 
