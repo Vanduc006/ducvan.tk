@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encrypt and Decrypt By Duc Kirkman</title>
+</head>
+<body>
+  <div class="gradient-border">
+  <h1 class="header" >
+
+    Phầm mềm mã hóa và giải mã hóa 
+  </h1>
+  <div class="content">
+    <div class="gioi_thieu">
+      
+      <h1 style="font-size: 20px;
+          background: rgba( 255, 255, 255, 0.45 );
+          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+          backdrop-filter: blur( 20px );
+          -webkit-backdrop-filter: blur( 20px );
+          border-radius:2em;
+          border: 1px solid rgba( 255, 255, 255, 0.18 );padding: 8px 16px;">
+        Vấn đề tin tặc tấn công, ăn cắp dữ liệu trở nên càng nghiêm trọng hơn và ngày một tăng cao tới mức báo động. 
+        Các cuộc tấn công này có thể khiến bạn mất đi dữ liệu hoặc lộ các thông tin riêng tư và rò rỉ tài sản của các cá nhân hay tổ chức. 
+        Để bảo vệ thông tin cá nhân và tổ chức, sử dụng phần mềm mã hóa là một giải pháp hiệu quả. 
+        Phần mềm mã hóa cung cấp một cách an toàn và tin cậy để mã hóa và giải mã dữ liệu của bạn. 
+
+      </h1>
+      <h1 class="header"> Về sản phầm của chúng tôi</h1>
+      
+      <h1 style="font-size: 20px;background: rgba( 255, 255, 255, 0.45 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 20px );
+      -webkit-backdrop-filter: blur( 20px );
+      border-radius:2em;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );padding: 8px 16px;">Sản phẩm của chúng tôi cung cấp giải pháp mã hóa chuyên sâu cho bạn, đảm bảo rằng dữ liệu của bạn luôn được bảo mật. Bằng việc sử dụng các thuật toán mã hóa mạnh mẽ và được cập nhật thường xuyên để đảm bảo sự an toàn tối đa cho dữ liệu của bạn. Phần mềm còn cung cấp một giao diện người dùng thân thiện và dễ sử dụng, không cần có kiến thức chuyên sâu về mã hóa.</h1>
+      
+      
+      <h1 style="font-size: 20px;background: rgba( 255, 255, 255, 0.45 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 20px );
+      -webkit-backdrop-filter: blur( 20px );
+      border-radius:2em;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );padding: 8px 16px;margin-top: 20px;">Bạn có thể dễ dàng mã hóa và giải mã các file của mình bằng cách sử dụng giao diện trực quan và dễ sử dụng của phần mềm. Nó cung cấp cho bạn nhiều tùy chọn mã hóa và giải mã, cho phép bạn lựa chọn phương pháp phù hợp nhất với nhu cầu của bạn.</h1>
+      <img src="gth_ui.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;border-radius: 20px 20px 0 0;margin-top: 15px;
+      background: rgba( 255, 255, 255, 0.5 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius:2em;
+border: 1px solid rgba( 255, 255, 255, 0.18 );">
+    </div>
+
+  <div class="row">
+    <div class="gth_cac_chuc_nang col " style="margin-top: 50px">
+      <h1 style="font-size: 20px;padding: 8px 16px;">
+        Sản phẩm của chúng tôi có đa dạng các phương pháp mã hóa như (ấn để biết thêm chi tiết)
+      </h1>  
+      <ul id='js_type'class="type">
+        <li><a>
+           Base64
+        </a></li>
+        <li><a>
+           Fenert (Chuyên sâu
+        </a>)</li>
+        <li><a>
+           Blowfish ( ... )
+        </a></li>
+        <li><a>
+           AES ( ... )
+        </a></li>
+        <li><a>
+           RSA ( ... )
+        </a></li>
+    </ul>  
+      <!--<img src="encryption-keys-lock-digital-concept.jpg" 
+      style='position: absolute;right: 0;top:0;width: 30%;border-radius: 20px;'>-->
+    
+
+  </div>
+    <div class="footer">
+    <div class="download">
+      <h1 style="padding: 8px 16px;">Download 😍</h1>
+      <ul class="type_down" style="list-style-type: none;font-size: 20px;padding: 0;margin-left: 20px;">
+        <li >Windows 10/11 64bit<button class="btn" style="margin-left: 30px"><a href="mahoa 64bit.exe" download>Download UI version</a></button></li>
+        <li style="margin-top:2em;">Windows 10/11 32bit<button class="btn" style="margin-left: 30px"><a>Download UI version</a></button></li>
+        <li style="margin-top:2em;">Linux/Ubuntu/Debian/...<button class="btn" style="margin-left: 30px"><a>Download Terminal version</a></button></li>
+        <li style="margin-top:2em;">MacOS Ventura/Monterey/Bigsur<button class="btn" style="margin-left: 30px"><a>Download Terminal version</a></button></li>
+        <li style="margin-top:2em;">Andriod Devices<button class="btn" style="margin-left: 30px"><a>Download Terminal version</a></button></li>
+        <li style="margin-top:2em;">IOS Devices (fucking bugs)</li>
+      </ul>
+    </div>
+    <div class="contact">
+      <h1 style="padding: 8px 16px;">More Infor</h1>
+      <ul class="ct_content" style="list-style-type: none;font-size: 20px;padding: 0;margin-left: 20px;font-size: 30px;line-height: 2;">
+        <li >Mã nguồn mở (Open source)<a class="btn_contact">Open!!</a></li>
+        <li >Facebook : Nguyễn Đức<a class="btn_contact">Open!!</a></li>
+        <li >Email : bagiadaohoa@gmail.com<a class="btn_contact">Copy</a></li>
+        <li >Github : Vanduc006<a class="btn_contact">Gét Gô</a></li>
+        <li >Tôi dành hơn 3 thàng để hoàn thiện mọi thứ, mong bạn thoải mái tận hưởng!!!</li>
+        
+        
+      </ul>
+      
+
+    </div>
+  </div>
+  <style>
+    * {
+      font-family: 'Arvo', serif;
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    
+    }
+    body {
+  --borderWidth: 3px;
+  
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+      body:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: hsla(152, 100%, 50%, 1);
+  opacity: 0.7;
+  
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+    @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Nunito:wght@300&display=swap');
+    .header{
+      text-align: justify;
+      text-align: center;
+    
+    }
+    .gioi_thieu {
+      text-align: center;
+      font-size: 15px;
+      
+      text-align: justify;
+      line-height: 1.4;
+      margin: 0px 20px;
+    }
+    .gth_cac_chuc_nang {
+      font-size: 15px;
+      position: relative;
+      text-align: justify;
+      line-height: 1.4;
+      margin: 0px 20px;
+      padding: 0;
+      
+    }
+
+    .type {
+      font-weight: bolder;
+      padding: 0;
+      margin-bottom: 10px;
+      display: none;
+      font-size: 20px;
+      margin-left: 50px;
+      background: rgba( 255, 255, 255, 0.5 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 4px );
+      -webkit-backdrop-filter: blur( 4px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      align-items: center;
+      justify-content: center;
+      
+      
+            
+
+      
+    }
+    .download {
+      font-size: 15px;
+      position: relative;
+      text-align: justify;
+      line-height: 1.4;
+      margin: 0px 20px;
+      padding: 0;
+      background-color: rgba(255, 0, 0,0.2);
+      border-radius: 20px;
+      width: 45%;
+      
+      
+    }
+    .btn {
+    padding: 8px 16px;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #131313;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #ecd448;
+    font-weight: bolder;
+    -webkit-box-shadow: 0 2px 0 2px #000;
+            box-shadow: 0 2px 0 2px #000;
+    }
+
+    .btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: hwb(24 0% 0%);
+    opacity: 0.8;
+    top: 50%;
+    -webkit-transform: skewX(30deg) translate(-150%, -50%);
+        -ms-transform: skewX(30deg) translate(-150%, -50%);
+            transform: skewX(30deg) translate(-150%, -50%);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    }
+
+    .btn:hover {
+    background-color: #4cc9f0;
+    color: #fff;
+    -webkit-box-shadow: 0 2px 0 2px #0d3b66;
+            box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .btn:hover::before {
+    -webkit-transform: skewX(30deg) translate(150%, -50%);
+        -ms-transform: skewX(30deg) translate(150%, -50%);
+            transform: skewX(30deg) translate(150%, -50%);
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+    }
+
+    .btn:active {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+    }
+    .footer {
+      width: 100% ;
+      position: relative;
+      
+    }
+    .download ,.contact{
+      display: inline-block;
+    }
+    .contact {
+      
+      line-height: 1.4;
+      margin: 0 0 20px 0px;
+      padding: 0;
+        width: 50%;
+        height: 100%;
+        background-color: rgba(255, 0, 0,0.2);
+        position: absolute;
+        border-radius: 20px;
+
+    }
+  .btn_contact {
+    padding: 1px 12px;
+    background-color:#5073b8;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    
+  }
+  .btn_contact:hover {
+    background-color: rgba(76, 201, 240,0.2);
+  }
+
+
+
+
+
+  </style>
+  <script>
+    var showButton = document.querySelector('.gth_cac_chuc_nang');
+    var list = document.getElementById("js_type");
+
+    showButton.addEventListener("click", function() {
+      list.style.display = "inline-block";
+    });
+    if (screen.width <= 768) { // Nếu kích thước màn hình nhỏ hơn hoặc bằng 768px (giả sử đây là ngưỡng cho thiết bị di động)
+  window.location.href = "mobile.html"; // Chuyển hướng đến trang mobile.html
+}
+
+    </script>
+    
+    </div>
+</body>
+</html>
+
+
+<!--
+  635 237
+
+1) nội dung  
+   - giới thiệu chung
+
+   - giới thiệu phần mềm
+
+    - hd trên hdh linux, win, mac ( mỗi cái có nút tải riêng), cho ng dùng bt là trên lin vs mac chỉ dùng dc dạng
+    script
+
+
+
+2) css
+  - hiệu ứng nền thay đổi màu
+  
+  -hover
+
+  -nút download
+
+
+-rảnh thì thêm sound, lời đọc sẵn vô!!!  
+
+
+
+
+script gioithieu
+
+
+
+
+
+Nó sử dụng công nghệ mã hóa chuyên sâu để đảm bảo bảo mật và riêng tư của dữ liệu của bạn.
+
+
+-->
