@@ -84,8 +84,13 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );">
     <div class="download">
       <h1 style="padding: 8px 16px;">Download 😍</h1>
       <ul class="type_down" style="list-style-type: none;font-size: 20px;padding: 0;margin-left: 20px;">
-        <li >Windows 10/11 64bit<button class="btn" style="margin-left: 30px"><a href="mahoa 64bit.exe" download>Download UI version</a></button></li>
-        <li style="margin-top:2em;">Windows 10/11 32bit<button class="btn" style="margin-left: 30px"><a>Download UI version</a></button></li>
+        <li>Windows 10/11 64bit<a href="mahoa 64bit.exe" download><button onclick="alert1()" class="btn" style="margin-left: 30px">Download UI version</button></a></li>
+        <script>
+          function alert1() {
+            alert('đừng bận tâm đến cảnh báo không an toàn của trình duyệt, phần mềm của chúng tôi có công khai mã nguồn, trong đó không hề chứa mã độc nào. Hãy yên tâm sử dụng nhé!')
+          }
+        </script>
+        <li style="margin-top:2em;">Windows 10/11 32bit<a onclick="alert1()" href="mahoa 32bit.exe" download><button class="btn" style="margin-left: 30px">Download UI version</button></a></li>
         <li style="margin-top:2em;">Linux/Ubuntu/Debian/...<button class="btn" style="margin-left: 30px"><a>Download Terminal version</a></button></li>
         <li style="margin-top:2em;">MacOS Ventura/Monterey/Bigsur<button class="btn" style="margin-left: 30px"><a>Download Terminal version</a></button></li>
         <li style="margin-top:2em;">Andriod Devices<button class="btn" style="margin-left: 30px"><a>Download Terminal version</a></button></li>
@@ -95,10 +100,15 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );">
     <div class="contact">
       <h1 style="padding: 8px 16px;">More Infor</h1>
       <ul class="ct_content" style="list-style-type: none;font-size: 20px;padding: 0;margin-left: 20px;font-size: 30px;line-height: 2;">
-        <li >Mã nguồn mở (Open source)<a class="btn_contact">Open!!</a></li>
-        <li >Facebook : Nguyễn Đức<a class="btn_contact">Open!!</a></li>
-        <li >Email : bagiadaohoa@gmail.com<a class="btn_contact">Copy</a></li>
-        <li >Github : Vanduc006<a class="btn_contact">Gét Gô</a></li>
+        <li >Mã nguồn mở (Open source)<a class="btn_contact" href="https://github.com/Vanduc006/ducv/blob/main/lol_tools/ui_encrypt.py">Open!!</a></li>
+        <li >Facebook : Nguyễn Đức<a class="btn_contact" href="https://www.facebook.com/profile.php?id=100065525475828">Open!!</a></li>
+        <li >Email : bagiadaohoa@gmail.com<a class="btn_contact" onclick="copyEmail()">Copy</a></li>
+        <script>
+        function copyEmail() {
+          navigator.clipboard.writeText('bagiadaohoa@gmail.com')
+          alert('Đã sao chép email');
+      }</script>
+        <li >Github : Vanduc006<a class="btn_contact" href="https://github.com/Vanduc006/">Gét Gô</a></li>
         <li >Tôi dành hơn 3 thàng để hoàn thiện mọi thứ, mong bạn thoải mái tận hưởng!!!</li>
         
         
@@ -106,7 +116,94 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );">
       
 
     </div>
+    
   </div>
+  <div class="cmt ">
+    <h1 style="margin-left: 20px;">Mời bạn cho ý kiến,nhận xét :D</h1>
+    <form class="comments"> 
+      <label for="name">Tên của bạn :</label>
+      
+      <input  placeholder="YourName..." id="name" name="name" class="input"><br><br>
+      <label for="content">Nội dung :</label>
+      <input type="text" id="content" name="content"></input><br><br>
+      <button type="submit" id="submitBtn" >Gửi 🤩</button>
+
+      </form>
+  </div>
+  <style>
+    .user_cmt {
+      padding: 8px 16px;
+      
+    }
+    .content_cmt {
+      padding: 8px 16px;
+      background-color: #6fba82;
+    }
+    .last_cmt {
+      margin-top: 30px;
+      margin-left: 20px;
+      margin-right: 20px;      
+      background-color: rgba(80, 115, 184,0.5);
+      
+
+    }
+    #submitBtn {
+      padding: 12px 20px 12px 40px;
+      background-color: rgba(13, 59, 102);
+      color: #fff;
+      opacity: 0.5;
+      cursor: pointer;
+      
+    }
+    #submitBtn:hover {
+      opacity: 1;
+    }
+
+    .cmt {
+      margin-top: 30px;
+      margin-left: 20px;
+      margin-right: 20px;      
+      background-color: rgba(122, 184, 80,0.2);
+      border-radius: 20px;
+    }
+    .comments {
+     
+      padding: 8px 16px;
+    }
+    .input {
+  border-radius: 10px;
+  outline: 2px solid #FEBF00;
+  border: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #e2e2e2;
+  outline-offset: 3px;
+  padding: 10px 1rem;
+  transition: 0.25s;
+  margin-left: 20px;
+}
+
+.input:focus {
+  outline-offset: 5px;
+  background-color: #fff
+}
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+    </style>
   <style>
     * {
       font-family: 'Arvo', serif;
@@ -306,6 +403,80 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );">
     if (screen.width <= 768) { // Nếu kích thước màn hình nhỏ hơn hoặc bằng 768px (giả sử đây là ngưỡng cho thiết bị di động)
   window.location.href = "mobile.html"; // Chuyển hướng đến trang mobile.html
 }
+    // gửi cmt
+    const form = document.querySelector('form');
+const submitBtn = document.querySelector('#submitBtn');
+
+submitBtn.addEventListener('click', function(event) {
+  event.preventDefault(); // Ngăn chặn form submit mặc định của trình duyệt
+  const name = document.querySelector('#name').value;
+
+  const content = document.querySelector('#content').value;
+  if (!name || !content) {
+  alert('Vui lòng nhập tên và nội dung comment');
+  return;
+}
+  // Gửi request POST tới API để lưu thông tin comment
+  fetch('https://640c374f94ce1239b0a7ebd5.mockapi.io/api/v1/comments', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      name: name,
+      content: content
+    })
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data); // In ra kết quả trả về từ API trong console
+    // Hiển thị comment mới lên trang web
+    let commentElement = document.createElement('div');
+    commentElement.innerHTML = `
+	<div  class='last_cmt'>
+      <h3 class="userName_cmt">${data.name}</h3>
+      <p class="content_cmt">${data.content}</p>
+	</div>  
+    `;
+    document.body.appendChild(commentElement);
+  })
+  .catch(error => {
+    console.error(error); // In ra lỗi trong console nếu có
+  });
+
+  // Reset form sau khi submit thành công
+  form.reset();
+});
+// Lấy danh sách các comments từ API
+fetch('https://640c374f94ce1239b0a7ebd5.mockapi.io/api/v1/comments')
+  .then(response => response.json())
+  .then(data => {
+    // Tạo phần tử cha để chứa các comments
+    let commentsContainer = document.createElement('div');
+    commentsContainer.id = 'comments';
+
+    // Tạo các phần tử HTML tương ứng với mỗi comment
+    data.forEach(comment => {
+      let commentElement = document.createElement('div');
+      commentElement.innerHTML = `
+      <div class='last_cmt'>
+        <h3 class='user_cmt'>${comment.name}</h3>
+        <p class='content_cmt'>${comment.content}</p>
+      </div>  
+      `;
+      commentsContainer.appendChild(commentElement);
+    });
+
+    // Thêm phần tử cha vào trong DOM
+    document.body.appendChild(commentsContainer);
+  })
+  .catch(error => {
+    console.error(error); // In ra lỗi trong console nếu có
+  });
+  function reloadPage() {
+  location.reload();
+}
+
 
     </script>
     

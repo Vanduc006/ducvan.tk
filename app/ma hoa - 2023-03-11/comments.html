@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form class="comments"> 
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+		<label for="content">Content:</label>
+		<textarea id="content" name="content"></textarea><br><br>
+		<button type="submit" id="submitBtn">Submit</button>
+	  </form>
+	<style>
+		.comments {
+			background-color: rgb(201, 56, 56);
+		}
+		.last_cmt {
+			background-color: brown;
+		}
+
+	</style>  
+    <script>
+		const form = document.querySelector('form');
+const submitBtn = document.querySelector('#submitBtn');
+
+submitBtn.addEventListener('click', function(event) {
+  event.preventDefault(); // Ngăn chặn form submit mặc định của trình duyệt
+  const name = document.querySelector('#name').value;
+  const content = document.querySelector('#content').value;
+
+  // Gửi request POST tới API để lưu thông tin comment
+  fetch('https://640c374f94ce1239b0a7ebd5.mockapi.io/api/v1/comments', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      name: name,
+      content: content
+    })
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data); // In ra kết quả trả về từ API trong console
+    // Hiển thị comment mới lên trang web
+    let commentElement = document.createElement('div');
+    commentElement.innerHTML = `
+	<div  class='last_cmt'>
+      <h3 class="userName_cmt">${data.name}</h3>
+      <p class="content_cmt">${data.content}</p>
+	</div>  
+    `;
+    document.body.appendChild(commentElement);
+  })
+  .catch(error => {
+    console.error(error); // In ra lỗi trong console nếu có
+  });
+
+  // Reset form sau khi submit thành công
+  form.reset();
+});
+// Lấy danh sách các comments từ API
+fetch('https://640c374f94ce1239b0a7ebd5.mockapi.io/api/v1/comments')
+  .then(response => response.json())
+  .then(data => {
+    // Tạo phần tử cha để chứa các comments
+    let commentsContainer = document.createElement('div');
+    commentsContainer.id = 'comments';
+
+    // Tạo các phần tử HTML tương ứng với mỗi comment
+    data.forEach(comment => {
+      let commentElement = document.createElement('div');
+      commentElement.innerHTML = `
+        <h3>${comment.name}</h3>
+        <p>${comment.content}</p>
+      `;
+      commentsContainer.appendChild(commentElement);
+    });
+
+    // Thêm phần tử cha vào trong DOM
+    document.body.appendChild(commentsContainer);
+  })
+  .catch(error => {
+    console.error(error); // In ra lỗi trong console nếu có
+  });
+
+	</script>	  
+</body>
+</html>
