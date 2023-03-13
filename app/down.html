@@ -411,10 +411,6 @@ const submitBtn = document.querySelector('#submitBtn');
 submitBtn.addEventListener('click', function(event) {
   event.preventDefault(); // Ngăn chặn form submit mặc định của trình duyệt
   const name = document.querySelector('#name').value;
-  if (!name || !content) {
-  alert('Vui lòng nhập tên và nội dung comment');
-  return;
-}
   const content = document.querySelector('#content').value;
 
   // Gửi request POST tới API để lưu thông tin comment
@@ -463,7 +459,7 @@ fetch('https://640c374f94ce1239b0a7ebd5.mockapi.io/api/v1/comments')
       <div class='last_cmt'>
         <h3 class='user_cmt'>${comment.name}</h3>
         <p class='content_cmt'>${comment.content}</p>
-      </div>  
+      </div>
       `;
       commentsContainer.appendChild(commentElement);
     });
@@ -474,12 +470,9 @@ fetch('https://640c374f94ce1239b0a7ebd5.mockapi.io/api/v1/comments')
   .catch(error => {
     console.error(error); // In ra lỗi trong console nếu có
   });
-  function reloadPage() {
-  location.reload();
-}
-
 
     </script>
+	</script>	  
     
     </div>
 </body>
