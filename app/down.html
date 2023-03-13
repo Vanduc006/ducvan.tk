@@ -210,6 +210,7 @@ input[type=text]:focus {
     font-family: 'Nunito', sans-serif;
     padding: 0;
     margin: 0;
+    color: black;
     
     }
     body {
@@ -410,12 +411,12 @@ const submitBtn = document.querySelector('#submitBtn');
 submitBtn.addEventListener('click', function(event) {
   event.preventDefault(); // Ngăn chặn form submit mặc định của trình duyệt
   const name = document.querySelector('#name').value;
-
-  const content = document.querySelector('#content').value;
   if (!name || !content) {
   alert('Vui lòng nhập tên và nội dung comment');
   return;
 }
+  const content = document.querySelector('#content').value;
+
   // Gửi request POST tới API để lưu thông tin comment
   fetch('https://640c374f94ce1239b0a7ebd5.mockapi.io/api/v1/comments', {
     method: 'POST',
