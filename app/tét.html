@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tải video</title>
+    <link rel="stylesheet" href="themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+	<input type="text" id="urlInput" placeholder="Nhập đường dẫn vào đây">
+<button onclick="checkTiktokLink()">Kiểm tra</button>
+<div id="statusMessage"></div>
+<script>
+function checkTiktokLink(link) {
+  var http = new XMLHttpRequest();
+  http.open('HEAD', link, false);
+  http.send();
+  return http.status === 200;
+}
+
+// Sử dụng hàm checkTiktokLink() để kiểm tra đường link video TikTok
+var tiktokLink = "https://www.tiktok.com/@roses_are_rosie/video/7218279890607459591";
+if (checkTiktokLink(tiktokLink)) {
+  console.log("Đường link hợp lệ");
+} else {
+  console.log("Đường link không hợp lệ");
+}
+
+
+
+</script>
+</body>
+</html>
