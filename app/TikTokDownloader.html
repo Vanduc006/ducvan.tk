@@ -5,15 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>I AM HERO | TIKTOK DOWNLOADER</title>
+  <meta name="google" content="notranslate"/>
 </head>
 <body>
   <h1 class="head">
     I AM HERO
   </h1>
-  <div class="main">
+  <div class="main" class="notranslate">
     <p class="content">DOWNLOAD VIDEO TIKTOK WITHOUT LOGO</p>
     <p class="sub-content">WITHOUT LOGO, WITHOUT WATERMARK, FREE</p>
-    <div class="work">
+    <div class="work" class="notranslate">
       <input type="text" placeholder="URL HERE" id="url-video"><br>
       <button type="submit" aria-label="Get" id="download-video">Sreach Video</button>
       
@@ -170,100 +171,7 @@
 
   </style>
 
-  <script>
-    
-    const URLvideo = document.getElementById('url-video').value
-    const SreachBtn = document.querySelector('#download-video')
-    const Loading = document.getElementById('loading')
-    SreachBtn.addEventListener('click', async e => {
-      
-  try {
-    const URLvideo = document.getElementById('url-video').value
-    function isValidUrl(URLvideo) {
-  const regex = /^(http|https):\/\/([a-z0-9]+\.)*[a-z0-9]+\.[a-z]+(\/.*)*$/;
-  return regex.test(URLvideo);
-  
-}
-
-if (!isValidUrl(URLvideo)) {
-  alert('Invalid URL');
-  return;
-}
-    Loading.style.display = 'block';
-    const CALLapi = `https://tiktok-downloader-download-tiktok-videos-without-watermark.p.rapidapi.com/vid/index?url=${encodeURIComponent(URLvideo)}`
-    console.log(CALLapi)
-    const options = {
-      method: 'GET',
-      headers: {
-        'X-RapidAPI-Key': '2bdc1f0810mshfc6e44c69c98822p1bdb0bjsn85b73f91c2d1',
-        'X-RapidAPI-Host': 'tiktok-downloader-download-tiktok-videos-without-watermark.p.rapidapi.com'
-      }
-    }
-    const response = await fetch(CALLapi, options)
-    const result = await response.text()
-
-    const jsonObj = JSON.parse(result)
-        const videoUrls = jsonObj.video
-        const Username = jsonObj.author
-        const VideoID = jsonObj.videoid
-        const Caption = jsonObj.description
-        const Thumb = jsonObj.cover
-        const Region = jsonObj.region
-    Loading.style.display = 'none';    
-  let InforElenments = document.createElement('div');
-    InforElenments.innerHTML = `
-    <div class="video-infor">
-        <img src="${Thumb}" alt="VIDEO THUMBNAIL">
-        <div class="title-video">
-            <p>Auther Video Username : ${Username} | Nation :${Region}</p>
-            <p>Video ID : ${VideoID}</p>
-            <p>Caption : ${VideoID}</p>
-
-        </div>
-        
-    </div>
-    <div class="down-load" id="down-load">
-        <i class="ti-download fa-solid fa-magnifying-glass"></i>
-        <a href="">Download Video</a>
-    </div>
-    
-      `;
-
-      document.body.appendChild(InforElenments);
-    const DownloadBtn = document.getElementById('down-load')
-    DownloadBtn.addEventListener('click', e => {
-      e.preventDefault();
-      downloadVideo(videoUrls);
-    })
-    function downloadVideo(url) {
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
-    xhr.responseType = 'blob'; // sử dụng blob để lưu trữ video
-    xhr.onload = function() {
-        if (this.status === 200) {
-            const videoBlob = this.response;
-            const url = URL.createObjectURL(videoBlob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = Username + '-' + VideoID;
-            document.body.appendChild(a);
-            a.click();
-            window.URL.revokeObjectURL(url);
-        }
-    };
-    xhr.send();
-}
-
-
-  } catch (error) {
-    console.error(error)
-  }
-
-});
-        
-        
-
-</script>
+  <script src="script-tiktok-downloader.js"></script>
 <!--
  <script>
     const respone = '{"video":["https://v16m-default.akamaized.net/e1f6d8a252585f572003b4efce9eee6e/64579acf/video/tos/useast2a/tos-useast2a-ve-0068c002/osWmgrtzkIGoIzyC1LCihJJxOATAshZdfQBuEo/?a=0&ch=0&cr=0&dr=0&lr=all&cd=0%7C0%7C0%7C0&cv=1&br=2638&bt=1319&cs=0&ds=6&ft=iJOG.y_RZLs0PD133zyXg9wbOqRTJEeC~&mime_type=video_mp4&qs=0&rc=O2RlNGZkOzw1OTMzaDZoNkBpMzxpczk6ZnE1azMzNzczM0BgNS9eYF5jNV8xXmMwYl9fYSNlM2lucjRfbTRgLS1kMTZzcw%3D%3D&l=202305070634115A48D372591336E50366&btag=80000"],"music":["https://sf77-ies-music-va.tiktokcdn.com/obj/musically-maliva-obj/7227764122027739909.mp3"],"cover":["https://p16-sign-va.tiktokcdn.com/tos-maliva-p-0068/bd89f943f5b74fd1aa28026d33f60808_1682849651~noop.image?x-expires=1683525600&x-signature=4rG1Q65gbq6jUBGPUC9UUdix8i4%3D&s=FEED&se=false&sh=&sc=cover&l=202305070634115A48D372591336E50366"],"OriginalWatermarkedVideo":["https://v16m-default.akamaized.net/69868b7ea6f3711213a2b8a919b69205/64579acf/video/tos/useast2a/tos-useast2a-pve-0068/oYvmQEeWdNJdUTecBgnAIzTNRrkQlBCEDiDXb4/?a=0&ch=0&cr=0&dr=0&lr=all&cd=0%7C0%7C0%7C0&cv=1&br=2160&bt=1080&cs=0&ds=3&ft=iJOG.y_RZLs0PD133zyXg9wbOqRTJEeC~&mime_type=video_mp4&qs=0&rc=NDc6aDhlMzs5aWQ3NTw3PEBpMzxpczk6ZnE1azMzNzczM0AyNTIvLzYwNmIxNC41XmIuYSNlM2lucjRfbTRgLS1kMTZzcw%3D%3D&l=202305070634115A48D372591336E50366&btag=80000"],"description":["Hông bé ơi, anh có vợ rồi. Anh có con luôn rồi 🤭"],"dynamic_cover":["https://p16-sign-va.tiktokcdn.com/obj/tos-maliva-p-0068/35bd2f4b44f74d5eb5eff06e8c1872a0_1682849652?x-expires=1683525600&x-signature=SmGUWn0zCXWUF6Hk6VOMZZ1Dca0%3D&s=FEED&se=false&sh=&sc=dynamic_cover&l=202305070634115A48D372591336E50366"],"author":["Trox & Lacci"],"region":["VN"],"avatar_thumb":["https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/cf87ed2c38331d7a32805894327a8d44~c5_100x100.webp?x-expires=1683525600&x-signature=z6xlV%2BFSjNM6bcK%2FU9HtGtsM0F8%3D"],"custom_verify":[""],"videoid":["7227764117841382661"],"post_type":"video_post"}'

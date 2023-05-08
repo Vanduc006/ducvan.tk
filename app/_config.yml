@@ -1,0 +1,8 @@
+include:
+  - TikTokDownloader.html
+  - down.html
+  - mobile.html
+  - tét.html
+exclude:
+  - script.js
+  - style.css
