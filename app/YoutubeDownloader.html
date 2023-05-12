@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gộp file video và audio</h1>
+        <form>
+            <label for="video">File video (mp4):</label>
+            <input type="file" id="video" accept=".mp4"><br>
+            <label for="audio">File audio (weba):</label>
+            <input type="file" id="audio" accept=".weba"><br>
+            <button onclick="merge()">Gộp file</button>
+        </form>
+        <div id="message"></div>
+    <style>
+        h1 {
+    text-align: center;
+}
+form {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+input[type="file"] {
+    margin-bottom: 1rem;
+}
+button {
+    margin-top: 1rem;
+}
+#message {
+    margin-top: 1rem;
+    text-align: center;
+}
+    </style>    
+    <script>
+       function merge() {
+    var videoFile = document.getElementById("video").files[0];
+    var audioFile = document.getElementById("audio").files[0];
+
+    if (!videoFile || !audioFile) {
+        document.getElementById("message").innerHTML = "Vui lòng chọn cả file video và audio";
+        return;
+    }
+
+    var videoUrl = URL.createObjectURL(videoFile);
+    var audioUrl = URL.createObjectURL(audioFile);
+
+    var video = document.createElement("video");
+    video.src = videoUrl;
+    video.onloadedmetadata = function() {
+        var canvas = document.createElement("canvas");
+        canvas.width = this.videoWidth;
+        canvas.height = this.videoHeight;
+        var ctx = canvas.getContext("2d");
+        ctx.drawImage(this, 0, 0);
+        var dataUrl = canvas.toDataURL("image/png");
+
+        var merged = document.createElement("video");
+        merged.width = this.videoWidth;
+        merged.height = this.videoHeight;
+        merged.controls = true;
+
+        var source = document.createElement("source");
+        source.src = URL.createObjectURL(new Blob([dataUrlToFile(dataUrl)], { type: "image/png" }));
+        source.type = "video/mp4";
+        merged.appendChild(source);
+
+        var audio = document.createElement("audio");
+        audio.src = audioUrl;
+        audio.controls = true;
+
+        var source2 = document.createElement("source");
+        source2.src = audioUrl;
+        source2.type = "audio/webm";
+        audio.appendChild(source2);
+
+        var context = new AudioContext();
+        var gainNode = context.createGain();
+        var sourceNode = context.createMediaElementSource(audio);
+        var destination = context.createMediaStreamDestination();
+        sourceNode.connect(gainNode);
+        gainNode.connect(destination);
+
+        var stream = canvas.captureStream();
+        stream.addTrack(destination.stream.getAudioTracks()[0]);
+
+        var recorder = new MediaRecorder(stream);
+        var chunks = [];
+
+        recorder.ondataavailable = function(event) {
+            chunks.push(event.data);
+        };
+
+        recorder.onstop = function(event) {
+            var blob = new Blob(chunks, { type: "video/mp4" });
+            var url = URL.createObjectURL(blob);
+            merged.src = url;
+            document.getElementById("message").innerHTML = "Đã gộp xong";
+        };
+
+        recorder.start();
+        setTimeout(() => { audio.play(); }, 1000);
+        setTimeout(() => { recorder.stop(); }, video.duration * 1000);
+    };
+}
+
+function dataUrlToFile(dataUrl) {
+    var binary = atob(dataUrl.split(",")[1]);
+    var array = [];
+    for (var i = 0; i < binary.length; i++) {
+        array.push(binary.charCodeAt(i));
+    }
+    return new Uint8Array(array);
+}
+    </script>
+</body>
+</html>
+
+<!--
+respone :
+
+-->

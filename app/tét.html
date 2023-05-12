@@ -1,31 +1,52 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tải video</title>
-    <link rel="stylesheet" href="themify-icons-font/themify-icons/themify-icons.css">
+	<title>Page Title</title>
+	<script>
+		// Tạo phần loading
+		function showLoading() {
+			document.getElementById("loading").style.display = "block";
+			document.getElementById("content").style.display = "none";
+			setTimeout(hideLoading, 3000); // Thời gian loading
+		}
+
+		// Ẩn phần loading và hiển thị nội dung trang
+		function hideLoading() {
+			document.getElementById("loading").style.display = "none";
+			document.getElementById("content").style.display = "block";
+		}
+	</script>
+	<style>
+		/* CSS cho phần loading */
+		#loading {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: #ffffff;
+			z-index: 9999;
+		}
+		#loading-img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
 </head>
-<body>
-	<input type="text" id="urlInput" placeholder="Nhập đường dẫn vào đây">
-<button onclick="checkTiktokLink()">Kiểm tra</button>
-<div id="statusMessage"></div>
-<script>
-function checkTiktokLink(link) {
-  var http = new XMLHttpRequest();
-  http.open('HEAD', link, false);
-  http.send();
-  return http.status === 200;
-}
-
-// Sử dụng hàm checkTiktokLink() để kiểm tra đường link video TikTok
-var tiktokLink = "https://www.tiktok.com/@roses_are_rosie/video/7218279890607459591";
-if (checkTiktokLink(tiktokLink)) {
-  console.log("Đường link hợp lệ");
-} else {
-  console.log("Đường link không hợp lệ");
-}
-
-
-
-</script>
+<body onload="showLoading()">
+	<!-- Phần loading -->
+	<div id="loading">
+		<img id="loading-img" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">
+	</div>
+	
+	<!-- Nội dung trang -->
+	<div id="content">
+		<h1>Page Title</h1>
+		<p>Page content goes here...</p>
+	</div>
 </body>
 </html>

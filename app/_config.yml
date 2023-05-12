@@ -6,3 +6,4 @@ include:
 exclude:
   - script.js
   - style.css
+  - script-tiktok-downloader.js

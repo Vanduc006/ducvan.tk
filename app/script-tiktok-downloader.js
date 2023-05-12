@@ -2,6 +2,7 @@ const URLvideo = document.getElementById('url-video').value
     const SreachBtn = document.querySelector('#download-video')
     const Loading = document.getElementById('loading')
     SreachBtn.addEventListener('click', async e => {
+
       
   try {
     const URLvideo = document.getElementById('url-video').value
@@ -12,10 +13,10 @@ const URLvideo = document.getElementById('url-video').value
 }
 
 if (!isValidUrl(URLvideo)) {
-  alert('Invalid URL');
+  alert('Wrong URL 😥');
   return;
 }
-    Loading.style.display = 'block';
+Loading.style.display = 'block';
     const CALLapi = `https://tiktok-downloader-download-tiktok-videos-without-watermark.p.rapidapi.com/vid/index?url=${encodeURIComponent(URLvideo)}`
     console.log(CALLapi)
     const options = {
@@ -27,7 +28,7 @@ if (!isValidUrl(URLvideo)) {
     }
     const response = await fetch(CALLapi, options)
     const result = await response.text()
-
+    console.log(result)
     const jsonObj = JSON.parse(result)
         const videoUrls = jsonObj.video
         const Username = jsonObj.author
@@ -43,7 +44,7 @@ if (!isValidUrl(URLvideo)) {
         <div class="title-video">
             <p>Auther Video Username : ${Username} | Nation :${Region}</p>
             <p>Video ID : ${VideoID}</p>
-            <p>Caption : ${VideoID}</p>
+            <p>Caption : ${Caption}</p>
 
         </div>
         
@@ -51,8 +52,9 @@ if (!isValidUrl(URLvideo)) {
     <div class="down-load" id="down-load" class="notranslate">
         <i class="ti-download fa-solid fa-magnifying-glass"></i>
         <a href="">Download Video</a>
+
     </div>
-    
+
       `;
 
       document.body.appendChild(InforElenments);
@@ -76,15 +78,19 @@ if (!isValidUrl(URLvideo)) {
             a.click();
             window.URL.revokeObjectURL(url);
         }
+    document.body.removeChild(InforElenments);    
     };
     xhr.send();
+    alert('DOWNLOAD SUCESSFUL')
+    document.body.removeChild(InforElenments);
 }
-
+    
 
   } catch (error) {
     console.error(error)
   }
-
+  
 });
+
         
         
