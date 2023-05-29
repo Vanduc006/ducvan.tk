@@ -9,8 +9,57 @@
 </head>
 <body >
 <!--LOADING PAGE-->
+<script>
+alert('Nếu bạn muốn nghe nhạc hãy ấn vào chữ TikTok Downloader nhé')
+if ('Notification' in window) {
+  if (Notification.permission === 'granted') {
+    // Người dùng đã cho phép hiển thị thông báo
+    // Tạo thông báo ở đây
+    var notification = new Notification('Thông điệp từ zũ trụ', {
+      body: 'Chào mừng bạn đến với TIKTOK DOWNLOADER 😍 ',
+      icon: 'tbao.png'
+    });
 
-  <h1 class="head" class="notranslate">
+    // Xử lý sự kiện khi người dùng ấn vào thông báo
+    notification.onclick = function () {
+      // Mở liên kết khi người dùng ấn vào thông báo
+      window.open('https://www.facebook.com/profile.php?id=100065525475828');
+      
+      // Đóng thông báo (tuỳ chọn)
+      notification.close();
+    };
+  } else if (Notification.permission !== 'denied') {
+    // Hiển thị yêu cầu cho phép thông báo
+    Notification.requestPermission().then(function (permission) {
+      if (permission === 'granted') {
+        // Người dùng đã cho phép hiển thị thông báo
+        // Tạo thông báo ở đây
+      }
+    });
+  }
+}
+  </script>
+  <script>
+var audio = null; // Biến lưu trữ đối tượng âm thanh
+
+function playMusic() {
+  if (audio === null) {
+    audio = new Audio('music.mp3'); // Đường dẫn đến tệp nhạc
+    audio.addEventListener('ended', function() {
+      audio = null; // Đặt lại biến âm thanh thành null khi nhạc kết thúc
+    });
+  }
+  
+  if (audio.paused) {
+    audio.play(); // Bật nhạc
+  } else {
+    audio.pause(); // Tắt nhạc
+  }
+}
+
+  </script>
+
+  <h1 class="head" class="notranslate" onclick="playMusic()" style="cursor: pointer;">
     TIKTOK DOWNLOADER
   </h1>
   <div class="main" class="notranslate">
@@ -20,6 +69,8 @@
       <input type="text" placeholder="🎬 Url video tiktok here ... " id="url-video"><br>
       <button type="submit" aria-label="Get" id="download-video"> POW 😍</button> 
   </div>
+
+
 
   <div id='loading'style="display: none;">
     
