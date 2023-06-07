@@ -1,8 +1,14 @@
+
 const URLvideo = document.getElementById('url-video').value
     const SreachBtn = document.querySelector('#download-video')
     const Loading = document.getElementById('loading')
     SreachBtn.addEventListener('click', async e => {
-
+      
+      const videoInforDiv = document.querySelector('.video-infor');
+      if (videoInforDiv) {
+        SreachBtn.disabled = false;
+        return 
+      } 
       
   try {
     const URLvideo = document.getElementById('url-video').value
@@ -16,6 +22,7 @@ if (!isValidUrl(URLvideo)) {
   alert('Wrong URL 😥');
   return;
 }
+SreachBtn.disabled = true;
 Loading.style.display = 'block';
     const CALLapi = `https://tiktok-downloader-download-tiktok-videos-without-watermark.p.rapidapi.com/vid/index?url=${encodeURIComponent(URLvideo)}`
     console.log(CALLapi)
@@ -37,6 +44,7 @@ Loading.style.display = 'block';
         const Thumb = jsonObj.cover
         const Region = jsonObj.region
     Loading.style.display = 'none';    
+    SreachBtn.disabled = false;
   let InforElenments = document.createElement('div');
     InforElenments.innerHTML = `
     <div class="video-infor" class="notranslate">

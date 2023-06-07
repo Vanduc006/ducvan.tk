@@ -6,11 +6,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vanduc006 | TIKTOK DOWNLOADER</title>
   <meta name="google" content="notranslate"/>
+  <link rel="stylesheet" href="/app/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 <body >
+  <!--List tbao-->
+  <div id="tbao-monhac" class="notification">Nếu bạn muốn nghe nhạc hãy ấn vào chữ TikTok Downloader nhé</div>
+  <div id="tbao-batnhac" class="notification" style="display: none;">Đã bật nhạc 🥳</div>
+  <div id="tbao-dungnhac" class="notification" style="display: none;">Đã dừng nhạc 😁</div>
+  <div id="notification-container"></div>
+  <style>
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  /* Thay đổi vị trí khi màn hình có độ rộng nhỏ hơn hoặc bằng 600px */
+  .notification {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* Thay đổi kích thước khi màn hình có độ rộng nhỏ hơn hoặc bằng 400px */
+  .notification {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+</style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  var notification = document.getElementById("tbao-monhac");
+  notification.style.display = "block";
+
+  // Tắt thông báo sau một khoảng thời gian
+  setTimeout(function() {
+    notification.style.display = "none";
+  }, 3000); 
+  
+});
+
+  </script>
+
 <!--LOADING PAGE-->
 <script>
-alert('Nếu bạn muốn nghe nhạc hãy ấn vào chữ TikTok Downloader nhé')
+//alert('Nếu bạn muốn nghe nhạc hãy ấn vào chữ TikTok Downloader nhé')
 if ('Notification' in window) {
   if (Notification.permission === 'granted') {
     // Người dùng đã cho phép hiển thị thông báo
@@ -32,8 +88,10 @@ if ('Notification' in window) {
     // Hiển thị yêu cầu cho phép thông báo
     Notification.requestPermission().then(function (permission) {
       if (permission === 'granted') {
-        // Người dùng đã cho phép hiển thị thông báo
-        // Tạo thông báo ở đây
+        var notification = new Notification('Thông điệp từ zũ trụ', {
+      body: 'Chào mừng bạn đến với TIKTOK DOWNLOADER 😍 ',
+      icon: 'tbao.png'
+    });
       }
     });
   }
@@ -51,6 +109,7 @@ function playMusic() {
   }
   
   if (audio.paused) {
+    audio.volume = 0.5;
     audio.play(); // Bật nhạc
   } else {
     audio.pause(); // Tắt nhạc
@@ -58,19 +117,28 @@ function playMusic() {
 }
 
   </script>
+  <div >
+    <h1 class="notranslate head" onclick="playMusic()" style="cursor: pointer;">
+      TIKTOK DOWNLOADER
+    </h1>
+  </div>
 
-  <h1 class="head" class="notranslate" onclick="playMusic()" style="cursor: pointer;">
-    TIKTOK DOWNLOADER
-  </h1>
   <div class="main" class="notranslate">
     <p class="content"> DOWNLOAD VIDEO TIKTOK 😁 </p>
     <p class="sub-content">WITHOUT LOGO, WITHOUT WATERMARK, FREE !!!!</p>
+
     <div class="work" class="notranslate">
-      <input type="text" placeholder="🎬 Url video tiktok here ... " id="url-video"><br>
-      <button type="submit" aria-label="Get" id="download-video"> POW 😍</button> 
+
+        <input type="text" placeholder="🎬 Url video tiktok here ... " id="url-video"><br>
+        <button type="submit" aria-label="Get" id="download-video"> POW 😍</button><br>
+
+
+
   </div>
+  <div class="soft">
+    <a style="text-align: center; align-items: center;justify-content: center;display: flex;font-weight: 600;color: #DF2935;font-size: 14px;cursor: pointer;">Đã có phiên bản dành cho máy tính, hãy tải về</a>  
 
-
+  </div>
 
   <div id='loading'style="display: none;">
     
@@ -80,7 +148,121 @@ function playMusic() {
     <div class="loading"></div>
     
   </div>  
+  
+    <div class="modal js-modal">
+      <div class="modal-contanier">
+        <div class="modal-close js-modal-close">
+          <i class="close ti-close fa-solid fa-xmark"></i>
+        </div>
+        <div class="modal-head">
+          
+          <h1>Tiktok (Mutil) Downloader For PC</h1>
+        </div>
+        <div class="modal-content">
+          <a>Một công cụ vô cùng hữu ích nếu bạn muốn tải nhiều video tiktok cùng lúc mà không cần phải thao tác chuột nhiều. Tải hàng trắm video chỉ với 1 cú click chuột 🤩. Bộ cung cụ miễn phí 100% được Nguyen Van Duc phát triển, sẽ có thêm nhiều cải tiến hơn trong tương lai (reup video) </a>
+        </div>
+        <div class="modal-down-btn">
+          <a href="Tiktok (Mutil) Downloader - By Vduc006.exe" download="" >Tải ngay 😍</a>
+        </div>
 
+
+
+
+        
+        <style>
+          .modal {
+      position: fixed;
+      top:0;
+      left:0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0,0.2);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      overflow-y: auto;
+      z-index: 9999;
+    }
+    .modal-contanier {
+      background: rgba( 255, 255, 255, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8px );
+-webkit-backdrop-filter: blur( 8px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+      width: 900px;
+      min-height: 250px;
+      position: relative;
+      max-width: calc(100% - 40px);
+      overflow-y: auto;
+      border-radius: 8px;
+    }
+
+    .open{
+      display: flex;
+    }
+    .close {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    padding: 5.5px;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 10px 10px 0 0;
+    }
+    .close:hover {
+      opacity: 0.3;
+    }
+    .modal-head {
+      font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+    }
+    .modal-content {
+      margin: 20px 30px 0 30px;
+      line-height: 2;
+    }
+    .modal-down-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-down-btn a {
+      background-color: #ff6f59;
+      padding: 8px 16px;
+      margin-top: 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #000;
+      margin-bottom: 10px;
+    }
+    .modal-down-btn a:hover {
+      background-color: rgba(255, 111, 89,0.5);
+
+    } 
+
+        </style>
+    <script>
+      const Modal = document.querySelector('.js-modal')
+      const ModalClose = document.querySelector('.js-modal-close')
+      const Showsoft = document.querySelector('.soft')
+      Showsoft.addEventListener('click', async e => {
+        Modal.classList.add('open')
+      })
+      ModalClose.addEventListener('click', async e => {
+        Modal.classList.remove('open')
+      })
+
+    </script>
+    </div>  
   <style>
 
     * {
@@ -91,7 +273,7 @@ function playMusic() {
     }
 
     .head {
-
+      position:sticky;
       text-align: center;
       text-transform: uppercase;
   background-image: linear-gradient(
