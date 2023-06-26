@@ -81,7 +81,7 @@ Loading.style.display = 'block';
             const url = URL.createObjectURL(videoBlob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = Username + '-' + VideoID;
+            a.download = Username + '-' + VideoID + '.mp4';
             document.body.appendChild(a);
             a.click();
             window.URL.revokeObjectURL(url);
