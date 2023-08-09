@@ -63,6 +63,15 @@ body {
     cursor: pointer;
     display: none;
 }
+.languageSelector  {
+    border-radius: 10px;
+    font-size: 1.15rem;
+    
+    border: none;
+}
+.languageSelector::before {
+    border-radius: 10px;
+}
 .sections {
     margin: 0 100px 0 100px;
     position: relative;

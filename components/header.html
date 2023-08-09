@@ -17,11 +17,20 @@
             <i class="fa-solid fa-xmark" style="color: #ffffff;" id="close-icon"></i>
         </label>
         <nav class="navbar">
-            <a href="/index.html" style="--i:0;">About</a>
-            <a href='/pages/project.html' style="--i:1;">Project</a>
-            <a href="" style="--i:2;">Works</a>
-            <a href="" style="--i:3;">Payments</a>
-            <a href="" style="--i:4;">Contact</a>
+            
+            <label for="languageSelector"></label>
+            <select id="languageSelector" class="languageSelector">
+                <option value="en">English</option>
+                <option value="vi">Tiếng Việt</option>
+                <!-- Thêm các ngôn ngữ khác -->
+            </select>
+            
+            
+            <a href="../index.html" style="--i:0;" data-translate="navAbout">About</a>
+            <a href='pages/project.html' style="--i:1;" data-translate="navProject">Project</a>
+            <a href="" style="--i:2;" data-translate="navWorks">Works</a>
+            <a href="" style="--i:3;" data-translate="navPayments">Payments</a>
+            
         </nav>
     </div>
 </body>
