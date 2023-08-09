@@ -1,259 +1,62 @@
-<<<<<<< Updated upstream
-@media screen and (min-aspect-ratio: 4/3) {
-    body {
-      background-size: cover;
-    }
-    body:before {
-      width: 0px;
-    }
-  
-    @-webkit-keyframes puff {
-      0% {
-        top: 100%;
-        width: 0px;
-        padding-bottom: 0px;
-      }
-      100% {
-        top: 50%;
-        width: 100%;
-        padding-bottom: 100%;
-      }
-    }
-    @keyframes puff {
-      0% {
-        top: 100%;
-        width: 0px;
-        padding-bottom: 0px;
-      }
-      100% {
-        top: 50%;
-        width: 100%;
-        padding-bottom: 100%;
-      }
-    }
-  }
-  
-  @media screen and (min-height: 480px) {
-    .profile-card header {
-      width: auto;
-      height: auto;
-      padding: 30px 20px;
-      display: block;
-      float: none;
-      border-right: none;
-    }
-    .profile-card .profile-bio {
-      width: auto;
-      height: auto;
-      padding: 15px 20px 30px 20px;
-      display: block;
-      float: none;
-    }
-    .profile-social-links {
-      width: 100%;
-      display: block;
-      float: none;
-    }
-    @-webkit-keyframes materia {
-      0% {
-        background: #E0E0E0;
-      }
-      50% {
-        -webkit-border-radius: 4px;
-      }
-      100% {
-        width: 280px;
-        height: 440px;
-        background: #FFFFFF;
-        -webkit-border-radius: 4px;
-      }
-    }
-    @keyframes materia {
-      0% {
-        background: #E0E0E0;
-      }
-      50% {
-        border-radius: 4px;
-      }
-      100% {
-        width: 280px;
-        height: 440px;
-        background: #FFFFFF;
-        border-radius: 4px;
+ /*Responsive*/
+ /* Tablet */
+ @media (max-width:992px) {
+    .header {
+        padding: 1.3rem 5%;
         
-      }
     }
-=======
-<<<<<<< HEAD
-@media screen and (min-aspect-ratio: 4/3) {
-    body {
-      background-size: cover;
-    }
-    body:before {
-      width: 0px;
-    }
-  
-    @-webkit-keyframes puff {
-      0% {
-        top: 100%;
-        width: 0px;
-        padding-bottom: 0px;
-      }
-      100% {
-        top: 50%;
-        width: 100%;
-        padding-bottom: 100%;
-      }
-    }
-    @keyframes puff {
-      0% {
-        top: 100%;
-        width: 0px;
-        padding-bottom: 0px;
-      }
-      100% {
-        top: 50%;
-        width: 100%;
-        padding-bottom: 100%;
-      }
-    }
-  }
-  
-  @media screen and (min-height: 480px) {
-    .profile-card header {
-      width: auto;
-      height: auto;
-      padding: 30px 20px;
-      display: block;
-      float: none;
-      border-right: none;
-    }
-    .profile-card .profile-bio {
-      width: auto;
-      height: auto;
-      padding: 15px 20px 30px 20px;
-      display: block;
-      float: none;
-    }
-    .profile-social-links {
-      width: 100%;
-      display: block;
-      float: none;
-    }
-    @-webkit-keyframes materia {
-      0% {
-        background: #E0E0E0;
-      }
-      50% {
-        -webkit-border-radius: 4px;
-      }
-      100% {
-        width: 280px;
-        height: 440px;
-        background: #FFFFFF;
-        -webkit-border-radius: 4px;
-      }
-    }
-    @keyframes materia {
-      0% {
-        background: #E0E0E0;
-      }
-      50% {
-        border-radius: 4px;
-      }
-      100% {
-        width: 280px;
-        height: 440px;
-        background: #FFFFFF;
-        border-radius: 4px;
+}
+/* Mobile */
+@media (max-width:768px) {
+    .icons {
+        display: inline-flex;
         
-      }
     }
-=======
-@media screen and (min-aspect-ratio: 4/3) {
-    body {
-      background-size: cover;
+    #check:checked~.icons #menu-icon {
+        display: none;
     }
-    body:before {
-      width: 0px;
+    #check:checked~.icons #close-icon {
+        display: block;
     }
-  
-    @-webkit-keyframes puff {
-      0% {
+    .icons #close-icon {
+        display: none;
+    }
+    .navbar {
+        position: absolute;
         top: 100%;
-        width: 0px;
-        padding-bottom: 0px;
-      }
-      100% {
-        top: 50%;
+        left: 0;
         width: 100%;
-        padding-bottom: 100%;
-      }
-    }
-    @keyframes puff {
-      0% {
-        top: 100%;
-        width: 0px;
-        padding-bottom: 0px;
-      }
-      100% {
-        top: 50%;
-        width: 100%;
-        padding-bottom: 100%;
-      }
-    }
-  }
-  
-  @media screen and (min-height: 480px) {
-    .profile-card header {
-      width: auto;
-      height: auto;
-      padding: 30px 20px;
-      display: block;
-      float: none;
-      border-right: none;
-    }
-    .profile-card .profile-bio {
-      width: auto;
-      height: auto;
-      padding: 15px 20px 30px 20px;
-      display: block;
-      float: none;
-    }
-    .profile-social-links {
-      width: 100%;
-      display: block;
-      float: none;
-    }
-    @-webkit-keyframes materia {
-      0% {
-        background: #E0E0E0;
-      }
-      50% {
-        -webkit-border-radius: 4px;
-      }
-      100% {
-        width: 280px;
-        height: 440px;
-        background: #FFFFFF;
-        -webkit-border-radius: 4px;
-      }
-    }
-    @keyframes materia {
-      0% {
-        background: #E0E0E0;
-      }
-      50% {
-        border-radius: 4px;
-      }
-      100% {
-        width: 280px;
-        height: 440px;
-        background: #FFFFFF;
-        border-radius: 4px;
+        height: 0;
+        background-color: rgba(0,0,0,0.5);
+        /* backdrop-filter: blur(50px); */
+        transition: 0.3s ease;
+        overflow: hidden;
         
-      }
     }
->>>>>>> ea0e484c91b57e8d7d3c2f5620c8a85d1626173a
->>>>>>> Stashed changes
-  }
+    #check:checked~.navbar {
+        
+        height: 17.7rem;
+    }
+    .navbar a {
+        opacity: 0;
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        transition: .3s ease;
+        
+    }
+    #check:checked~.navbar a {
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+    .sections {
+        margin: 0 20px 0 20px;
+    }
+    .p-mobile {
+        margin-top: 10px;
+    }
+
+}

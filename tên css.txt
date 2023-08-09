@@ -1,0 +1,7 @@
+sections : sections
+
+...-sections : sections-setup
+h1 : sections-h1
+p or div : sections-pharagraph
+<p class="p-pc-tablet p-mobile"></p>
+p-pc-tablet : p-pc-tablet
