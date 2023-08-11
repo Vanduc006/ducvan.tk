@@ -63,15 +63,35 @@ body {
     cursor: pointer;
     display: none;
 }
-.languageSelector  {
+
+/* .languageSelector  {
     border-radius: 10px;
     font-size: 1.15rem;
-    
     border: none;
+    cursor: pointer;
+} */
+
+/* Modal Css */
+.selectlang-modal {
+
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    z-index: 9999;
+
 }
-.languageSelector::before {
-    border-radius: 10px;
-}
+
+/* End Modal */
+
+
+/* Sections Css */
 .sections {
     margin: 0 100px 0 100px;
     position: relative;

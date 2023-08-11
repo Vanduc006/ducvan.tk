@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <script src="../app.js"></script>
+    <script src="https://kit.fontawesome.com/493cf92c43.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="soft">
+        <a style="text-align: center; align-items: center;justify-content: center;display: flex;font-weight: 600;color: #DF2935;font-size: 14px;cursor: pointer;">Đã có phiên bản dành cho máy tính, hãy tải về</a>  
+    
+      </div>
+    <div class="modal js-modal">
+        <div class="modal-contanier">
+          <div class="modal-close js-modal-close">
+            <i class="close ti-close fa-solid fa-xmark"></i>
+          </div>
+          <div class="modal-head">
+            
+            <h1>Tiktok (Mutil) Downloader For PC</h1>
+          </div>
+          <div class="modal-content">
+            <a>Một công cụ vô cùng hữu ích nếu bạn muốn tải nhiều video tiktok cùng lúc mà không cần phải thao tác chuột nhiều. Tải hàng trắm video chỉ với 1 cú click chuột 🤩. Bộ cung cụ miễn phí 100% được Nguyen Van Duc phát triển, sẽ có thêm nhiều cải tiến hơn trong tương lai (reup video) </a>
+          </div>
+          <div class="modal-down-btn">
+            <a href="Tiktok (Mutil) Downloader - By Vduc006.exe" download="" >Tải ngay 😍</a>
+          </div>
+  
+  
+  
+  
+          
+          <style>
+            .modal {
+        position: fixed;
+        top:0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0,0.2);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        overflow-y: auto;
+        z-index: 9999;
+      }
+      .modal-contanier {
+        background: rgba( 255, 255, 255, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 8px );
+  -webkit-backdrop-filter: blur( 8px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width: 900px;
+        min-height: 250px;
+        position: relative;
+        max-width: calc(100% - 40px);
+        overflow-y: auto;
+        border-radius: 8px;
+      }
+  
+      .open{
+        display: flex;
+      }
+      .close {
+      float: right;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: black;
+      color: white;
+      border-radius: 100px;
+      padding: 5.5px;
+      font-size: 14px;
+      cursor: pointer;
+      opacity: 0.5;
+      margin: 10px 10px 0 0;
+      }
+      .close:hover {
+        opacity: 0.3;
+      }
+      .modal-head {
+        font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  
+      }
+      .modal-content {
+        margin: 20px 30px 0 30px;
+        line-height: 2;
+      }
+      .modal-down-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .modal-down-btn a {
+        background-color: #ff6f59;
+        padding: 8px 16px;
+        margin-top: 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        color: #000;
+        margin-bottom: 10px;
+      }
+      .modal-down-btn a:hover {
+        background-color: rgba(255, 111, 89,0.5);
+  
+      } 
+  
+          </style>
+      <script>
+        const Modal = document.querySelector('.js-modal')
+        const ModalClose = document.querySelector('.js-modal-close')
+        const Showsoft = document.querySelector('.soft')
+        Showsoft.addEventListener('click', async e => {
+          Modal.classList.add('open')
+        })
+        ModalClose.addEventListener('click', async e => {
+          Modal.classList.remove('open')
+        })
+  
+      </script>
+      </div>
+</body>
+</html>

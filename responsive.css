@@ -36,6 +36,9 @@
         overflow: hidden;
         
     }
+    .languageSelector {
+        left: 40%;
+    }
     #check:checked~.navbar {
         
         height: 17.7rem;
@@ -73,5 +76,5 @@
         font-size: 14px;
         padding: 5px 10px;
     }
-
+    
 }

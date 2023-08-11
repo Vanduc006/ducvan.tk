@@ -1,5 +1,5 @@
 function includeHeader() {
-  fetch('https://raw.githubusercontent.com/Vanduc006/ducvan/main/components/header.html')
+  fetch('/components/header.html')
     .then(response => response.text())
     .then(data => {
       const headerContainer = document.querySelector('#header-container');
