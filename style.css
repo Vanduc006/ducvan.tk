@@ -72,21 +72,65 @@ body {
 } */
 
 /* Modal Css */
-.selectlang-modal {
-
+.modal {
     position: fixed;
     top:0;
     left:0;
     right: 0;
     bottom: 0;
-    background: black;
+    background: rgba(0, 0, 0,0.2);
     display: none;
-    align-items: center;
     justify-content: center;
     overflow-y: auto;
     z-index: 9999;
-
 }
+.modal-open {
+    display: flex;
+}
+.selectlang-modal {
+    padding: 8px 16px;
+    width: 300px;
+    height: 500px;
+    margin-top: 100px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-container p {
+    padding: 8px 16px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: #444654 2px solid;
+    cursor: pointer;
+    position: relative;
+}
+
+.modal-container p:hover {
+    background-color: #444654 ;
+}
+.close {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #444654 ;
+    color: white;
+    border-radius: 10px;
+    padding: 5.5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 10px 10px 0 0;
+}
+
 
 /* End Modal */
 
