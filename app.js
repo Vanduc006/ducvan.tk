@@ -1,5 +1,14 @@
 function includeHeader() {
-  fetch('components/header.html')
+  if (localStorage.getItem('userselect')) {
+    const uerselect = localStorage.getItem('userselect')
+    loadLanguage(uerselect)
+  }
+  else {
+    console.log('null')
+  }
+  const forLocal = '../components/header.html'
+  const forGithub = 'https://raw.githubusercontent.com/Vanduc006/ducvan/main/components/header.html'
+  fetch(forGithub)
     .then(response => response.text())
     .then(data => {
       const headerContainer = document.querySelector('#header-container');
@@ -11,6 +20,7 @@ function includeHeader() {
       //   const selectedLanguage = languageSelector.value;
       //   loadLanguage(selectedLanguage);
       // });
+
       const selectLang = document.querySelector('.selectlang')
       const selectLangClose = document.querySelector('.selectlang-close')
       const showSelectLang = document.querySelector('.languageSelector')
@@ -23,6 +33,31 @@ function includeHeader() {
  
         selectLang.classList.remove('modal-open')
       })
+
+      //Ngôn ngữ dc chọn
+      const langsElements = document.querySelectorAll('.langs');
+
+      // Lặp qua từng phần tử và thêm sự kiện click
+      langsElements.forEach(lang => {
+          lang.addEventListener('click', () => {
+              const langValue = lang.getAttribute('value'); // Lấy giá trị 'value'
+              //console.log(langValue); // In ra giá trị khi người dùng nhấp vào
+              selectLangClose.click()
+              localStorage.setItem('userselect',langValue)
+              
+              loadLanguage(langValue)
+              
+          });
+      });
+      Toastify({
+        text: "Hello thier",
+        className: "info",
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        }
+      }).showToast();
+      
+
     });
 }
 
@@ -38,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function loadLanguage(language) {
-fetch(`${language}.json`)
+fetch(`../${language}.json`)
   .then(response => response.json())
   .then(data => {
     applyLanguage(data);
