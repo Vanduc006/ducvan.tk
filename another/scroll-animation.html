@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <section class="sec-1 show-animate">
+        <h1 class="animate">Hi i'm VANDUC</h1>
+        <p class="animate">Animation on sroll using HTML CSS JS</p>
+    </section>
+
+    <section class="sec-2">
+        <h1 class="animate">Keep Scrolling</h1>
+        <p class="animate">Animation on sroll using HTML CSS JS</p>
+    </section>
+
+    <section class="sec-3">
+        <h1 class="animate">Nice!</h1>
+        <p class="animate">Animation on sroll using HTML CSS JS</p>
+    </section>
+
+    <section class="sec-4">
+        <h1 >Very Good <span class="showRight-animate" style="--i:1;" ></span> </h1>
+        <p >Animation on sroll using HTML CSS JS <span class="showRight-animate" style="--i:3;"></span></p>
+    </section>
+
+    <section class="sec-5">
+        <div class="images">
+            <img class="animate" style="--i:0;" src="https://images.pexels.com/photos/10811517/pexels-photo-10811517.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <img class="animate" style="--i:1;" src="https://images.pexels.com/photos/1598072/pexels-photo-1598072.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <img class="animate" style="--i:2;" src="https://images.pexels.com/photos/2422463/pexels-photo-2422463.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+        </div>
+    </section>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            flex-direction: column;
+            background-color: #1f242d;
+            overflow-x: hidden;
+        }
+        h1 {
+            font-size: 90px;
+            color: #fff;
+            position: relative;
+        }
+        p {
+            font-size: 35px;
+            color: #0ef;
+            font-weight: 600;
+            position: relative;
+        }
+        section .animate {
+            transition: 1s;
+            filter: blur(5px);
+            opacity: 0;
+        }
+        section.show-animate .animate {
+            filter: blur(0);
+            opacity: 1;
+        }
+        /* Animation */
+        .sec-1 .animate {
+            transform: translateX(-100%);
+        }
+        .sec-1.show-animate .animate {
+            transform: translateX(0);
+        }
+        .sec-2 .animate {
+            transform: translateX(100%);
+        }
+        .sec-2.show-animate .animate {
+            transform: translateX(0);
+        }
+        .sec-3 .animate {
+            transform: scale(0.7);
+        }
+        .sec-3.show-animate .animate {
+            transform: scale(1);
+        }
+
+        /* .sec-4 .animate {
+            transform: translateX(100%);
+        }
+        .sec-4.show-animate .animate {
+            transform: translateX(0);
+        } */
+
+        .sec-4 .showRight-animate {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: #1f242d;
+            transition: 1s;
+            transition-delay: calc(0.2s * var(--i));
+            
+        }
+        .sec-4.show-animate .showRight-animate {
+            width: 0;
+            
+            /* border: 2px solid seagreen; */
+        }
+
+        .sec-5.show-animate .images img {
+            transform: translateX(0);
+        }
+        
+
+        /* End */
+
+        .sec-2 p{
+            color: #0f0;
+        }
+        .sec-3 p{
+            color: #e0f;
+        }
+        .sec-4 p {
+            color: #ff0;
+        }
+        .sec-5 .images img {
+            max-width: 500px;
+            margin: 0 30px;
+            transform: translateX(-100%);
+            transition-delay: calc(0.2s * var(--i)) ;
+        }
+    </style>
+
+
+
+    <script>
+        let sections = document.querySelectorAll('section');
+        window.onscroll = () => {
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 200;
+                let hieght = sec.offsetHeight;
+                if (top >= offset && top < offset + hieght) {
+                    sec.classList.add('show-animate');
+                }
+                else {
+                    sec.classList.remove('show-animate');
+                }
+            })
+        }
+    </script>
+</body>
+</html>

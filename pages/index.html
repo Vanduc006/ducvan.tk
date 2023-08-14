@@ -24,28 +24,73 @@
             <div class="sections-pharagraph special-background" style="width: 100%;">
                 <p class="p-pc-tablet p-mobile" data-translate="birthdayContent">Today is my birthday 🥳, send me your wish :3</p>
             </div>
-            <div class="wish-containier">
+            <form class="wish-containier">
                 <p class="p-pc-tablet p-mobile" data-translate="yourName">Your Name :</p>
-                <input type="text" name="" id="">
+                <input type="text" id="name">
                 <p class="p-pc-tablet p-mobile" data-translate="yourWish">Your Wish :</p>
-                <input type="text" name="" id="">
-            </div>
+                <input type="text" id="content" >
+                <button type="submit" id="submitBtn" data-translate="sendWish">Send </button>
+            </form>
             <div class="show-wish">
-                <div class="sections-pharagraph " style="width: 100%;">
-                    <p class="p-pc-tablet p-mobile" ><i class="fa-solid fa-user" style="color: #000000;"></i> Vanduc : Happy birthday</p>
-                </div>
+                <script src="wish.js"></script>
+                
             </div>
-            <style>
-                .wish-containier input {
-                    width: 100%;
-                    padding: 8px 16px;
-                    margin-top: 10px;
-                    border-radius: 10px;
-                    border: 3px solid black;
-                }
-            </style>
+
         </div>
         
+    </div>
+    <div class="sections">
+        <div class="sections-setup">
+            <div class="aboutme">
+                <section class="sec-1 show-animate">
+                    <h1 class="animate">Hi i'm VANDUC</h1>
+                    <div class="animate">
+                        <p>I'm 17 year old . I start coding since 2019</p>
+                    </div>
+                </section>
+            
+                <section class="sec-2">
+                    <h1 class="animate">Keep Scrolling</h1>
+                    <p class="animate">Animation on sroll using HTML CSS JS</p>
+                </section>
+            
+                <section class="sec-3">
+                    <h1 class="animate">Nice!</h1>
+                    <p class="animate">Animation on sroll using HTML CSS JS</p>
+                </section>
+            
+                <section class="sec-4">
+                    <h1 >Very Good <span class="showRight-animate" style="--i:1;" ></span> </h1>
+                    <p >Animation on sroll using HTML CSS JS <span class="showRight-animate" style="--i:3;"></span></p>
+                </section>
+
+                
+                <script>
+                    let sections = document.querySelectorAll('section');
+                    window.onscroll = () => {
+                        sections.forEach(sec => {
+                            let top = window.scrollY;
+                            let offset = sec.offsetTop;
+                            let hieght = sec.offsetHeight;
+                            if (top >= offset && top < offset + hieght) {
+                                sec.classList.add('show-animate');
+                            }
+                            else {
+                                sec.classList.remove('show-animate');
+                            }
+                        })
+                    }
+                </script>
+            </div>
+            <!-- <section class="sec-5">
+                <div class="images">
+                    <img class="animate" style="--i:0;" src="https://images.pexels.com/photos/10811517/pexels-photo-10811517.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                    <img class="animate" style="--i:1;" src="https://images.pexels.com/photos/1598072/pexels-photo-1598072.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                    <img class="animate" style="--i:2;" src="https://images.pexels.com/photos/2422463/pexels-photo-2422463.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                </div>
+            </section> -->
+
+        </div>
     </div>
     
 </body>

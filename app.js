@@ -28,6 +28,7 @@ function includeHeader() {
       showSelectLang.addEventListener('click', e => {
  
         selectLang.classList.add('modal-open')
+
       })
       selectLangClose.addEventListener('click', e => {
  
@@ -44,20 +45,23 @@ function includeHeader() {
               //console.log(langValue); // In ra giá trị khi người dùng nhấp vào
               selectLangClose.click()
               localStorage.setItem('userselect',langValue)
-              
+                      
+              Toastify({
+                text: "Language : " + langValue,
+                duration: 2000,
+                newWindow: true,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                  background: "linear-gradient(to right, #00b09b, #96c93d)",
+                },
+                onClick: function(){} // Callback after click
+              }).showToast();
               loadLanguage(langValue)
-              
           });
       });
-      Toastify({
-        text: "Hello thier",
-        className: "info",
-        style: {
-          background: "linear-gradient(to right, #00b09b, #96c93d)",
-        }
-      }).showToast();
-      
-
     });
 }
 
