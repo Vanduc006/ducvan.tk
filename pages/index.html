@@ -42,7 +42,7 @@
     <div class="sections">
         <div class="sections-setup">
             <div class="aboutme">
-                <section class="sec-1 show-animate">
+                <section class="sec-1">
                     <h1 class="animate">Hi i'm VANDUC</h1>
                     <div class="animate">
                         <p>I'm 17 year old . I start coding since 2019</p>
@@ -51,17 +51,17 @@
             
                 <section class="sec-2">
                     <h1 class="animate">Keep Scrolling</h1>
-                    <p class="animate">Animation on sroll using HTML CSS JS</p>
+                    <p class="animate">Will update, pls wait</p>
                 </section>
             
                 <section class="sec-3">
                     <h1 class="animate">Nice!</h1>
-                    <p class="animate">Animation on sroll using HTML CSS JS</p>
+                    <p class="animate">Will update, pls wait</p>
                 </section>
             
                 <section class="sec-4">
                     <h1 >Very Good <span class="showRight-animate" style="--i:1;" ></span> </h1>
-                    <p >Animation on sroll using HTML CSS JS <span class="showRight-animate" style="--i:3;"></span></p>
+                    <p >Will update, pls wait<span class="showRight-animate" style="--i:3;"></span></p>
                 </section>
 
                 
@@ -70,7 +70,7 @@
                     window.onscroll = () => {
                         sections.forEach(sec => {
                             let top = window.scrollY;
-                            let offset = sec.offsetTop;
+                            let offset = sec.offsetTop - 150;
                             let hieght = sec.offsetHeight;
                             if (top >= offset && top < offset + hieght) {
                                 sec.classList.add('show-animate');

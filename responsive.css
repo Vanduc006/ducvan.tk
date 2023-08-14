@@ -78,5 +78,13 @@
         font-size: 14px;
         padding: 5px 10px;
     }
+
+    /* About me responesive */ 
+    .aboutme h1 {
+        font-size: 40px;
+    }
+    .aboutme p {
+        font-size: 15px;
+    }
     
 }
