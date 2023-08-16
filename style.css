@@ -325,3 +325,91 @@ section.show-animate .animate {
     transform: translateX(-100%);
     transition-delay: calc(0.2s * var(--i)) ;
 }
+
+/* VIE-GPT */
+.vie-gpt-preview {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 16px 16px;
+    margin-top: 20px;
+    height: 500px;
+    position: relative;
+}
+.logo-gpt {
+    font-size: 10px;
+    width: 200px;
+    background-color: #f37055;
+    padding: 8px 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.logo-gpt h1{
+    display: inline-block;
+}
+.logo-gpt .icon-gear {
+    float: right;
+}
+
+.mode {
+    display: inline-block;
+    font-size: 10px;
+    background-color: #f37055;
+    padding: 8px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.chat-area {
+    margin-top: 10px;
+
+}
+.user-chats {
+    background-color: #f79533;
+    padding: 8px 16px;
+    border-radius: 10px;    
+}
+.user-chats p {
+    margin-top: 5px;
+}
+.bot-chats {
+    background-color: #6fba82 ;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 8px 16px;
+    border-radius: 10px;  
+}
+.bot-chats p {
+    margin-top: 5px;
+}
+
+
+.bottom-contanier {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 16px;
+    box-sizing: border-box;
+
+
+}
+#user-input {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 2px solid #f37055;
+
+
+}
+#send-button {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #f37055;
+    border: none;
+}

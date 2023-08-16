@@ -1,13 +1,22 @@
 {
-    "navAbout":"Về Tôi",
-    "navProject":"Dự Án",
-    "navWorks":"Hợp tác",
-    "navPayments":"Thanh Toán",
+    "navAbout":"About",
+    "navProject":"Projects",
+    "navWorks":"Work",
+    "navPayments":"Payments",
 
     "specialEvent": "Sự Kiện Đặc Biệt",
     "birthdayContent" : "Hôm nay là sinh nhật của tôi 🥳, hãy gửi cho tôi lời chúc nhé",
     "yourName": "Tên của bạn:",
     "yourWish": "Lời chúc của bạn:",
-    "sendWish": "Gửi"
+    "sendWish": "Gửi",
+
+    "intro-vie": "Giới thiệu VIE-GPT",
+    "intro-vie-p1": "VIE-GPT là một Reverse API mạnh mẽ từ OpenAI, tận dụng khả năng của GPT - một mô hình ngôn ngữ dựa trên transformer có 175 tỷ tham số. Với tư cách là một Reverse API từ OpenAI, VIE-GPT cho phép bạn xử lý và hiểu văn bản được tải lên, mở ra những khả năng mới cho việc phân tích văn bản, thông tin và phản hồi thông minh.",
+    "intro-vie-p2": "Với OpenAI Reverse API của VIE-GPT, bạn có thể khai thác sức mạnh vô cùng của GPT để nâng cao ứng dụng, tự động hóa nhiệm vụ và tạo ra đầu ra văn bản động. Cho dù bạn đang xây dựng một chatbot, phân tích đầu vào của người dùng hoặc tạo nội dung cá nhân, VIE-GPT đem lại khả năng xử lý ngôn ngữ tự nhiên tiên tiến.",
+    "intro-vie-p3": "Trải nghiệm tích hợp mượt mà của OpenAI Reverse API từ VIE-GPT vào dự án của bạn, giúp bạn tiếp cận thông minh đáng kinh ngạc của GPT. Cách mà bạn xử lý công việc dựa trên văn bản sẽ được cách mạng hóa, tương tác với người dùng thông qua cuộc trò chuyện sẽ trở nên thú vị, và tiềm năng của mô hình ngôn ngữ dựa trên trí tuệ nhân tạo sẽ được khai thác hết.",
+    "intro-vie-p4": "Và không chỉ thế! Chúng tôi còn hỗ trợ trí tuệ nhân tạo từ You.com và Bing! Vậy tại sao bạn còn chần chừ?",
+    "intro-vie-p5": "Mở khả năng biến đổi của OpenAI Reverse API từ VIE-GPT và khám phá một thế giới mới của xử lý và hiểu văn bản. Tham gia cách mạng trí tuệ nhân tạo và nâng cấp ứng dụng của bạn với VIE-GPT ngay hôm nay!"
+
+
 }
   

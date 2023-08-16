@@ -8,6 +8,13 @@
     "birthdayContent" : "Today is my birthday 🥳, give your wish to me :3",
     "yourName": "Your Name:",
     "yourWish": "Your Wish:",
-    "sendWish": "Send"
+    "sendWish": "Send",
+
+    "intro-vie": "Introducing VIE-GPT",
+    "intro-vie-p1": "VIE-GPT is a powerful OpenAI Reverse API that leverages the capabilities of GPT, a large transformer-based language model with 175 billion parameters. As an OpenAI Reverse API, VIE-GPT enables you to process and interpret uploaded text, unlocking new possibilities for text analysis, insights, and intelligent responses.",
+    "intro-vie-p2": "With VIE-GPT's OpenAI Reverse API, you can harness the immense power of GPT to enhance your applications, automate tasks, and generate dynamic text-based outputs. Whether you're building a chatbot, analyzing user inputs, or creating personalized content, VIE-GPT empowers you with advanced natural language processing capabilities.",
+    "intro-vie-p3": "Experience the seamless integration of VIE-GPT's OpenAI Reverse API into your projects, enabling you to tap into the remarkable intelligence of GPT. Revolutionize your text-based workflows, engage users with interactive conversations, and unleash the potential of AI-driven language models.",
+    "intro-vie-p4": "And not just that! We even support the You.com AI and the Bing AI! So why wait?",
+    "intro-vie-p5": "Unlock the transformative potential of VIE-GPT's OpenAI Reverse API and discover a new realm of possibilities for text processing and interpretation. Join the AI revolution and supercharge your applications with VIE-GPT today!"
   }
   
