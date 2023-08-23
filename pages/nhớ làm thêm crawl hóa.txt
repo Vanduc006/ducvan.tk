@@ -1,0 +1,429 @@
+url : https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2
+
+khi requests nhớ có header
+
+example respone: dùng html view, giải pháp tạm thời :D beautysoup,prase,....
+
+<!doctype html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title>H2O = H2 + O2 - Chemical Equation Balancer</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" referrerpolicy="no-referrer"><link rel="stylesheet" href="https://cdn.chemicalaid.com/assets/css/site.css" referrerpolicy="no-referrer"><style>
+.share-buttons {
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.share-buttons .btn {
+  padding: 4px;
+  width: 34px;
+  height: 36px;
+}
+.share-icon {
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+</style><style>ins.adsbygoogle a { display: none !important; } ins.adsbygoogle[data-ad-status="unfilled"] a { display: block; }</style><link rel="preload" as="script" href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2883378907845011" referrerpolicy="no-referrer" crossorigin="anonymous" fetchpriority="low"><link rel="preload" as="script" href="https://cdn.chemicalaid.com/assets/js/share.js" referrerpolicy="no-referrer" fetchpriority="low"><script>$js=function(){var h=function(){},c={},u={},f={};function o(e,n){if(e){var r=f[e];if(u[e]=n,r)for(;r.length;)r[0](e,n),r.splice(0,1)}}function l(e,n){e.call&&(e={success:e}),n.length?(e.error||h)(n):(e.success||h)(e)}function d(r,t,s,i){var c,o,e=document,n=s.async,u=(s.numRetries||0)+1,f=s.before||h,l=r.replace(/[\?|#].*$/,""),a=r.replace(/^(css|img)!/,"");i=i||0,/(^css!|\.css$)/.test(l)?((o=e.createElement("link")).rel="stylesheet",o.href=a,(c="hideFocus"in o)&&o.relList&&(c=0,o.rel="preload",o.as="style")):/(^img!|\.(png|gif|jpg|svg|webp)$)/.test(l)?(o=e.createElement("img")).src=a:((o=e.createElement("script")).src=r,o.async=void 0===n||n),!(o.onload=o.onerror=o.onbeforeload=function(e){var n=e.type[0];if(c)try{o.sheet.cssText.length||(n="e")}catch(e){18!=e.code&&(n="e")}if("e"==n){if((i+=1)<u)return d(r,t,s,i)}else if("preload"==o.rel&&"style"==o.as)return o.rel="stylesheet";t(r,n,e.defaultPrevented)})!==f(r,o)&&e.head.appendChild(o)}function r(e,n,r){var t,s;if(n&&n.trim&&(t=n),s=(t?r:n)||{},t){if(t in c)throw"LoadJS";c[t]=!0}function i(n,r){!function(e,t,n){var r,s,i=(e=e.push?e:[e]).length,c=i,o=[];for(r=function(e,n,r){if("e"==n&&o.push(e),"b"==n){if(!r)return;o.push(e)}--i||t(o)},s=0;s<c;s++)d(e[s],r,n)}(e,function(e){l(s,e),n&&l({success:n,error:r},e),o(t,e)},s)}if(s.returnPromise)return new Promise(i);i()}return r.ready=function(e,n){return function(e,r){e=e.push?e:[e];var n,t,s,i=[],c=e.length,o=c;for(n=function(e,n){n.length&&i.push(e),--o||r(i)};c--;)t=e[c],(s=u[t])?n(t,s):(f[t]=f[t]||[]).push(n)}(e,function(e){l(n,e)}),r},r.done=function(e){o(e,[])},r.reset=function(){c={},u={},f={}},r.isDefined=function(e){return e in c},r}();(function() {var d = document; var loaded = function() {$js.done("dom"); $js.done("document")}; if (d.readyState != "loading"){loaded()} else {d.addEventListener("DOMContentLoaded", loaded)}})();(function() {var loaded = function() {$js.done("page")}; if (document.readyState == "complete"){loaded()} else {window.addEventListener("load", loaded)}})();</script><script>window.CookieState = Object.assign({isReady: true, ready: cb => cb()}, {"necessary":true,"preferences":true,"statistics":true,"marketing":true});$js.done('cookie-state');</script><script>window._cvh="b8a97fad7991bd62";</script>  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-ZQ048ZM3C4" fetchpriority="low"></script><script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }(function() {if (window.CookieState) {
+  var cc = function() { return {'ad_storage': CookieState.marketing ? 'granted' : 'denied', 'analytics_storage': CookieState.statistics ? 'granted' : 'denied'}; }
+  gtag('consent', 'default', cc());
+  if (!CookieState.isReady) { CookieState.ready(function() { gtag('consent', 'update', cc()); }); }
+} else {
+  if (window.__tcfapi) {window['gtag_enable_tcf_support']=true}
+}gtag('js', new Date());var c = {"page_title":"\/tools\/equationbalancer.php","page_location":"https:\/\/www.chemicalaid.com\/tools\/equationbalancer.php","page_uri":"en\/adsense\/"};gtag("config", "G-ZQ048ZM3C4", c);})();</script><link rel="shortcut icon" type="image/png" href="https://cdn.chemicalaid.com/assets/img/icon.png"><meta name="theme-color" content="#4D698E"><link rel="manifest" href="/assets/manifest.json"><meta name="description" content="Balance the reaction of H2O = H2 + O2 using this chemical equation balancer!"><script type="application/ld+json">{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Chemical Equation Balancer","item":"https://www.chemicalaid.com/tools/equationbalancer.php"},{"@type":"ListItem","position":2,"name":"H2O = H2 + O2"}]}</script><link rel="canonical" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=en"><link rel="alternate" hreflang="en" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=en"><link rel="alternate" hreflang="es" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=es"><link rel="alternate" hreflang="fr" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=fr"><link rel="alternate" hreflang="de" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=de"><link rel="alternate" hreflang="pt" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=pt"><link rel="alternate" hreflang="it" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=it"><link rel="alternate" hreflang="nl" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=nl"><link rel="alternate" hreflang="ru" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=ru"><link rel="alternate" hreflang="pl" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=pl"><link rel="alternate" hreflang="cs" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=cs"><link rel="alternate" hreflang="sk" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=sk"><link rel="alternate" hreflang="hr" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=hr"><link rel="alternate" hreflang="vi" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=vi"><link rel="alternate" hreflang="ms" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=ms"><link rel="alternate" hreflang="id" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=id"><link rel="alternate" hreflang="ko" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=ko"><link rel="alternate" hreflang="ja" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=ja"><link rel="alternate" hreflang="zh" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=zh"><link rel="alternate" hreflang="hi" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=hi"><link rel="alternate" hreflang="ar" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=ar"><link rel="alternate" hreflang="tr" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=tr"><link rel="alternate" hreflang="bn" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=bn"><link rel="alternate" hreflang="x-default" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2"><meta property="og:type" content="website"><meta property="og:title" content="H2O = H2 + O2 - Chemical Equation Balancer"><meta property="og:site_name" content="ChemicalAid"><meta property="og:description" content="Balance the reaction of H2O = H2 + O2 using this chemical equation balancer!"><meta property="og:url" content="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2"><meta property="og:image" content="https://www.chemicalaid.com/assets/img/balance.php?equation=H2O+%3D+H2+%2B+O2"><meta property="og:image:width" content="400"><meta property="og:image:height" content="200"><meta property="fb:app_id" content="1101757523225503"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body jslog="EquationBalancer;track=scrollpercent">  <nav class="navbar navbar-light navbar-expand-md xfixed-top static-top shadow-sm mb-2" style="background-color: #f8f8f8;" id="layout-nav">
+    <div class="xcontainer container-fluid">
+      <div class="dropdown">
+        <a href="#" class="navbar-brand me-1" data-bs-toggle="dropdown">
+          <img src="https://cdn.chemicalaid.com/assets/img/icon.png" width="30" height="30" alt="ChemicalAid" class="d-inline-block align-top" decoding="async">
+        </a>
+        <a href="https://www.chemicalaid.com" class="navbar-brand ms-0">
+          <span style="font-weight: 500;">ChemicalAid</span>
+        </a>
+        <ul class="dropdown-menu ml-n2" role="menu">
+          <li>
+            <a class="navbar-brand dropdown-item px-2" href="https://www.chemicalaid.com/">
+              <img src="https://cdn.chemicalaid.com/assets/img/icon.png" width="30" height="30" loading="lazy" decoding="async" alt="" class="d-inline-block align-top">
+              <span>ChemicalAid</span>
+            </a>
+          </li>
+          <li>
+            <a class="navbar-brand dropdown-item px-2" href="https://periodictable.chemicalaid.com/?lang=en">
+              <img src="https://periodictable.chemicalaid.com/assets/img/icon.png" width="30" height="30" loading="lazy" decoding="async" alt="" class="d-inline-block align-top">
+              <span>Periodic Table</span>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li>
+            <a class="navbar-brand dropdown-item px-2" href="https://zeptomath.com/">
+              <img src="https://zeptomath.com/assets/img/icon.png" width="30" height="30" loading="lazy" decoding="async" alt="" class="d-inline-block align-top">
+              <span>ZeptoMath</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown"><span class="d-inline d-md-none d-xl-inline">⚛️ </span>Elements</a>
+            <ul class="dropdown-menu">
+              <li><a href="https://www.chemicalaid.com/periodictable.php" class="dropdown-item">Periodic Table</a></li>
+              <li><a href="https://www.chemicalaid.com/elements/trends.php" class="dropdown-item">Periodic Trends</a></li>
+              <li><a href="https://www.chemicalaid.com/elements/charts.php" class="dropdown-item">Element Charts</a></li>
+              <li><a href="https://www.chemicalaid.com/elements/future-elements.php" class="dropdown-item">Future Elements</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown"><span class="d-inline d-md-none d-xl-inline">🛠️ </span>Calculators</a>
+            <ul class="dropdown-menu">
+              <li><a href="https://www.chemicalaid.com/tools/equationbalancer.php" class="dropdown-item">Chemical Equation Balancer</a></li>
+              <li><a href="https://www.chemicalaid.com/tools/molarmass.php" class="dropdown-item">Molar Mass Calculator</a></li>
+              <li><a href="https://www.chemicalaid.com/tools/empiricalformula.php" class="dropdown-item">Empirical Formula Calculator</a></li>
+              <li><a href="https://www.chemicalaid.com/tools/sigfigscalculator.php" class="dropdown-item">Significant Figures Calculator</a></li>
+              <li><a href="https://www.chemicalaid.com/tools/reactionstoichiometry.php" class="dropdown-item">Reaction Stoichiometry Calculator</a></li>
+              <li><a href="https://www.chemicalaid.com/tools/limitingreagent.php" class="dropdown-item">Limiting Reagent Calculator</a></li>
+              <li><a href="https://www.chemicalaid.com/tools/oxidationnumber.php" class="dropdown-item">Oxidation Number Calculator</a></li>
+              <li><a href="https://www.chemicalaid.com/tools/netionicequation.php" class="dropdown-item">Net Ionic Equation Calculator</a></li>
+              <li><a href="https://www.chemicalaid.com/tools/redoxreaction.php" class="dropdown-item">Redox Reaction Calculator</a></li>
+                              <li><a href="https://www.chemicalaid.com/tools/solubility.php" class="dropdown-item">Solubility Calculator</a></li>
+                            <li class="dropdown-divider"></li>
+              <li><a href="https://www.chemicalaid.com/tools" class="dropdown-item fw-bold">All Calculators</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown"><span class="d-inline d-md-none d-xl-inline">👨‍🏫 </span>Learn</a>
+            <ul class="dropdown-menu">
+              <li><a href="https://www.chemicalaid.com/references/prefixes.php" class="dropdown-item">Chemistry Prefixes</a></li>
+              <!--<li><a href="https://www.chemicalaid.com/articles.php" class="dropdown-item">Lessons & Tutorials</a></li>-->
+              <li><a href="https://www.chemicalaid.com/references/definitions.php" class="dropdown-item">Definitions</a></li>
+              <li><a href="https://www.chemicalaid.com/references/question-solutions.php" class="dropdown-item">Question Solutions</a></li>
+                              <li><a href="https://www.chemicalaid.com/learn/books.php" class="dropdown-item">Books</a></li>
+                            <li class="dropdown-header">Info</li>
+              <li><a href="https://www.chemicalaid.com/info/chemicals.php" class="dropdown-item">Chemical Formulas</a></li>
+              <li><a href="https://www.chemicalaid.com/references/equations.php" class="dropdown-item">Chemistry Equations</a></li>
+              <li><a href="https://www.chemicalaid.com/info/point-group-symmetry.php" class="dropdown-item">Point Group Symmetry</a></li>
+              <!--<li class="dropdown-divider"></li>-->
+              <li class="dropdown-header">Practice</li>
+              <li><a href="https://www.chemicalaid.com/games/" class="dropdown-item">Chemistry Quizzes</a></li>
+            </ul>
+          </li>
+
+          <!--
+          <li class="nav-item dropdown">
+            <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown"><span class="d-inline d-md-none d-xl-inline">📚 </span>Info</a>
+            <ul class="dropdown-menu">
+              <li><a href="https://www.chemicalaid.com/info/chemicals.php" class="dropdown-item">Chemical Formulas</a></li>
+              <li><a href="https://www.chemicalaid.com/references/equations.php" class="dropdown-item">Chemistry Equations</a></li>
+              <li><a href="https://www.chemicalaid.com/info/point-group-symmetry.php" class="dropdown-item">Point Group Symmetry</a></li>
+            </ul>
+          </li>-->
+                    <li class="nav-item dropdown">
+            <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown"><span class="d-inline d-md-none d-xl-inline">&#128172; </span>Help</a>
+            <ul class="dropdown-menu">
+              <li><a href="https://www.chemicalaid.com/pages/chat.php" class="dropdown-item">Chat</a></li>
+              <li><a href="https://forums.chemicalaid.com/" class="dropdown-item">Forums</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+        <form action="https://www.chemicalaid.com/search.php" id="cse-search-box" class="form-inline" role="search">
+          <input type="search" name="q" placeholder="Search" class="form-control navbar-search-input" />
+        </form>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a data-bs-toggle="modal" href="#locale-list" class="nav-link">
+              &#127758;
+              <span class="d-none d-md-inline d-xxl-none" title="English">EN</span>
+              <span class="d-md-none d-xxl-inline small">English</span>
+            </a>
+          </li>
+                      <li class="nav-item">
+              <form action="https://forums.chemicalaid.com/p/2-sso" class="form-inline">
+                <button class="btn nav-link" title="Login" type="submit" name="return" value="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2">&#128100;<span class="d-inline d-lg-none"> Login</span></button>
+              </form>
+            </li>
+                  </ul>
+      </div>
+    </div>
+  </nav>
+<div class="xcontainer container-fluid">    <header id="layout-header">
+      <h1 style="overflow-wrap: break-word;">H2O = H2 + O2 - Chemical Equation Balancer</h1>
+    </header>
+<div class="row"><div class="col-lg-8 mb-3" id="layout-content"><div class="text-center py-1"><ins class="adsbygoogle my-2" style="display:block" data-ad-client="ca-pub-2883378907845011" data-ad-slot="2190568016" data-ad-format="horizontal" data-ad-channel="9801696530" data-full-width-responsive="true"></ins></div>      <div class="card mb-2" jslog="Result">
+        <h2 class="card-header">Balanced Chemical Equation</h2>
+        <div class="card-body chemical-formula balanced-result" style="font-size: 160%;">
+          <span data-bs-toggle="tooltip" title="<h1>Water</h1><div>Water, Hydroxic Acid, H₂O, [Oh2], Aqua, Pure Water, Hydrogen Oxide, Oxidane, Dihydrogen Oxide, Hydrogen Hydroxide, Hoh, Dihydridooxygen, Dihydrogen Monoxide, H2O</div>"><span class="coefficient">2</span>H<sub>2</sub>O</span> → <span data-bs-toggle="tooltip" title="<h1>Dihydrogen</h1><div>Dihydrogen, Molecular Hydrogen, Hydrogen Molecule, Hydrogen, Hydrogen Gas, Molecular Hydrogen Gas, H₂, H2</div>"><span class="coefficient">2</span>H<sub>2</sub></span> + <span data-bs-toggle="tooltip" title="<h1>Dioxygen</h1><div>Dioxygen, Lox, Liquid Oxygen, Oxygen Gas, Triplet Oxygen, Diatomic Oxygen, Molecular Oxygen, Oxygen, O₂, O2</div>">O<sub>2</sub></span>        </div>
+                <div class="card-body pt-0 text-muted small">⬇ Scroll down to see reaction info and a step-by-step answer, or balance another equation.</div>
+        <div class="card-footer">
+            <div class="share-buttons">
+    <button class="btn btn-outline-light" title="Copy" data-type="Copy" data-icon="copy" data-bs-toggle="tooltip" data-share-url="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2" data-share-title="H2O = H2 + O2 - Chemical Equation Balancer" data-selector=".balanced-result"></button> <button class="btn btn-outline-light" title="Share" data-type="Share" data-icon="share" data-bs-toggle="tooltip" data-share-url="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2" data-share-title="H2O = H2 + O2 - Chemical Equation Balancer"></button> <button class="btn btn-outline-light" title="Facebook" data-type="Facebook" data-icon="facebook" data-bs-toggle="tooltip" data-href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.chemicalaid.com%2Ftools%2Fequationbalancer.php%3Fequation%3DH2O%2B%253D%2BH2%2B%252B%2BO2"></button> <button class="btn btn-outline-light" title="Pinterest" data-type="Pinterest" data-icon="pinterest" data-bs-toggle="tooltip" data-href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.chemicalaid.com%2Ftools%2Fequationbalancer.php%3Fequation%3DH2O%2B%253D%2BH2%2B%252B%2BO2"></button> <button class="btn btn-outline-light" title="Reddit" data-type="Reddit" data-icon="reddit" data-bs-toggle="tooltip" data-href="https://reddit.com/submit?url=https%3A%2F%2Fwww.chemicalaid.com%2Ftools%2Fequationbalancer.php%3Fequation%3DH2O%2B%253D%2BH2%2B%252B%2BO2&amp;title=H2O+%3D+H2+%2B+O2+-+Chemical+Equation+Balancer"></button> <button class="btn btn-outline-light" title="Twitter" data-type="Twitter" data-icon="twitter" data-bs-toggle="tooltip" data-href="https://twitter.com/share?url=https%3A%2F%2Fwww.chemicalaid.com%2Ftools%2Fequationbalancer.php%3Fequation%3DH2O%2B%253D%2BH2%2B%252B%2BO2&amp;text=H2O+%3D+H2+%2B+O2+-+Chemical+Equation+Balancer&amp;hashtags=chemicalaid"></button> <button class="btn btn-outline-light" title="Email" data-type="Email" data-icon="envelope" data-bs-toggle="tooltip" data-href="mailto:?Subject=H2O+%3D+H2+%2B+O2+-+Chemical+Equation+Balancer&amp;amp;Body=https%3A%2F%2Fwww.chemicalaid.com%2Ftools%2Fequationbalancer.php%3Fequation%3DH2O%2B%253D%2BH2%2B%252B%2BO2"></button> <button class="btn btn-outline-light" title="AddThis" data-type="AddThis" data-icon="addthis" data-bs-toggle="tooltip" data-href="https://www.addthis.com/bookmark.php?url=https%3A%2F%2Fwww.chemicalaid.com%2Ftools%2Fequationbalancer.php%3Fequation%3DH2O%2B%253D%2BH2%2B%252B%2BO2"></button>   </div>
+        </div>
+      </div>
+    <ins class="adsbygoogle my-2 text-center" style="display:block" data-ad-client="ca-pub-2883378907845011" data-ad-slot="2190568016" data-ad-format="horizontal,rectangle" data-ad-channel="4379373413" data-full-width-responsive="true"></ins>      <div class="card mt-2 mb-3" jslog="ReactionInfo" id="reaction-info">
+        <h2 class="card-header">
+          Reaction Information <span class="float-sm-end d-block d-sm-inline-block"><button class="badge btn btn-danger" style="font-size:0.65em;" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="This data is calculated and theoretical. It does not necessarily represent a real chemical reaction.">Disclaimer</button></span>        </h2>
+
+
+        <div class="card-body py-2"><h3 class="card-title">Word Equation</h3><div class="card-text lead" style="font-size: 110%;">Water = Dihydrogen + Dioxygen</div>
+<div class="card-text text-muted small">Two moles of <xabbr title="H2O">Water [H2O]</xabbr> decomposes into two moles of <xabbr title="H2">Dihydrogen [H2]</xabbr> and one mole of <xabbr title="O2">Dioxygen [O2]</xabbr></div>
+</div>
+<div class="card-body text-center px-0 py-2 position-relative" style><div style="overflow-x:auto; visibility:hidden; min-height: 200px;"><img alt="Structure of H2O = H2 + O2" style="display:none;" height="200" src="https://periodictable.chemicalaid.com/assets/img/equation.php/H2O%20%3D%20H2%20%2B%20O2.svg" loading="lazy" decoding="async"></div>
+<button class="position-absolute top-50 start-50 translate-middle btn btn-outline-primary btn-lg shadow-lg" jslog="ShowChemicalStructureButton;track=click" onclick="this.style.display=&quot;none&quot;; this.previousElementSibling.style.visibility = null; this.previousElementSibling.firstElementChild.style.display = null">Show Chemical Structure Image</button></div>
+
+        <div class="card-body py-2"><h3 class="card-title">Reaction Type</h3><p class="card-text mb-1"><a href="https://www.chemicalaid.com/tools/equationbalancer.php/reactions">Decomposition</a></p>
+<ul class><li>Redox</li><li>Electrolysis reaction</li></ul><h4 class="mt-2">Redox (Oxidation-Reduction) Reaction</h4><p class="small mb-0"><a class="text-decoration-none" href="https://www.chemicalaid.com/tools/redoxreaction.php?equation=H2O+%3D+H2+%2B+O2">H2O = H2 + O2 might be a redox reaction.</a></p></div>
+
+        <div class="card-body py-2">
+          <h3 class="card-title">Reactants</h3>
+          <ul class="list-group list-unstyled mb-0">
+                        <li class="list-group-item"><h3 class="fs-6"><a href="https://www.chemicalaid.com/info/chemical.php?compound=H2O&id=Q283" class="mb-1">Water - H<sub>2</sub>O</a></h3><div><span class="badge text-bg-light p-2">Hoh</span> <span class="badge text-bg-light p-2">Aqua</span> <span class="badge text-bg-light p-2">H₂O</span> <span class="badge text-bg-light p-2">[Oh2]</span> <span class="badge text-bg-light p-2">Oxidane</span> <span class="badge text-bg-light p-2">Pure Water</span> <span class="badge text-bg-light p-2">Hydroxic Acid</span> <span class="badge text-bg-light p-2">Hydrogen Oxide</span>  <a href="https://www.chemicalaid.com/tools/molarmass.php?formula=H2O" class="btn btn-sm btn-outline-primary py-0">H2O Molar Mass</a> <a href="https://www.chemicalaid.com/tools/oxidationnumber.php?compound=H2O" class="btn btn-sm btn-outline-primary py-0">H2O Oxidation Number</a></div></li>          </ul>
+        </div>
+
+        <div class="card-body pb-2 pt-2">
+          <h3 class="card-title">Products</h3>
+          <ul class="list-group list-unstyled mb-0">
+            <li class="list-group-item"><h3 class="fs-6"><a href="https://www.chemicalaid.com/info/chemical.php?compound=H2&id=Q3027893" class="mb-1">Dihydrogen - H<sub>2</sub></a></h3><div><span class="badge text-bg-light p-2">H₂</span> <span class="badge text-bg-light p-2">Hydrogen</span> <span class="badge text-bg-light p-2">Hydrogen Gas</span> <span class="badge text-bg-light p-2">Hydrogen Molecule</span> <span class="badge text-bg-light p-2">Molecular Hydrogen</span> <span class="badge text-bg-light p-2">Molecular Hydrogen Gas</span>  <a href="https://www.chemicalaid.com/tools/molarmass.php?formula=H2" class="btn btn-sm btn-outline-primary py-0">H2 Molar Mass</a> <a href="https://www.chemicalaid.com/tools/bondpolarity.php?e1=H&amp;e2=H" class="btn btn-sm btn-outline-primary py-0">H2 Bond Polarity</a> <a href="https://www.chemicalaid.com/tools/oxidationnumber.php?compound=H2" class="btn btn-sm btn-outline-primary py-0">H2 Oxidation Number</a></div></li><li class="list-group-item"><h3 class="fs-6"><a href="https://www.chemicalaid.com/info/chemical.php?compound=O2&id=Q5203615" class="mb-1">Dioxygen - O<sub>2</sub></a></h3><div><span class="badge text-bg-light p-2">Lox</span> <span class="badge text-bg-light p-2">O₂</span> <span class="badge text-bg-light p-2">Oxygen</span> <span class="badge text-bg-light p-2">Oxygen Gas</span> <span class="badge text-bg-light p-2">Liquid Oxygen</span> <span class="badge text-bg-light p-2">Triplet Oxygen</span> <span class="badge text-bg-light p-2">Diatomic Oxygen</span> <span class="badge text-bg-light p-2">Molecular Oxygen</span>  <a href="https://www.chemicalaid.com/tools/molarmass.php?formula=O2" class="btn btn-sm btn-outline-primary py-0">O2 Molar Mass</a> <a href="https://www.chemicalaid.com/tools/bondpolarity.php?e1=O&amp;e2=O" class="btn btn-sm btn-outline-primary py-0">O2 Bond Polarity</a> <a href="https://www.chemicalaid.com/tools/oxidationnumber.php?compound=O2" class="btn btn-sm btn-outline-primary py-0">O2 Oxidation Number</a></div></li>          </ul>
+        </div>
+
+        <div class="card-body pb-0"><h3 class="card-title">Thermodynamics</h3><p>Thermodynamics of the reaction can be calculated using a <a href="/tools/equationbalancer.php/thermodynamicvalues">lookup table</a>.</p>
+</div>
+<div id="equation-thermodynamics" class="accordion border-top border-bottom"><div class="accordion-header" id="equation-thermodynamics-states"><button class="accordion-button collapsed" data-bs-target="#equation-thermodynamics-states-content" data-bs-toggle="collapse" aria-expanded="false" aria-controls="equation-thermodynamics-states-content" jslog="ChooseStatesButton;track=click">Choose Compound States</button></div>
+<div id="equation-thermodynamics-states-content" class="collapse" data-bs-parent="#equation-thermodynamics" aria-labelledby="equation-thermodynamics-states"><form action method="post" class="m-2 row"><div class="col-md-4 col-xl-3 mb-1"><div class="form-floating"><select name="td-o-0" id="input-td-o-0" class="form-select"><option value="H2O:(g)">H2O (g)</option><option value="H2O:(l)">H2O (l)</option></select><label for="input-td-o-0">H2O</label></div>
+</div>
+<div class="col-md-4 col-xl-3 mb-1"><div class="form-floating"><select name="td-o-1" id="input-td-o-1" class="form-select" disabled><option value="H2:(g)">H2 (g)</option></select><label for="input-td-o-1">H2</label></div>
+</div>
+<div class="col-md-4 col-xl-3 mb-1"><div class="form-floating"><select name="td-o-2" id="input-td-o-2" class="form-select" disabled><option value="O2:(g)">O2 (g)</option></select><label for="input-td-o-2">O2</label></div>
+</div>
+<div class="col-12 d-grid"><button type="submit" class="btn btn-outline-secondary btn-sm">Change States</button></div>
+</form></div>
+<div class="accordion-header border-top" id="equation-thermodynamics-enthalpy"><button class="accordion-button collapsed" data-bs-target="#equation-thermodynamics-enthalpy-content" data-bs-toggle="collapse" aria-expanded="false" aria-controls="equation-thermodynamics-enthalpy-content" jslog="EnthalpyButton;track=click">Enthalpy Calculator</button></div>
+<div id="equation-thermodynamics-enthalpy-content" class="collapse" data-bs-parent="#equation-thermodynamics" aria-labelledby="equation-thermodynamics-enthalpy"><div class="p-3"><h4 class>Is the Reaction Exothermic or Endothermic?</h4><table class="table table-sm table-borderless small"><tr class="border-top border-4 border-bottom-0 border-start-0 border-end-0"><th class="chemical-formula">H<sub>2</sub>O <span class="small text-muted">(g)</span></th><td>2 mol</td><td>-241.818464 kJ/mol</td><td>483.636928 kJ</td></tr><tr class="border-top border-4 border-bottom-0 border-start-0 border-end-0"><th class="chemical-formula">H<sub>2</sub> <span class="small text-muted">(g)</span></th><td>2 mol</td><td>0 kJ/mol</td><td>0 kJ</td></tr><tr class><th class="chemical-formula">O<sub>2</sub> <span class="small text-muted">(g)</span></th><td>1 mol</td><td>0 kJ/mol</td><td>0 kJ</td></tr><tr class="border-top border-4 border-bottom-0 border-start-0 border-end-0"><th colspan="1">ΣΔH°<sub>f</sub>(reactants)</th><td colspan="2"></td><td colspan="1">-483.636928 kJ</td></tr><tr class><th colspan="1">ΣΔH°<sub>f</sub>(products)</th><td colspan="2"></td><td colspan="1">0 kJ</td></tr><tr class="border-top border-4 border-bottom-0 border-start-0 border-end-0"><th colspan="1">ΔH°<sub>rxn</sub></th><td colspan="2"></td><td colspan="1">483.636928 kJ</td></tr></table><div class>ΣΔH°<sub>f</sub>(products) &gt; ΣΔH°<sub>f</sub>(reactants), so H2O = H2 + O2 is <b>endothermic</b> (absorbs heat).</div>
+</div>
+</div>
+<div class="accordion-header border-top" id="equation-thermodynamics-entropy"><button class="accordion-button collapsed" data-bs-target="#equation-thermodynamics-entropy-content" data-bs-toggle="collapse" aria-expanded="false" aria-controls="equation-thermodynamics-entropy-content" jslog="EntropyButton;track=click">Entropy Calculator</button></div>
+<div id="equation-thermodynamics-entropy-content" class="collapse" data-bs-parent="#equation-thermodynamics" aria-labelledby="equation-thermodynamics-entropy"><div class="p-3"><h4 class>Is the Reaction Exoentropic or Endoentropic?</h4><p>ΔS = S<sub>products</sub> - S<sub>reactants</sub>. If ΔS &lt; 0, it is exoentropic. If ΔS > 0, it is endoentropic.</p>
+<table class="table table-sm table-borderless small"><tr class="border-top border-4 border-bottom-0 border-start-0 border-end-0"><th class="chemical-formula">H<sub>2</sub>O <span class="small text-muted">(g)</span></th><td>2 mol</td><td>188.715136 J/(mol K)</td><td>-377.430272 J/K</td></tr><tr class="border-top border-4 border-bottom-0 border-start-0 border-end-0"><th class="chemical-formula">H<sub>2</sub> <span class="small text-muted">(g)</span></th><td>2 mol</td><td>130.586824 J/(mol K)</td><td>261.173648 J/K</td></tr><tr class><th class="chemical-formula">O<sub>2</sub> <span class="small text-muted">(g)</span></th><td>1 mol</td><td>205.028552 J/(mol K)</td><td>205.028552 J/K</td></tr><tr class="border-top border-4 border-bottom-0 border-start-0 border-end-0"><th colspan="1">ΣΔS°(reactants)</th><td colspan="2"></td><td colspan="1">377.430272 J/K</td></tr><tr class><th colspan="1">ΣΔS°(products)</th><td colspan="2"></td><td colspan="1">466.2022 J/K</td></tr><tr class="border-top border-4 border-bottom-0 border-start-0 border-end-0"><th colspan="1">ΔS°<sub>rxn</sub></th><td colspan="2"></td><td colspan="1">88.771928 J/K</td></tr></table><div class>ΣΔS°(products) &gt; ΣΔS°(reactants), so H2O = H2 + O2 is <b>endoentropic</b> (increase in entropy).</div>
+</div>
+</div>
+<div class="accordion-header border-top" id="equation-thermodynamics-gibbs"><button class="accordion-button collapsed" data-bs-target="#equation-thermodynamics-gibbs-content" data-bs-toggle="collapse" aria-expanded="false" aria-controls="equation-thermodynamics-gibbs-content" jslog="GibbsFreeEnergyButton;track=click">Gibbs Free Energy Calculator</button></div>
+<div id="equation-thermodynamics-gibbs-content" class="collapse" data-bs-parent="#equation-thermodynamics" aria-labelledby="equation-thermodynamics-gibbs"><div class="p-3"><h4 class>Is the Reaction Exergonic or Endergonic?</h4><p>ΔG = G<sub>products</sub> - G<sub>reactants</sub>. If ΔG &lt; 0, it is exergonic. If ΔG > 0, it is endergonic.</p>
+<table class="table table-sm table-borderless small"><tr class="border-top border-4 border-bottom-0 border-start-0 border-end-0"><th class="chemical-formula">H<sub>2</sub>O <span class="small text-muted">(g)</span></th><td>2 mol</td><td>-228.588656 kJ/mol</td><td>457.177312 kJ</td></tr><tr class="border-top border-4 border-bottom-0 border-start-0 border-end-0"><th class="chemical-formula">H<sub>2</sub> <span class="small text-muted">(g)</span></th><td>2 mol</td><td>0 kJ/mol</td><td>0 kJ</td></tr><tr class><th class="chemical-formula">O<sub>2</sub> <span class="small text-muted">(g)</span></th><td>1 mol</td><td>0 kJ/mol</td><td>0 kJ</td></tr><tr class="border-top border-4 border-bottom-0 border-start-0 border-end-0"><th colspan="1">ΣΔG°(reactants)</th><td colspan="2"></td><td colspan="1">-457.177312 kJ</td></tr><tr class><th colspan="1">ΣΔG°(products)</th><td colspan="2"></td><td colspan="1">0 kJ</td></tr><tr class="border-top border-4 border-bottom-0 border-start-0 border-end-0"><th colspan="1">ΔG°<sub>rxn</sub></th><td colspan="2"></td><td colspan="1">457.177312 kJ</td></tr></table><div class>ΣΔG°(products) &gt; ΣΔG°(reactants), so H2O = H2 + O2 is <b>endergonic</b> (absorbs energy).</div>
+</div>
+</div>
+</div><div class="card-body pb-0"><h3>Reaction Expressions</h3></div>
+<div id="equation-expressions" class="accordion border-top"><div class="accordion-header" id="equation-expressions-equilibrium-constant-and-reaction-quotient"><button class="accordion-button collapsed" data-bs-target="#equation-expressions-equilibrium-constant-and-reaction-quotient-content" data-bs-toggle="collapse" aria-expanded="false" aria-controls="equation-expressions-equilibrium-constant-and-reaction-quotient-content" jslog="EquilibriumConstantButton;track=click">Equilibrium Constant &amp; Reaction Quotient</button></div>
+<div id="equation-expressions-equilibrium-constant-and-reaction-quotient-content" class="collapse" data-bs-parent="#equation-expressions" aria-labelledby="equation-expressions-equilibrium-constant-and-reaction-quotient"><div class="p-3"><span title="Equilibrium Constant">K<sub>c</sub></span> or <span title="Reaction Quotient">Q</span> = ( [H<sub>2</sub>]<sup>2</sup> [O<sub>2</sub>] ) / ( [H<sub>2</sub>O]<sup>2</sup> )<div class="small text-muted">(assuming all reactants and products are aqueous. substitutue 1 for any solids/liquids, and P<small>substance</small> for gases.)</div>
+</div>
+</div>
+<div class="accordion-header border-top" id="equation-expressions-rate-of-reaction"><button class="accordion-button collapsed" data-bs-target="#equation-expressions-rate-of-reaction-content" data-bs-toggle="collapse" aria-expanded="false" aria-controls="equation-expressions-rate-of-reaction-content" jslog="RateOfReactionButton;track=click">Rate of Reaction</button></div>
+<div id="equation-expressions-rate-of-reaction-content" class="collapse" data-bs-parent="#equation-expressions" aria-labelledby="equation-expressions-rate-of-reaction"><div class="p-3">rate = -1/2 * (Δ[H<sub>2</sub>O] / Δt) = 1/2 * (Δ[H<sub>2</sub>] / Δt) = (Δ[O<sub>2</sub>] / Δt)<div class="small text-muted">(assuming constant volume in a closed system and no accumulation of intermediates or side products)</div>
+</div>
+</div>
+</div>
+                  <div class="card-footer">
+            <div class="row">
+              <div class="col-md-6 my-1 d-grid">
+                <a href="https://www.chemicalaid.com/tools/reactionstoichiometry.php?equation=H2O+%3D+H2+%2B+O2" class="btn btn-secondary btn-sm" role="button" jslog="StoichiometryButton;track=click">
+                  Calculate Reaction Stoichiometry                </a>
+              </div>
+              <div class="col-md-6 my-1 d-grid">
+                <a href="https://www.chemicalaid.com/tools/limitingreagent.php?equation=H2O+%3D+H2+%2B+O2" class="btn btn-secondary btn-sm" role="button" jslog="LimitingReagentButton;track=click">
+                  Calculate Limiting Reagent                </a>
+              </div>
+            </div>
+          </div>
+              </div>
+            <form action="https://www.chemicalaid.com/tools/equationbalancer.php" method="get" id="calculator-form" class="tool-equation-balancer mb-1" jslog="CalculatorForm">
+        <div class="mb-2">
+          <p>Use the calculator below to balance chemical equations and determine the type of reaction <a href="#instructions">(instructions)</a>.</p>
+          <div class="input-group" xclass="form-floating">
+            <input placeholder="Chemical Equation (H2O = H + O)" class="form-control typeahead-autocomplete chemical-formula" type="text" name="equation" id="equation" required maxlength="100" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-typeahead-path="https://www.chemicalaid.com/tools/equationbalancer.php/suggestions" value="H2O = H2 + O2">          </div>
+        </div>
+
+        <div class="mb-2 row">
+          <div class="col-3 d-grid">
+            <button type="button" class="btn btn-outline-secondary tool-chemical-editor-btn" data-editor-mode="equation" jslog="EquationEditorButton;track=click">
+              🛠️
+              <!--&#9998;⚙️&#9638;-->
+              <span class="d-none d-xl-inline">Equation Editor</span>            </button>
+          </div>
+          <div class="col-9 d-grid">
+            <button type="submit" class="btn btn-primary">Balance Equation &#10140;</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="row mb-3">
+        <div class="col-md-6 mt-3">
+
+          <h2 id="instructions">Instructions</h2>
+          <p>To balance a chemical equation, enter an equation of a chemical reaction and press the Balance button. The balanced equation will appear above.</p>
+          <ul>
+            <li>Use uppercase for the first character in the element and lowercase for the second character. Examples: Fe, Au, Co, Br, C, O, N, F.</li>
+            <li>Ionic charges are not yet supported and will be ignored.</li>
+            <li>Replace immutable groups in compounds to avoid ambiguity. For example, C6H5C2H5 + O2 = C6H5OH + CO2 + H2O will not be balanced, but XC2H5 + O2 = XOH + CO2 + H2O will.</li>
+            <li>Compound states [like (s) (aq) or (g)] are not required.</li>
+            <li>You can use parenthesis () or brackets [].</li>
+          </ul>
+                  </div>
+
+        <div class="col-md-6 mt-3">
+          <h2>Examples</h2>
+          <ul class="list-group small">
+                          <li class="list-group-item"><a href="?equation=H2O+%3D+H2+%2B+O2">Water = Dihydrogen + Dioxygen</a></li>
+                          <li class="list-group-item"><a href="?equation=H2+%2B+O2+%2B+%283.76N2%29+%3D+H2O+%2B+N2">H2 + O2 + (3.76N2) = H2O + N2</a></li>
+                          <li class="list-group-item"><a href="?equation=H2+%2B+O2+%2B+%283.76N2%29+%3D+H2O+%2B+O2+%2B+N2">H2 + O2 + (3.76N2) = H2O + O2 + N2</a></li>
+                          <li class="list-group-item"><a href="?equation=H2+%2B+O2+%2B+Al+%3D+Al%28OH%293">H2 + O2 + Al = Al(OH)3</a></li>
+                          <li class="list-group-item"><a href="?equation=H2+%2B+O2+%2B+Al+%3D+AlH3O3">H2 + O2 + Al = AlH3O3</a></li>
+                          <li class="list-group-item"><a href="?equation=H2+%2B+O2+%2B+C+%2B+Na+%3D+NaHCO3">H2 + O2 + C + Na = NaHCO3</a></li>
+                          <li class="list-group-item"><a href="?equation=H2+%2B+O2+%2B+C+%2B+P+%3D+CH2OP">H2 + O2 + C + P = CH2OP</a></li>
+                          <li class="list-group-item"><a href="?equation=H2+%2B+O2+%2B+C+%3D+%28CH2OH%292">H2 + O2 + C = (CH2OH)2</a></li>
+                          <li class="list-group-item"><a href="?equation=H2+%2B+O2+%2B+C+%3D+C12H22O11">H2 + O2 + C = C12H22O11</a></li>
+                          <li class="list-group-item"><a href="?equation=NAl+%2B+Br2+%3D+NAlBr">NAl + Br2 = NAlBr</a></li>
+                          <li class="list-group-item"><a href="?equation=MgO+%2B+K2O3Si+%3D+MgSiO3+%2B+K2O">MgO + K2O3Si = MgSiO3 + K2O</a></li>
+                          <li class="list-group-item"><a href="?equation=Al+%2B+H3Po4+%3D+AlPo4+%2B+H2">Al + H3Po4 = AlPo4 + H2</a></li>
+                          <li class="list-group-item"><a href="?equation=S+%2B+P4+%3D+P4S6">S + P4 = P4S6</a></li>
+                        <li class="list-group-item"><a href="/activity.php/equationbalancer">Recently Balanced Equations</a></li>
+          </ul>
+        </div>
+
+      </div>
+                <h2>How To Balance Equations</h2>
+          <p>Read our article on <a href="equationbalancer.php#article">how to balance chemical equations</a> or ask for help in our <a href="/pages/chat.php">chat</a>.</p>
+          <p>You can also ask for help in our <a href="/pages/chat.php">chat</a> or <a href="//forums.chemicalaid.com/">forums</a>.</p>
+          <div id="balance-steps"><h2 class="mt-3">Balance H2O = H2 + O2 Using the Algebraic Method</h2><div class="xcard mt-1 mb-3" xitemscope="" itemtype="https://schema.org/HowToX"><div class="text-center pt-2 float-xl-end mx-3"><img src="https://cdn.chemicalaid.com/assets/img/balance.php?equation=H2O+%3D+H2+%2B+O2" alt="How To Balance H2O = H2 + O2" loading="lazy" class="img-fluid" style="width:400px;height:200px;" itemprop="image"></div><div class="xcard-body mb-0"><p class="lead">To balance the equation H2O = H2 + O2 using the algebraic method step-by-step, you must have experience solving systems of linear equations.
+The most common methods are substitution/elimination and linear algebra, but any similar method will work.</p>
+<ol class="px-3"><li itemprop="step" itemscope itemtype="https://schema.org/HowToStepX"><link itemprop="url" href="#steps-label-vars"><h3 id="steps-label-vars" itemprop="name">Label Each Compound With a Variable</h3><div itemprop="text"><p>Label each compound (reactant or product) in the equation with a variable to represent the unknown coefficients.</p><p><span class="chemical-formula font-monospace"><span class="coefficient">a</span> H<sub>2</sub>O = <span class="coefficient">b</span> H<sub>2</sub> + <span class="coefficient">c</span> O<sub>2</sub></span></p></div></li><li itemprop="step" itemscope itemtype="https://schema.org/HowToStepX"><link itemprop="url" href="#steps-create-equations"><h3 id="steps-create-equations" itemprop="name">Create a System of Equations</h3><p itemprop="text">Create an equation for each element (H, O) where each term represents the number of atoms of the element in each reactant or product.</p><pre class="mb-0" style="overflow-x: auto;"><span class="chemical-formula"><b>H</b>:  <span class="coefficient">2</span>a     =       <span class="coefficient">2</span>b     +       <span class="text-muted">0c</span></span>
+<span class="chemical-formula"><b>O</b>:        <span class="coefficient">1</span>a     =       <span class="text-muted">0b</span>      +       <span class="coefficient">2</span>c</span>
+
+</pre></li><li itemprop="step" itemscope itemtype="https://schema.org/HowToStepX"><link itemprop="url" href="#steps-solve-vars"><h3 id="steps-solve-vars" itemprop="name">Solve For All Variables</h3><p itemprop="text">Use substitution, Gaussian elimination, or a calculator to solve for each variable.</p><div id="solve-equations-options" class="accordion card mb-3"><div class="accordion-header" id="solve-equations-options-substitution"><button class="accordion-button collapsed" data-bs-target="#solve-equations-options-substitution-content" data-bs-toggle="collapse" aria-expanded="false" aria-controls="solve-equations-options-substitution-content">Using Substitution or Elimination</button></div>
+<div id="solve-equations-options-substitution-content" class="collapse" data-bs-parent="#solve-equations-options" aria-labelledby="solve-equations-options-substitution"><ul class="py-2 font-monospace"><li>2a  - 2b = 0</li><li>1a  - 2c = 0</li></ul></div>
+<div class="accordion-header border-top" id="solve-equations-options-linear-algebra"><button class="accordion-button collapsed" data-bs-target="#solve-equations-options-linear-algebra-content" data-bs-toggle="collapse" aria-expanded="false" aria-controls="solve-equations-options-linear-algebra-content">Using Linear Systems / Algebra</button></div>
+<div id="solve-equations-options-linear-algebra-content" class="collapse" data-bs-parent="#solve-equations-options" aria-labelledby="solve-equations-options-linear-algebra"><div class="p-2"><p>Use your graphing calculator's rref() function (or an <a href="https://zeptomath.com/calculators/matrix.php/reduced-row-echelon-form-rref">online rref calculator</a>) to convert the following matrix into reduced row-echelon-form:</p>
+<pre>[ 2        -2       0      0]
+[ 1      0      -2      0]
+</pre><div>The resulting matrix can be used to determine the coefficients. In the case of a single solution, the last column of the matrix will contain the coefficients.</div>
+<form action="https://zeptomath.com/calculators/matrix.php/reduced-row-echelon-form-rref" method="get" target="_blank" class="m-0 mt-2"><input type="hidden" name="A" value="[ 2 -2  0 0]
+[ 1  0 -2 0]
+"><button class="btn btn-light badge text-bg-light" type="submit" name="reduced" value="1">Convert to RREF and Solve Step-by-Step</button><input type="hidden" name="vars" value="abc"><input type="hidden" name="utm_campaign" value="chemicalaid-equationbalancer"></form></div>
+</div>
+</div><p>Simplify the result to get the lowest, whole integer values.</p><ul class="list-group mb-3 font-monospace"><li class="list-group-item">a = 2 (H2O)</li><li class="list-group-item">b = 2 (H2)</li><li class="list-group-item">c = 1 (O2)</li></ul></li><li itemprop="step" itemscope itemtype="https://schema.org/HowToStepX"><link itemprop="url" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&amp;hl=en#steps-verify-result"><h3 id="steps-verify-result" itemprop="name">Substitute Coefficients and Verify Result</h3><div itemprop="text"><p>Count the number of atoms of each element on each side of the equation and verify that all elements and electrons (if there are charges/ions) are balanced.</p><span class="chemical-formula font-monospace"><span class="coefficient">2</span> H<sub>2</sub>O = <span class="coefficient">2</span> H<sub>2</sub> + O<sub>2</sub></span><table class="table table-sm"><tr>
+              <td></td>
+              <th><abbrx title="Left Hand Side, Reactants">Reactants</abbrx></th>
+              <th><abbrx title="Right Hand Side, Products">Products</abbrx></th>
+              <td></td>
+              </tr><tr><th>H</th><td>4</td><td>4</td><td>✔️</td></tr><tr><th>O</th><td>2</td><td>2</td><td>✔️</td></tr></table><div>Since there is an equal number of each element in the reactants and products of 2H2O = 2H2 + O2, the equation is balanced.</div></div></li></ol></div></div><h2 class>Balance H2O = H2 + O2 Using Inspection</h2><div class="mt-1 mb-3"><p class="lead">The law of conservation of mass states that matter cannot be created or destroyed, which means there must be the same number atoms at the end of a chemical reaction as at the beginning.
+To be balanced, every element in H2O = H2 + O2 must have the same number of atoms on each side of the equation.
+When using the inspection method (also known as the trial-and-error method), this principle is used to balance one element at a time until both sides are equal and the chemical equation is balanced.</p>
+<h3>1. Count the number of each element on the left and right hand sides</h3><table class="table-sm table-bordered mb-2 text-center"><tr class="d-none d-lg-table-row"><th></th><th colspan="2">Reactants (Left Hand Side)</th><th colspan="3">Products (Right Hand Side)</th><th></th></tr><tr class="d-lg-table-row d-lg-none"><th></th><th colspan="1">Reactants</th><th colspan="1">Products</th><th></th></tr><tr class="chemical-formula small d-none d-lg-table-row"><th></th><td class="py-2" style="writing-mode: vertical-lr;">H<sub>2</sub>O</td><th><span class="">Total</span></th><td class="py-2" style="writing-mode: vertical-lr;">H<sub>2</sub></td><td class="py-2" style="writing-mode: vertical-lr;">O<sub>2</sub></td><th><span class="">Total</span></th><td></td></tr><tr><th class="px-1">H</th><td class="d-none d-lg-table-cell">2</td><th>2</th><td class="d-none d-lg-table-cell">2</td><td class="d-none d-lg-table-cell"></td><th>2</th><td>✔️</td></tr><tr><th class="px-1">O</th><td class="d-none d-lg-table-cell">1</td><th>1</th><td class="d-none d-lg-table-cell"></td><td class="d-none d-lg-table-cell">2</td><th>2</th><td>❌</td></tr></table><h3 class="mt-3">2. Multiply coefficients for compounds to balance out each element</h3><p>For each element that is not equal, try to balance it by adding more of it to the side with less. Sometimes there may be multiple compounds with that element on one side, so you'll need to use your best judgement and be prepared to go back and try the other options.</p>
+<ol><li><div class="chemical-formula mb-1"><b>O</b> is not balanced. Add <b>1</b> molecule of <b>H<sub>2</sub>O</b> to the reactant (left-hand) side to balance Oxygen: <br><span class="coefficient">2</span>H<sub>2</sub>O = H<sub>2</sub> + O<sub>2</sub></div><table class="table-sm table-bordered mb-2"><tr><th></th><th>Reactants</th><th>Products</th><th></th></tr><tr><th>H</th><td>4</td><td>2</td><td>❌</td></tr><tr><th>O</th><td>2</td><td>2</td><td>✔️</td></tr></table></li><li><div class="chemical-formula mb-1"><b>H</b> is not balanced. Add <b>1</b> molecule of <b>H<sub>2</sub></b> to the product (right-hand) side to balance Hydrogen: <br><span class="coefficient">2</span>H<sub>2</sub>O = <span class="coefficient">2</span>H<sub>2</sub> + O<sub>2</sub></div><table class="table-sm table-bordered mb-2"><tr><th></th><th>Reactants</th><th>Products</th><th></th></tr><tr><th>H</th><td>4</td><td>4</td><td>✔️</td></tr><tr><th>O</th><td>2</td><td>2</td><td>✔️</td></tr></table></li></ol><h3 class="mt-3">3. Verify that the equation is balanced</h3><p class="mb-1">Since there are an equal number of atoms of each element on both sides, the equation is balanced.</p>
+<div class="lead chemical-formula"><span class="coefficient">2</span>H<sub>2</sub>O = <span class="coefficient">2</span>H<sub>2</sub> + O<sub>2</sub></div></div>
+</div>
+</div><div class="col-lg-4 mb-3" id="layout-sidebar"><ins class="adsbygoogle mb-2 d-none d-lg-block mb-2 text-center" style="display:block" data-ad-client="ca-pub-2883378907845011" data-ad-slot="2190568016" data-ad-format="rectangle,vertical" data-ad-channel="4275081261" data-full-width-responsive="true"></ins><div id="calculator-list" class="accordion card d-block mb-3 text-capitalize" aria-labelledby="calculator-list-title"><h2 id="calculator-list-title" class="card-header bg-transparent"><a href="https://www.chemicalaid.com/tools" class="text-decoration-none">Calculators</a></h2><div class="accordion-header border-top" id="calculator-list-reactions"><button class="accordion-button text-capitalize" data-bs-target="#calculator-list-reactions-content" data-bs-toggle="collapse" aria-expanded="true" aria-controls="calculator-list-reactions-content">Equations &amp; Reactions</button></div>
+<div id="calculator-list-reactions-content" class="collapse show" aria-labelledby="calculator-list-reactions"><ul class="nav flex-column"><li class="nav-item"><a href="https://www.chemicalaid.com/tools/equationbalancer.php" class="nav-link">Chemical Equation Balancer</a></li><li class="nav-item"><a href="https://www.chemicalaid.com/tools/reactionstoichiometry.php" class="nav-link">Reaction Stoichiometry Calculator</a></li><li class="nav-item"><a href="https://www.chemicalaid.com/tools/limitingreagent.php" class="nav-link">Limiting Reagent Calculator</a></li><li class="nav-item"><a href="https://www.chemicalaid.com/tools/netionicequation.php" class="nav-link">Ionic Equation Calculator</a></li><li class="nav-item"><a href="https://www.chemicalaid.com/tools/redoxreaction.php" class="nav-link">Redox Calculator</a></li></ul></div>
+<div class="accordion-header border-top" id="calculator-list-compounds"><button class="accordion-button text-capitalize" data-bs-target="#calculator-list-compounds-content" data-bs-toggle="collapse" aria-expanded="true" aria-controls="calculator-list-compounds-content">Compounds &amp; Formulas</button></div>
+<div id="calculator-list-compounds-content" class="collapse show" aria-labelledby="calculator-list-compounds"><ul class="nav flex-column"><li class="nav-item"><a href="https://www.chemicalaid.com/tools/empiricalformula.php" class="nav-link">Empirical Formula Calculator</a></li><li class="nav-item"><a href="https://www.chemicalaid.com/tools/molarmass.php" class="nav-link">Molar Mass Calculator</a></li><li class="nav-item"><a href="https://www.chemicalaid.com/tools/oxidationnumber.php" class="nav-link">Oxidation Number Calculator</a></li><li class="nav-item"><a href="https://www.chemicalaid.com/tools/solubility.php" class="nav-link">Solubility Calculator</a></li><li class="nav-item"><a href="https://www.chemicalaid.com/tools/bondpolarity.php" class="nav-link">Bond Polarity Calculator</a></li></ul></div>
+<div class="accordion-header border-top" id="calculator-list-calculations"><button class="accordion-button text-capitalize" data-bs-target="#calculator-list-calculations-content" data-bs-toggle="collapse" aria-expanded="true" aria-controls="calculator-list-calculations-content">Calculations</button></div>
+<div id="calculator-list-calculations-content" class="collapse show" aria-labelledby="calculator-list-calculations"><ul class="nav flex-column"><li class="nav-item"><a href="https://www.chemicalaid.com/tools/sigfigscalculator.php" class="nav-link">Significant Figures Calculator</a></li><li class="nav-item"><a href="https://www.chemicalaid.com/tools/formulacalculator.php" class="nav-link">Chemistry Equation Calculators</a></li><li class="nav-item"><a href="https://www.chemicalaid.com/tools/formulacalculator.php/ideal-gas-law" class="nav-link">Ideal Gas Law</a></li><li class="nav-item"><a href="https://units.zeptomath.com/convert.php" class="nav-link">Unit Converter</a></li></ul></div>
+<div class="accordion-header border-top" id="calculator-list-random"><button class="accordion-button collapsed text-capitalize" data-bs-target="#calculator-list-random-content" data-bs-toggle="collapse" aria-expanded="false" aria-controls="calculator-list-random-content">More Calculators</button></div>
+<div id="calculator-list-random-content" class="collapse" aria-labelledby="calculator-list-random"><ul class="nav flex-column"><li class="nav-item"><a href="https://zeptomath.com/calculators/statistics.php" class="nav-link">Statistics Calculator</a></li><li class="nav-item"><a href="https://zeptomath.com/calculators/definite.php" class="nav-link">Definite Integral Calculator</a></li><li class="nav-item"><a href="https://www.chemicalaid.com/tools/orbitalhybridization.php" class="nav-link">[Organic] Orbital Hybridization Calculator</a></li><li class="nav-item"><a href="https://zeptomath.com/calculators/derivative.php" class="nav-link">Derivative Calculator</a></li></ul></div>
+</div>  <footer class="text-center" id="layout-footer">
+    <p>Copyright &copy; 2008-2023</p>
+    <div class="mb-4">
+      <div>
+        <a href="https://www.chemicalaid.com/pages/about.php">About Us</a>
+        <!-- &middot; <a href="https://www.chemicalaid.com/pages/links.php">Links</a> -->
+        &middot; <a href="https://www.chemicalaid.com/pages/privacy.php">Privacy</a>
+        &middot; <a href="https://www.chemicalaid.com/pages/terms.php">Terms</a>
+      </div>
+      <div>
+        <a data-bs-toggle="modal" href="#locale-list" title="English">
+          <span class="d-md-none">🇺🇸</span>
+          <span class="d-none d-md-inline">&#127758;</span>
+          EN        </a>
+                  &middot; <a href="#" onclick="ChemAid.citation({&quot;title&quot;:&quot;H2O = H2 + O2 - Chemical Equation Balancer&quot;,&quot;date&quot;:1692716161,&quot;uri&quot;:&quot;L3Rvb2xzL2VxdWF0aW9uYmFsYW5jZXIucGhwP2VxdWF0aW9uPUgyTyslM0QrSDIrJTJCK08y&quot;,&quot;sig&quot;:&quot;a47f0fa0bec1086af0e7a608ba6eae64&quot;}); return false;">How to Cite</a>
+                        </div>
+      <div class="mt-2">
+        <a href="https://fb.com/ChemicalAid" class="btn btn-outline-light"><img src="https://cdn.jsdelivr.net/npm/simple-icons@8.1.0/icons/facebook.svg" alt="ChemicalAid on Facebook" width="24" height="24" loading="lazy" decoding="async"></a>
+        <a href="https://youtube.com/@chemicalaid" class="btn btn-outline-light"><img src="https://cdn.jsdelivr.net/npm/simple-icons@8.1.0/icons/youtube.svg" alt="ChemicalAid on YouTube" width="24" height="24" loading="lazy" decoding="async"></a>
+        <a href="https://discord.com/invite/chemicalaid-chemistry-server-733146806505963607" class="btn btn-outline-light"><img src="https://cdn.jsdelivr.net/npm/simple-icons@8.1.0/icons/discord.svg" alt="ChemicalAid on Discord" width="24" height="24" loading="lazy" decoding="async"></a>
+      </div>
+    </div>
+  </footer>
+</div></div></div><script>$js.ready(["page"], function() {$js("https://cdn.jsdelivr.net/npm/bootstrap.native@4.2.0/dist/bootstrap-native.min.js", "bsn");});$js.ready(["page"], function() {$js("https://cdn.chemicalaid.com/assets/js/site.min.js", "site");});$js.ready(["dom","ads-delay"], function() {$js("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2883378907845011", {before: function(p, s) {;s.crossOrigin="anonymous"},success: function() {window.ads_blocked=!window.adsbygoogle||!adsbygoogle.hasOwnProperty("cookieOptions");$js.done("ads-initialized");},error: function(d) {window.ads_blocked=1;$js.done("ads-initialized");},});});$js.ready(["site","page"], function() {$js("https://cdn.chemicalaid.com/assets/js/share.js");});</script>  <div id="locale-list" class="modal fade" role="dialog" aria-labelledby="locale-list-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="locale-list-label">Languages</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="row list-unstyled">
+            <li class="col-md-4"><a style="font-weight:bold" hreflang="en" lang="en" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=en" title="English" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇺🇸</span>English</a></li><li class="col-md-4"><a style="" hrefla  ng="es" lang="es" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=es" title="Spanish" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇪🇸</span>español</a></li><li cl  ass="col-md-4"><a style="" hreflang="fr" lang="fr" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=fr" title="French" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">�🇷<</span>français</
+a></li><li class="col-md-4"><a style="" hreflang="de" lang="de" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=de" title="German" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇩🇪</span>Deutsch</a></li><li class="col-md-4"><a style="" hreflang="pt" lang="pt" href  ="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=pt" title="Portuguese" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇵🇹</span>português</a></li><li class="col-md-4"><a   style="" hreflang="it" lang="it" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=it" title="Italian" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇮🇹</span>italia  no</a></li><li class="col-md-4"><a style="" hreflang="nl" lang="nl" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=nl" title="Dutch" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇳🇱<
+/span>Nederlands</a></li><li class="col-md-4"><a style="" hreflang="ru" lang="ru" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=ru" title="Russian" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇷🇺</span>русский</a></li><li class="col-md-4"><a style="" hreflang=  "pl" lang="pl" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=pl" title="Polish" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇵🇱</span>polski</a></li><li class="  col-md-4"><a style="" hreflang="cs" lang="cs" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=cs" title="Czech" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇨🇿</s  pan>čeština</a></li><li class="col-md-4"><a style="" hreflang="sk" lang="sk" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=sk" title="Slovak" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇸🇰</span>slovenčina</a></li><li class="col-md-4"><a style="" hreflang="hr" lang="hr" href="ht  tps://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=hr" title="Croatian" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇭🇷</span>hrvatski</a></li><li class="col-md-4"><a style=  "" hreflang="vi" lang="vi" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=vi" title="Vietnamese" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇻🇳</span>Tiếng Việt  </a></li><li class="col-md-4"><a style="" hreflang="ms" lang="ms" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=ms" title="Malay" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇲🇾</s
+pan>Melayu</a></li><li class="col-md-4"><a style="" hreflang="id" lang="id" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=id" title="Indonesian" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇮🇩</span>Indonesia</a></li><li class="col-md-4"><a style="" hreflang="  ko" lang="ko" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=ko" title="Korean" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇰🇷</span>한국어</a></li><li class="col-  md-4"><a style="" hreflang="ja" lang="ja" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=ja" title="Japanese" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇯🇵<  /span>日本語</a></li><li class="col-md-4"><a style="" hreflang="zh" lang="zh" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=zh" title="Chinese" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇨🇳</span>中文</a></li><li class="col-md-4"><a style="" hreflang="hi" lang="hi" href="https://  www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=hi" title="Hindi" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇮🇳</span>हिन्दी</a></li><li class="col-md-4"><a style="" hrefla  ng="ar" lang="ar" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=ar" title="Arabic" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇸🇦</span>العربية</a></li><li cla  ss="col-md-4"><a style="" hreflang="tr" lang="tr" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=tr" title="Turkish" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">�🇷<</span>Türkçe</a>
+</li><li class="col-md-4"><a style="" hreflang="bn" lang="bn" href="https://www.chemicalaid.com/tools/equationbalancer.php?equation=H2O+%3D+H2+%2B+O2&hl=bn" title="Bangla" rel="alternate" class="btn btn-sm d-block text-start"><span class="float-end">🇧🇩</span>বাংলা</a></li>          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "18cf8d43ade04a00abafb06367210f81"}'></script><!-- End Cloudflare Web Analytics -->    <script>
+      (function() {
+        var s = function(a, b, c) {
+          window.should_show_ads = !!a;
+          window.ad_provider = b;
+          window.ad_slots = c || '0';
+        };
+        s(true,"adsense","100110");
+        if (window.should_show_ads) {
+          var ssa = function() {
+            var n = navigator;
+            if ((n.deviceMemory || 4) <= 1) {
+              return false;
+            }
+            var nc = n.connection;
+            if (nc) {
+              if (['slow-2g', '2g', '3g'].includes(nc.effectiveType) || (nc.rtt || 0) > 400 || (nc.downlink || 10) <= 1) {
+                return false;
+              }
+            }
+            return true;
+          };
+          if (!ssa()) {
+            if (1) {
+              s(false, 'holdback');
+            } else {
+              window.ads_hide_holdback = true;
+            }
+          }
+        }
+      }());
+    </script>
+  <script>adsbygoogle = window.adsbygoogle || [];if (window.CookieState) {
+  adsbygoogle.pauseAdRequests=1;
+  CookieState.ready(function() {
+    adsbygoogle.requestNonPersonalizedAds=!CookieState.marketing;
+    adsbygoogle.pauseAdRequests=0;
+  });
+}if (window.should_show_ads) {$js.ready(["page"], function() {
+  let f = function() {
+    document.querySelectorAll('.adsbygoogle').forEach(function(el) {
+      if (getComputedStyle(el, null).display != 'none') {
+        if (window.ads_hide_holdback) { el.setAttribute("data-ad-channel", "5197582018"); }
+        adsbygoogle.push({params:{}});
+      } else {
+        el.parentElement.removeChild(el);
+      }
+    });
+    $js.done('ads-delay');
+  };
+  window.scheduler ? scheduler.postTask(f, { priority: "background" }) : window.setTimeout(f, 1000);
+});}</script></body></html>

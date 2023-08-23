@@ -13,47 +13,56 @@
 
 </head>
 <body onload="includeHeader()">
+
     <div id="header-container" class="header"></div>
+
     <div class="sections">
-            
+        
         <div class="sections-setup">
             <h1 data-translate="intro-vie" class="sections-h1">Introducing VIE-GPT</h1>
             <div class="sections-pharagraph">
                 <p data-translate="intro-vie-p1">VIE-GPT is a powerful OpenAI Reverse API that leverages the capabilities of GPT, a large transformer-based language model with 175 billion parameters. As an OpenAI Reverse API, VIE-GPT enables you to process and interpret uploaded text, unlocking new possibilities for text analysis, insights, and intelligent responses.</p>
+                <p class="p-pc-tablet p-mobile"><img src="image/848f6454d5222a1667e9d3d7dbec50ed.jpg" alt="Anupat Insuvanno - Api data gateway isometric illustration."></p>
                 <p data-translate="intro-vie-p2"class="p-pc-tablet p-mobile">With VIE-GPT's OpenAI Reverse API, you can harness the immense power of GPT to enhance your applications, automate tasks, and generate dynamic text-based outputs. Whether you're building a chatbot, analyzing user inputs, or creating personalized content, VIE-GPT empowers you with advanced natural language processing capabilities.</p>
+                <p class="p-pc-tablet p-mobile"><img src="image/original-c554aa05dd5033a2e5eda9a940ec7a95.png" alt="OpenAI logo redesign by Eli Schiff on Dribbble"></p>
                 <p data-translate="intro-vie-p3" class="p-pc-tablet p-mobile">Experience the seamless integration of VIE-GPT's OpenAI Reverse API into your projects, enabling you to tap into the remarkable intelligence of GPT. Revolutionize your text-based workflows, engage users with interactive conversations, and unleash the potential of AI-driven language models.</p>
                 <p data-translate="intro-vie-p4" class="p-pc-tablet p-mobile">And not just that! We even support the You.com AI and the Bing AI! So why wait?</p>
                 <p data-translate="intro-vie-p5" class="p-pc-tablet p-mobile">Unlock the transformative potential of VIE-GPT's OpenAI Reverse API and discover a new realm of possibilities for text processing and interpretation. Join the AI revolution and supercharge your applications with VIE-GPT today!</p>
 
             </div>
             
-            <h1 class="sections-h1">Try it! (Limit)</h1>
+            <h1 class="sections-h1">Try it! /* Limit */\</h1>
             <div class="vie-gpt-preview">
                 <div class="logo-gpt">
                     <h1>VIE-GPT</h1> 
                     <h1 class="icon-gear"><i class="fa-solid fa-gear"></i></h1>
                 </div>
-                <div class="mode">
+                <!-- <div class="mode">
                     <h1>Model</h1>
                 </div>
-                <!-- <div class="mode">
+                <div class="mode">
                     <h1>Setting</h1>
                 </div> -->
                 <div class="chat-area">
-                    <div class="user-chats">
-                        <p><i class="fa-solid fa-user"></i></p>
-                        <p>User chat</p>
-                    </div>
-                    <div class="bot-chats">
-                        <p><i class="fa-solid fa-robot"></i></p>
-                        <p>Bot respone</p>
+                    <div class="history">
+                        <div class="user-chats">
+                            <p><i class="fa-solid fa-user"></i></p>
+                            <p>User chat </p>
+                        </div>
+                        <div class="bot-chats">
+                            <p><i class="fa-solid fa-robot"></i></p>
+                            <p>Bot respone</p>
+                        </div>
                     </div>
 
                 </div>
                 <div class="bottom-contanier">
-                        <input type="text" id="user-input"> <br>
-                        <input type="submit" id="send-button">
+                    <input type="text" id="user-input"> <br>
+                    <input type="submit" id="send-button" value="Send">
+                    <input type="submit" class="send-button" value="Test API">
                 </div>
+
+                <script src="vie-gpt.js"></script>
             </div>
         </div>
 
@@ -69,9 +78,33 @@
             </div>
             <h1 class="sections-h1">Try it</h1>
             <p class="sections-pharagraph">Update soon</p>
+        </div>            
+        
+
+    </div>
+    <div class="footer">
+        <h1>Nguyen Van Duc - Made With Fucking Love 😛 </h1>
+        <h1>
+            <a href="https://www.facebook.com/profile.php?id=100065525475828" target="_blank">
+                <i class="fa-brands fa-facebook fa-lg" style="color: #000000;">
+                </i>
+            </a>
+        </h1>
+        <h1>
+            <a href="https://github.com/Vanduc006" target="_blank">
+                <i class="fa-brands fa-github fa-lg" style="color: #000000;"></i>
+                </i>
+            </a>
+        </h1>
+        <h1>
+            <a href="" >
+                <i class="fa-solid fa-at" style="color: #000000;"></i>
+                </i>
+            </a>
+        </h1>
     </div>
 
-</div>
+
 </body>
 </html>
 
