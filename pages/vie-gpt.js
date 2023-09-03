@@ -29,7 +29,7 @@ sendBtn.addEventListener('click', e => {
     if (userInput.value !== '') {
         adduserInput()
         scrollToBottom()
-        botRespone()
+        //botRespone()
         addBotOutput(alphaContent)
         userInput.value = ''
         stopPrinting = false;
