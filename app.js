@@ -4,7 +4,7 @@ function includeHeader() {
     loadLanguage(uerselect)
   }
   else {
-    console.log('null')
+    console.log('language was not selected')
   }
   const forLocal = '../components/header.html'
   const forGithub = 'https://raw.githubusercontent.com/Vanduc006/ducvan/main/components/header.html'
