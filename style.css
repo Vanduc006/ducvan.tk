@@ -440,7 +440,9 @@ section.show-animate .animate {
     margin-top: 10px;
 
 }
-
+.output {
+    padding: 10px;
+}
 
 .bottom-contanier {
     display: block;
