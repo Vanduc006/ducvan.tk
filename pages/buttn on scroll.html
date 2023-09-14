@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Scrollable Button</title>
+</head>
+<body>
+    <div class="container">
+        <button id="scrollButton">Nút j</button>
+        <div class="box"></div>
+    </div>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0,0.5);
+    position: relative;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+}
+
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const scrollButton = document.getElementById("scrollButton");
+    const box = document.querySelector(".box");
+    let isScrolling = false;
+
+    scrollButton.addEventListener("mousedown", function () {
+        console.log('xuong')
+        isScrolling = true;
+        
+    });
+
+    document.addEventListener("mouseup", function () {
+        console.log('len')
+        isScrolling = false;
+    });
+
+    document.addEventListener("mousemove", function (event) {
+        if (isScrolling) {
+            const boxHeight = box.clientHeight;
+            const buttonTop = parseInt(window.getComputedStyle(scrollButton).top);
+            
+            if (buttonTop + event.movementY >= 0 && buttonTop + event.movementY <= boxHeight - scrollButton.clientHeight) {
+                scrollButton.style.top = (buttonTop + event.movementY) + "px";
+            }
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="image.css">
+    <script src="https://kit.fontawesome.com/493cf92c43.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="#">
+                <!-- <img src="https://kaikun.io/_next/image?url=https%3A%2F%2Fkaikun-ai-image.s3.ap-northeast-1.amazonaws.com%2Ff593e75d-f0af-4e66-908a-cdff07972009%2F1694663523307.png&w=1920&q=75" class="rounded-circle" alt="..." width="50px" height="50px"> -->
+                IMASIS
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Generate✨</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  " href="#">Discover👀</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">More?🤭</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link login" href="#">SignUp</a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+
+      <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <script src="image-gen.js"></script>
+      <div class="sections">
+        <div class="sections-setup">
+          <div class="header">
+            <h1 class="header-content">Unlimited Generate Images</h1>
+            <h1 class="header-subcontent">With Billion Modals & Loras</h1>
+          </div>
+          <div class="trending-tag"></div>
+          <div class="gen-work">
+            <div class="prompt-data">
+              <div class="textarea-container">
+                <textarea name="" id="" class="prompt-input" placeholder="Tell we your imagine"></textarea>
+                <script>
+                  const textarea = document.querySelector('.prompt-input');
+
+                  textarea.addEventListener('input', function() {
+                      this.style.height = 'auto'; // Đặt lại chiều cao thành auto để tính toán lại chiều cao thực tế
+                      this.style.height = (this.scrollHeight > 200 ? 200 : this.scrollHeight) + 'px'; // Giới hạn chiều cao tối đa là 100px
+                  });
+                </script>
+                <div class="options">
+                    <i class="fa-solid fa-gear" style="color: #000000;"></i>
+                </div>
+            </div>
+
+              <input class="send-prompt" type="submit" value="Let's see your imagine" onclick="callServer()">
+
+            </div>
+          </div>
+
+          <!--  Image Show-->
+          <div class="img-container">
+            <div class="items">
+                
+                <img class='imgs' src="https://pbxt.replicate.delivery/8FHhVn0AQ3YlBVbUS9OMpmPISHfiHHtWki8An8Vfx0WuUIjRA/out-0.png" alt="">
+                <div class="item-bottom">
+                    <a class="author-image">
+                        <i class="fa-solid fa-user"></i> Nguyen Van Duc
+
+                    </a>
+                    <a class="react">
+                        <i onclick="myFunction(this)" class="fa-regular fa-heart btn-react" style="color: #080808;"></i>
+                    </a>
+                </div>
+
+                <div class="info-img">
+                    <button>Open <i class="fa-solid fa-image" style="color: #000000;"></i></button>
+                </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+</body>
+</html>

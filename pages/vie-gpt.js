@@ -3,6 +3,9 @@ const sendBtn = document.querySelector('#send-button')
 const chatArea = document.querySelector('.history')
 const testBtn = document.querySelector('.send-button')
 
+const sanitizedInput = DOMPurify.sanitize(userInput.value);
+sendBtn.disable = true;
+
 console.log(localStorage.getItem('chats'))
 if(localStorage.getItem('chats')) {
   chatArea.innerHTML = localStorage.getItem('chats');
@@ -13,7 +16,7 @@ function adduserInput() {
     userChats.innerHTML = `
         <div class="user-chats">
             <p><i class="fa-solid fa-user"></i></p>
-            <p> ${userInput.value} </p>
+            <p> ${sanitizedInput} </p>
         </div>
     `;
     chatArea.appendChild(userChats)
@@ -27,9 +30,9 @@ function chatStorage(keyvalue,value) {
 }
 sendBtn.addEventListener('click', e => {
     if (userInput.value !== '') {
-        adduserInput()
-        scrollToBottom()
-        botRespone()
+        // adduserInput()
+        // scrollToBottom()
+        // botRespone()
 
         userInput.value = ''
         stopPrinting = false;
@@ -108,7 +111,7 @@ function addBotOutput(alphaContent) {
   let stopPrinting = false;
   const botChats = document.createElement('div');
   botChats.innerHTML = `
-      <div class="user-chats">
+      <div class="bot-chats">
           <p><i class="fa-solid fa-robot"></i></p>
           <p class="chats-container output"></p>
           <div class="respone-btns">
@@ -246,3 +249,21 @@ userInput.addEventListener('keypress', function(event) {
     }
     
 })
+
+
+// API
+fetch("http://127.0.0.1:5000/haha", {
+     
+    // Adding method type
+    method: "POST",
+})
+ 
+// Converting to JSON
+.then(response => response.json())
+ 
+// Displaying results to console
+.then(json => {
+
+  const imageFromAPI = json.output;
+  console.log(imageFromAPI)
+});

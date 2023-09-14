@@ -12,13 +12,122 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
 
+
 </head>
 <body onload="includeHeader()">
 
     <div id="header-container" class="header"></div>
 
-    <div class="sections">
+    <!-- <div class="sections">
         
+        <div class="sections-setup">
+            
+            <h1 class="sections-h1">Image Generation</h1>
+            <button class="gen-img" onclick="callServer()">AlPHA TEST</button>
+            <div class="img-container">
+                <div class="items">
+                    
+                    <img class='imgs' src="https://pbxt.replicate.delivery/8FHhVn0AQ3YlBVbUS9OMpmPISHfiHHtWki8An8Vfx0WuUIjRA/out-0.png" alt="">
+                    <div class="item-bottom">
+                        <a class="author-image">
+                            <i class="fa-solid fa-user"></i> Nguyen Van Duc
+
+                        </a>
+                        <a class="react">
+                            <i onclick="myFunction(this)" class="fa-regular fa-heart btn-react" style="color: #080808;"></i>
+                        </a>
+                        
+
+                    </div>
+
+                    <div class="info-img">
+                        <button>Open <i class="fa-solid fa-image" style="color: #000000;"></i></button>
+                    </div>
+
+                </div>
+
+            </div>
+            <style>
+                .img-container {
+                    margin-top: 20px;
+                    display: grid;
+                    grid-gap: 10px;
+                    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                    grid-auto-flow: dense;
+                }
+
+                .img-container > .items {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    background-color: #f5f5f5; /* Màu nền (thay đổi thành màu bạn muốn) */
+                    border-radius: 10px;
+                    padding: 10px;
+                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Đổ bóng (tuỳ chỉnh) */
+                }
+
+                .img-container > .items > .imgs {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                    user-select: none;
+                    -moz-user-select: none;
+                    -webkit-user-drag: none;
+                    -webkit-user-select: none;
+                    -ms-user-select: none;
+                    transition: opacity 0.5s ease-in-out;
+                }
+
+
+                .items:hover .react {
+                    opacity: 1;
+                    z-index: 1;
+                }
+
+                .items:hover .info-img {
+                    opacity: 0.9;
+                }
+
+                .items:hover .imgs {
+                    opacity: 0.5;
+                }
+
+                .info-img {
+                    transition: 0.5s ease;
+                    opacity: 0;
+                    position: absolute;
+                    z-index: 10;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                }
+
+                .info-img button {
+                    border: none;
+                    padding: 8px 16px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+                .author-image {
+                    
+                }
+                .item-bottom {
+                    margin-top: 10px;
+                    display: block;
+                    
+                }
+                .react {
+                    float: right;
+                }
+                .btn-react {
+                    font-size: 20px;
+                }
+
+
+
+            </style>
+        </div>   -->
         <div class="sections-setup">
             <h1 data-translate="intro-vie" class="sections-h1">Introducing VIE-GPT</h1>
             <div class="sections-pharagraph">
@@ -33,46 +142,46 @@
             </div>
             
             <h1 class="sections-h1">Try it!</h1>
-            <div class="vie-gpt-preview">
-                <div class="logo-gpt">
-                    <h1><a href="vie-gpt.html">VIE-GPT</a></h1> 
-                    <h1 class="icon-gear"><i class="fa-solid fa-gear"></i></h1>
-                </div>
-                <!-- <div class="mode">
-                    <h1>Model</h1>
-                </div>
-                <div class="mode">
-                    <h1>Setting</h1>
-                </div> -->
-                <div class="chat-area">
-                    <div class="history">
-                        <!-- <div class="user-chats">
-                            <p><i class="fa-solid fa-user"></i></p>
-                            <p>User chat </p>
-                        </div>
-                        <div class="bot-chats">
-                            <p><i class="fa-solid fa-robot"></i></p>
-                            <p>Bot respone</p>
-                            <div class="respone-btns">
-                                <button class="stop-generate"><i class="fa-solid fa-circle-stop"></i> Stop Generate </i></button>
-                                <button>Generate To File</button> 
-                                
-                            </div>
-                        </div> -->
-                        
-                    </div>
-
-                </div>
-                <div class="bottom-contanier">
-                    <input type="text" id="user-input"> <br>
-                    <input type="submit" id="send-button" value="Send">
-                    <!-- <input type="submit" class="send-button" value="Test API"> -->
-                </div>
-
-                <script src="vie-gpt.js"></script>
-            </div>
+            
         </div>
+        <div class="vie-gpt-preview">
+            <div class="logo-gpt">
+                <h1><a href="vie-gpt.html">VIE-GPT</a></h1> 
+                <h1 class="icon-gear"><i class="fa-solid fa-gear"></i></h1>
+            </div>
+            <!-- <div class="mode">
+                <h1>Model</h1>
+            </div>
+            <div class="mode">
+                <h1>Setting</h1>
+            </div> -->
+            <div class="chat-area">
+                <div class="history">
+                    <!-- <div class="user-chats">
+                        <p><i class="fa-solid fa-user"></i></p>
+                        <p>User chat </p>
+                    </div>
+                    <div class="bot-chats">
+                        <p><i class="fa-solid fa-robot"></i></p>
+                        <p>Bot respone</p>
+                        <div class="respone-btns">
+                            <button class="stop-generate"><i class="fa-solid fa-circle-stop"></i> Stop Generate </i></button>
+                            <button>Generate To File</button> 
+                            
+                        </div>
+                    </div> -->
+                    
+                </div>
 
+            </div>
+            <div class="bottom-contanier">
+                <input type="text" id="user-input"> <br>
+                <input type="submit" id="send-button" value="Send" >
+                <!-- <input type="submit" class="send-button" value="Test API"> -->
+            </div>
+
+            <script src="vie-gpt.js"></script>
+        </div>
         <div class="sections-setup" id="tiktok-section">
             <h1 class="sections-h1">Meet TikTokDownloader</h1>
             <div class="sections-pharagraph">
@@ -85,8 +194,7 @@
             </div>
             <h1 class="sections-h1">Try it</h1>
             <p class="sections-pharagraph">Update soon</p>
-        </div>            
-        
+        </div>  
 
     </div>
     <div class="footer">

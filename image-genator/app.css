@@ -1,0 +1,151 @@
+.logo {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(11,10,71,1) 0%, rgba(0,212,255,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-a {
+    color: rgb(0,212,255);
+}
+.login {
+    background-color: aquamarine;
+}
+/* Sections Css */
+.sections {
+    margin: 50px 100px 0 100px;
+    position: relative;
+}
+
+.head-sections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+.sections-setup {
+    margin-top: 50px;
+    background-color: #f3f4f6;
+    padding: 30px 30px 20px 30px;
+    border-radius: 10px;
+}
+.sections-setup img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.sections-h1 {
+    margin-top: 10px;
+    font-size: 35px;
+}
+.sections-pharagraph {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: white;
+    font-size: 20px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    line-height: 2;
+}
+.p-pc-tablet {
+    margin-top: 20px;
+}
+
+.header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.header-content {
+    font-size: 40px;
+}
+.header-subcontent {
+    font-size: 20px;
+    color: grey;
+}
+.gen-work {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    margin-top: 30px;
+}
+.prompt-data {
+    width: 100%;
+}
+.prompt-data input{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+.textarea-container {
+    position: relative;
+}
+.prompt-input {
+    border: none;
+    height: 80px;
+    resize: none; /* Không cho phép thay đổi kích thước tự do */
+    min-height: 30px; /* Chiều cao tối thiểu của textarea */
+    max-height: 200px; /* Chiều cao tối đa của textarea */
+    overflow-y: auto;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.send-prompt {
+    border: none;
+    background-color:  #87CEEB;
+    border-radius: 10px;
+    height: 30px;
+
+}
+.options {
+    position: absolute;
+    z-index: 1;
+    margin: 5px 5px 0 0;
+    right: 0;
+    top: 0;
+    background-color: #FFDAB9;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/* Responesive */
+@media (max-width:768px) {
+    .sections {
+        margin: 0 20px 0 20px;
+    }
+    .sections-setup {
+        padding: 20px 20px 20px 20px;
+    }
+    .sections-setup img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .p-mobile {
+        margin-top: 10px;
+    }
+    .sections-h1 {
+        margin: 0;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .sections-pharagraph {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}    
