@@ -42,22 +42,24 @@ function addImage(imageUrl) {
 // Sau đó khi gọi hàm addImage(imageFromAPI), nó sẽ thêm hình ảnh mới vào đầu .img-container
 
 function callServer() {
-    fetch("http://127.0.0.1:5000/haha", {
+    // fetch("http://127.0.0.1:5000/haha", {
         
-        // Adding method type
-        method: "POST",
-    })
+    //     // Adding method type
+    //     method: "POST",
+    // })
     
-    // Converting to JSON
-    .then(response => response.json())
+    // // Converting to JSON
+    // .then(response => response.json())
     
-    // Displaying results to console
-    .then(json => {
+    // // Displaying results to console
+    // .then(json => {
 
-    const imageFromAPI = json.output;
-    console.log(imageFromAPI)
+    // const imageFromAPI = json.output;
+    // console.log(imageFromAPI)
+    // addImage(imageFromAPI)
+    // });
+    const imageFromAPI = 'https://pbxt.replicate.delivery/8FHhVn0AQ3YlBVbUS9OMpmPISHfiHHtWki8An8Vfx0WuUIjRA/out-0.png'
     addImage(imageFromAPI)
-    });
 }
 
 
