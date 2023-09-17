@@ -31,6 +31,7 @@ function addImage(imageUrl) {
     if (firstItem) {
         imgContainer.insertBefore(imgShow, firstItem);
         numb += 1
+        
     } else {
         imgContainer.appendChild(imgShow);
         numb += 1

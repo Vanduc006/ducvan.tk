@@ -64,10 +64,12 @@
 }
 .header-content {
     font-size: 40px;
+    text-align: center;
 }
 .header-subcontent {
     font-size: 20px;
     color: grey;
+    text-align: center;
 }
 .gen-work {
     display: flex;
@@ -147,5 +149,11 @@
     .sections-pharagraph {
         font-size: 14px;
         padding: 5px 10px;
+    }
+    .header-content {
+        font-size: 20px;
+    }
+    .header-subcontent {
+        font-size: 15px;
     }
 }    

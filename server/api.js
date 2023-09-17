@@ -1,16 +1,54 @@
 //index.js
-
 import express from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
-
+import { checkLogin } from './routes/LoginRouter.js'
 
 const app = express();
 app.use(cors({ origin: 'http://127.0.0.1:5500' }));
 app.use(morgan('combined'))
+
+app.use(express.json());
+
+app.post('/login', (req, res) => {
+  // Lấy dữ liệu JSON từ yêu cầu của client
+  const requestData = req.body;
+  const username = requestData.username
+  const password = requestData.password
+
+  checkLogin(username, password, (result) => {
+
+
+    if (result === 'Login True') {
+      // Xử lý khi đăng nhập thành công
+      
+      res.json({login_status : 'True'});
+    } else if (result === 'Login False') {
+      // Xử lý khi đăng nhập không thành công
+      res.json({login_status : 'False'});
+    } else {
+      // Xử lý lỗi kết nối
+      res.json({login_status : 'Erro Connect'});
+    }
+  });
+  // const username = { username : requestData.username}
+  // res.json(username)
+  // Kiểm tra nếu requestData chứa số và làm phép tính
+  // if (typeof requestData.number === 'number') {
+  //   // Thực hiện phép tính và trả kết quả về client
+  //   const result = requestData.number * 2; // Phép nhân 2
+  //   const responseData = { result };
+  //   res.json(responseData);
+  // } else {
+  //   // Trường hợp dữ liệu không hợp lệ
+  //   res.status(400).json({ error: 'Dữ liệu không hợp lệ' });
+  // }
+});
+
 app.get('/',(req,res) => {
 	res.send('<h1>haha</h1>');
 })
+
 app.post('/haha', (req, res) => {
     // res.send('POST request to the homepage')
     const imageOutput = 'https://pbxt.replicate.delivery/8FHhVn0AQ3YlBVbUS9OMpmPISHfiHHtWki8An8Vfx0WuUIjRA/out-0.png'
