@@ -17,6 +17,8 @@ const connection = mysql.createConnection({
     
     // Dữ liệu để chèn vào bảng
     const userData = {
+      firstname: 'Văn',
+      lastname: 'Đức',
       username: 'example_user',
       password: 'example_password',
       level: 'example_level',

@@ -7,14 +7,18 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="image.css">
-    <script src="https://kit.fontawesome.com/493cf92c43.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://kit.fontawesome.com/493cf92c43.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+  <nav class="navbar navbar-expand-lg fixed-top nav-bar" style="background-color: #57ebde;">
     <div class="container-fluid">
-        <a class="navbar-brand logo" href="#">
+        <a class="navbar-brand logo" href="#" style="color: #000;">
             <!-- <img src="https://kaikun.io/_next/image?url=https%3A%2F%2Fkaikun-ai-image.s3.ap-northeast-1.amazonaws.com%2Ff593e75d-f0af-4e66-908a-cdff07972009%2F1694663523307.png&w=1920&q=75" class="rounded-circle" alt="..." width="50px" height="50px"> -->
             IMASIS
         </a>
@@ -24,20 +28,33 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
         <ul class="navbar-nav ">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">Tạo ảnh✨</a>
+            <a class="nav-link " aria-current="page" href="#" style="color: #000;">Tạo ảnh✨</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  " href="#">Khám phá👀</a>
+            <a class="nav-link  " href="#" style="color: #000;">Khám phá👀</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#">Nhiều hơn?🤭</a>
+            <a class="nav-link " href="#" style="color: #000;">Nhiều hơn?🤭</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link login" href="#" class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Đăng kí</a>
+            <a class="nav-link login" href="#" class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" style="color: #000;">Đăng kí</a>
           </li>
         </ul>
+        <div class="dropdown bg-transparent">
+          
+          <a class="dropdown-toggle" role="button" data-bs-toggle="dropdown" style="color: #000;text-decoration: none;">
+            <!-- <img src="https://kaikun.io/_next/image?url=https%3A%2F%2Fkaikun-ai-image.s3.ap-northeast-1.amazonaws.com%2Ff593e75d-f0af-4e66-908a-cdff07972009%2F1694663523307.png&w=1920&q=75" class="rounded-circle" alt="..." width="30px" height="30px"> -->
+            Tài khoản
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+  
+          </ul>
+        </div>
       </div>
-      
+
     </div>
   </nav>
 
@@ -64,8 +81,8 @@
         </div>
       </div> -->
 
-      <!-- >  Image Slider-->
-      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <!-- Image Slider-->
+      <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide">
         
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -105,13 +122,15 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+      </div> -->
+
   <!-- Work -->
   <script src="image-gen.js"></script>
   <div class="sections">
     <div class="sections-setup">
       <div class="header">
-        <h1 class="header-content">Tạo Ra Bức Tranh Từ Trí Tưởng Tượng Của Bạn</h1>
+        <h1 class="header-content">Tạo Ra Bức Ảnh Từ</h1>
+        <h1 class="header-content"><span>Trí Tưởng Tượng Của Bạn</span></h1>
         <h1 class="header-subcontent">Với Hàng Tỉ Modals Và Loras </h1>
       </div>
       <div class="trending-tag"></div>
@@ -132,31 +151,39 @@
             </div>
         </div>
 
-          <input class="send-prompt" type="submit" value="Let's see your imagine" onclick="callServer()">
+          <input class="send-prompt rainbow-5" type="submit" value="Let's see your imagine" onclick="callServer()">
 
         </div>
       </div>
 
       <!--  Image Show-->
+              
       <div class="img-container">
+        
         <div class="items">
-            
-            <img class='imgs' src="https://pbxt.replicate.delivery/8FHhVn0AQ3YlBVbUS9OMpmPISHfiHHtWki8An8Vfx0WuUIjRA/out-0.png" alt="">
-            <div class="item-bottom">
-                <a class="author-image">
-                    <i class="fa-solid fa-user"></i> Nguyen Van Duc
+           <!-- <div class="loading">
+            <div class="lds-ripple"><div></div><div></div></div>
+          </div> -->
+          <img class='imgs load-sucess' src="https://pbxt.replicate.delivery/8FHhVn0AQ3YlBVbUS9OMpmPISHfiHHtWki8An8Vfx0WuUIjRA/out-0.png" alt="">
+          <div class="item-bottom load-sucess">
+              <a class="author-image">
+                  <i class="fa-solid fa-user"></i> Nguyen Van Duc
 
-                </a>
-                <a class="react">
-                    <i onclick="myFunction(this)" class="fa-regular fa-heart btn-react" style="color: #080808;"></i>
-                </a>
-            </div>
-
-            <div class="info-img">
-                <button>Open <i class="fa-solid fa-image" style="color: #000000;"></i></button>
-            </div>
+              </a>
+              <a class="react">
+                <span></span>
+                  <i class="fa-solid fa-circle-info" style="color: #000000;font-size: 20px;margin-right:5px;"></i>
+                  <i class="fa-solid fa-download" style="color: #000000;font-size: 20px;margin-right: 5px;"></i>
+                  <i onclick="myFunction(this)" class="fa-regular fa-heart btn-react" style="color: #080808;"></i>
+              </a>
+          </div>
         </div>
+        
+      </div>
+      <div class="pagination">
+        <!-- Các nút trang sẽ được thêm vào đây -->
     </div>
+    
   </div>
   <!-- Login and Retry -->
   <div class="form_modal">
@@ -164,7 +191,7 @@
 
 <!-- Form Registry -->
 <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Đăng kí</h1>
@@ -178,37 +205,50 @@
               <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
               <label for="floatingInputInvalid">Invalid input</label>
             </form> -->
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Họ" aria-label="Họ">
-              <span class="input-group-text">Và</span>
-              <input type="text" class="form-control" placeholder="Tên" aria-label="Tên">
-            </div>
             <label for="exampleInputEmail1" class="form-label">Nhập mail của bạn</label>
             <!-- <div class="input-group mb-3">
               <input type="text" class="form-control" placeholder="Username" aria-label="Username">
               <span class="input-group-text">@</span>
               <input type="text" class="form-control" placeholder="Server" aria-label="Server">
             </div> -->
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input class="color-input form-control username-register" placeholder="Mail của bạn ..">
+            
             <div id="emailHelp" class="form-text">Chúng tôi không công khai địa chỉ mail cua bạn.</div>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input class="form-control password-register">
+            
+            <div class="password-checklist">
+              <span>Vui lòng nhập mật khẩu đáp ứng đủ các điều kiện sau</span>
+              <ul class="checklist">
+                <li class="checklist-item">
+                  Mật khẩu có trên 8 kí tự
+                </li>
+                <li class="checklist-item">
+                  Mật khẩu có ít nhất 1 chữ số
+                </li>
+                <li class="checklist-item">
+                  Mật khẩu có ít nhất 1 chữ cái viết hoa
+                </li>
+              </ul>
+            </div>
           </div>
+
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Nhập lại mật khẩu</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input class="form-control repassword-register">
           </div>
           <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Đồng ý với chính sách của chúng tôi</label>
           </div>
-          <button type="submit" class="btn btn-primary">Đăng kí 😊</button>
+          <script src="register.js"></script>
+          <button class="btn color-button" onclick="testCase()" type="button">Đăng kí 😊</button>
         </form>
 
         <div style="margin-top: 10px;">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Bạn đã có tài khoản? 🤗</button>
+          <button class="btn color-button" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Bạn đã có tài khoản? 🤗</button>
         </div>
       </div>
 
@@ -219,40 +259,12 @@
 <!-- Login Form -->
 
 <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-  <script>
-    const username = document.querySelector('.username-login');
-const pass = document.querySelector('.password-login');
-const loginBtn = document.querySelector('.log-btn')
-// loginBtn.addEventListener('click', e => {
-//     callLogin()
-// })
-function callLogin() {
-    const json_username = username.value
-    const json_password = pass.value
-    const json_data = {
-        username: json_username,
-        password: json_password
-    }
-    console.log(json_username)
-    fetch('http://127.0.0.1:5000/login', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(json_data)
-    })
-    .then(response => response.json())
-    .then(json => {
 
-        console.log(json)
-    });
-}
-  </script>
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Đăng nhập</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close close-login" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form>
@@ -267,17 +279,18 @@ function callLogin() {
               <span class="input-group-text">@</span>
               <input type="text" class="form-control" placeholder="Server" aria-label="Server">
             </div> -->
-            <input type="text" class="form-control username-login" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="text" class="form-control username-login">
             <div id="emailHelp" class="form-text">Chúng tôi không công khai địa chỉ mail cua bạn.</div>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>
-            <input type="password" class="form-control password-login" id="exampleInputPassword1">
+            <input type="password" class="form-control password-login">
           </div>
-          <button type="submit" class="btn btn-primary log-btn" onclick="callLogin()">Đăng nhập 😊</button>
+          <script src="login.js"></script>
+          <button class="btn color-button" onclick="checkEmpty()" type="button">Đăng nhập 😊</button>
         </form>
         <div style="margin-top: 10px;">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Bạn chưa có tài khoản? 😜</button>
+          <button class="btn color-button" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Bạn chưa có tài khoản? 😜</button>
         </div>
       </div>
 

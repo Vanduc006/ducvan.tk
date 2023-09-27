@@ -7,5 +7,5 @@ var con = mysql.createConnection({
   });
   
 // var sql = "CREATE TABLE users (id, username VARCHAR(20), password VARCHAR(20), level, email, daylycoins, usedcoins, favorite, datecreate, ipadress)";
-var sql = "CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY,username VARCHAR(20),password VARCHAR(20),level VARCHAR(255),email VARCHAR(255),daylycoins INT,usedcoins INT,favorite VARCHAR(255),datecreate TIMESTAMP,ipadress VARCHAR(255));";
+var sql = "CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY,firstname VARCHAR(20),lastname VARCHAR(20),username VARCHAR(20),password VARCHAR(20),level VARCHAR(255),email VARCHAR(255),daylycoins INT,usedcoins INT,favorite VARCHAR(255),datecreate TIMESTAMP,ipadress VARCHAR(255));";
 con.query(sql)

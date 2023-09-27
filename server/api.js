@@ -3,18 +3,22 @@ import express from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
 import { checkLogin } from './routes/LoginRouter.js'
+import { createUser } from './routes/RegisterRouter.js'
 
 const app = express();
 app.use(cors({ origin: 'http://127.0.0.1:5500' }));
 app.use(morgan('combined'))
 
 app.use(express.json());
-
+app.post('/register', (req,res) => {
+  const requestRegister = req.body
+  console.log(requestRegister)
+})
 app.post('/login', (req, res) => {
   // Lấy dữ liệu JSON từ yêu cầu của client
-  const requestData = req.body;
-  const username = requestData.username
-  const password = requestData.password
+  const requestLogin = req.body;
+  const username = requestLogin.username
+  const password = requestLogin.password
 
   checkLogin(username, password, (result) => {
 
@@ -31,12 +35,12 @@ app.post('/login', (req, res) => {
       res.json({login_status : 'Erro Connect'});
     }
   });
-  // const username = { username : requestData.username}
+  // const username = { username : requestLogin.username}
   // res.json(username)
-  // Kiểm tra nếu requestData chứa số và làm phép tính
-  // if (typeof requestData.number === 'number') {
+  // Kiểm tra nếu requestLogin chứa số và làm phép tính
+  // if (typeof requestLogin.number === 'number') {
   //   // Thực hiện phép tính và trả kết quả về client
-  //   const result = requestData.number * 2; // Phép nhân 2
+  //   const result = requestLogin.number * 2; // Phép nhân 2
   //   const responseData = { result };
   //   res.json(responseData);
   // } else {

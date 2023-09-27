@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Thêm Ảnh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" id="imageUrl" placeholder="Nhập URL ảnh">
+    <button onclick="addImage()">Thêm Ảnh</button>
+    <div class="gallery">
+        <div class="images"></div>
+        <div class="pagination"></div>
+    </div>
+
+    <script>
+        // script.js
+// script.js
+const imageUrlInput = document.getElementById('imageUrl');
+const imagesContainer = document.querySelector('.images');
+const paginationContainer = document.querySelector('.pagination');
+let n = 0
+var r_text = new Array ();
+r_text[0] = "https://pbxt.replicate.delivery/8FHhVn0AQ3YlBVbUS9OMpmPISHfiHHtWki8An8Vfx0WuUIjRA/out-0.png";
+r_text[1] = "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/bc74b3ad-761f-4b3a-9813-27b51d137684/width=1024/02605-3890791456.jpeg";
+r_text[2] = "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/28b24924-c3fe-4336-bf3c-afe897fedabd/width=1024/02624-1666160780.jpeg";
+r_text[3] = "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/74a2c25a-e466-4563-895d-9f2a96ba3760/width=1024/02611-4002259413.jpeg";
+r_text[4] = "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/71b1e651-49a9-47b1-90cb-1abc981a88aa/width=2560/00180-2286020825.jpegm";
+
+let images = [];
+const imagesPerPage = 8;
+let currentPage = 1;
+
+function addImage() {
+    const imageUrl = 'https://pbxt.replicate.delivery/8FHhVn0AQ3YlBVbUS9OMpmPISHfiHHtWki8An8Vfx0WuUIjRA/out-0.png'
+
+    if (imageUrl !== '') {
+        images.unshift(imageUrl);
+        renderImages();
+    }
+
+    imageUrlInput.value = '';
+}
+
+
+function renderImages() {
+
+    const startIndex = (currentPage - 1) * imagesPerPage;
+    const endIndex = startIndex + imagesPerPage;
+    const currentImages = images.slice(startIndex, endIndex);
+
+    imagesContainer.innerHTML = '';
+
+    currentImages.forEach((image, index) => {
+        var i = Math.floor(7*Math.random())
+        const imageElement = document.createElement('div');
+   
+        imageElement.innerHTML = `
+            <img class='imgs' src="${r_text[i]}" alt="">
+            <div class="item-bottom">
+                <a class="author-image">
+                    <i class="fa-solid fa-user"></i> Nguyen Van Duc | Ảnh
+                </a>
+                <a class="react">
+                    <i onclick="myFunction(this)" class="fa-regular fa-heart btn-react" style="color: #080808;"></i>
+                </a>
+            </div>   
+        `;
+        imagesContainer.appendChild(imageElement);
+
+    });
+
+    renderPagination();
+}
+
+function renderPagination() {
+    const totalPages = Math.ceil(images.length / imagesPerPage);
+
+    paginationContainer.innerHTML = '';
+
+    for (let i = 1; i <= totalPages; i++) {
+        const button = document.createElement('button');
+        button.textContent = i;
+        button.addEventListener('click', () => {
+            currentPage = i;
+            renderImages();
+        });
+        paginationContainer.appendChild(button);
+    }
+}
+
+renderImages();
+
+
+
+
+
+
+    </script>
+    <style>
+        /* style.css */
+/* style.css */
+.gallery {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 5px;
+}
+
+
+
+.items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #fff; 
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.imgs {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.items:hover .react {
+    opacity: 1;
+    z-index: 1;
+}
+
+.author-image {
+    text-decoration: none;
+    color: black;
+}
+.item-bottom {
+    margin-top: 10px;
+    display: block;
+    
+}
+.react {
+    float: right;
+}
+.btn-react {
+    font-size: 20px;
+}
+    </style>
+</body>
+</html>

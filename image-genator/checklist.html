@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Password Validation</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="password-input-box">
+
+        <input type="password" placeholder="Password" class="password-input">
+        <i class="fa-solid fa-eye show-password"></i>
+
+    </div>
+    <div class="password-checklist">
+        <h3 class="checklist-title">Password should be</h3>
+    
+        <ul class="checklist">
+            <li class="list-item">At least 8 character long</li>
+            <li class="list-item">At least 1 number</li>
+            <li class="list-item">At least 1 lowercase letter</li>
+            <li class="list-item">At least 1 uppercase letter</li>
+            <li class="list-item">At least 1 special character</li>
+        </ul>
+    </div>
+    
+    <script src="app.js"></script>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #d34970;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.password-input-box{
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+
+.password-input{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: none;
+    padding: 5px 15px;
+    outline: none;
+    border-radius: 5px;
+    color: #d34970;
+    padding-right: 45px;
+}
+
+.password-input::placeholder{
+    color: #d34970;
+}
+
+.password-input:focus{
+    box-shadow: 0 0 0 3px #d34970,
+                0 0 0 6px #4fe222;
+}
+
+.show-password{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #92203f;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: .5s ease;
+}
+
+.password-input:focus ~ .password-checklist{
+    opacity: 1;
+    transform: translateY(0);
+}
+.password-checklist{
+    position: absolute;
+    top: calc(100% + 10px);
+    width: 100%;
+    padding: 20px 30px;
+    background: #ef547f;
+    border-radius: 5px;
+}
+
+.checklist-title{
+    font-size: 15px;
+    color: #922037;
+    margin-bottom: 10px;
+}
+
+.checklist{
+    list-style: none;
+}
+
+.list-item{
+    padding-left: 30px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.list-item::before{
+    content: '\f00d';
+    font-family: FontAwesome;
+    display: inline-block;
+    margin: 8px 0;
+    margin-left: -30px;
+    width: 20px;
+    font-size: 12px;
+}
+
+.list-item.checked{
+    opacity: 0.5;
+}
+
+.list-item.checked::before{
+    content: '\f00c';
+    color: #922037;
+}
+
+
+    </style>
+    <script>
+        let showPasswordBtn = document.querySelector('.show-password');
+        let passwordInp = document.querySelector('.password-input');
+
+        showPasswordBtn.addEventListener('click', () => {
+
+            // toggle icon 
+
+            // font awesome class for eye icon
+            showPasswordBtn.classList.toggle('fa-eye'); 
+
+            // font awesome class for slashed eye icon
+            showPasswordBtn.classList.toggle('fa-eye-slash');
+
+            // ternary operator a shorthand for if and else to change the type of password input
+            passwordInp.type = passwordInp.type === 'password' ? 'text' : 'password';
+
+        })
+        // string password validation
+
+let passwordChecklist = document.querySelectorAll('.list-item');
+
+let validationRegex = [
+    { regex: /.{8,}/ }, // min 8 letters,
+    { regex: /[0-9]/ }, // numbers from 0 - 9
+    { regex: /[a-z]/ }, // letters from a - z (lowercase)
+    { regex: /[A-Z]/}, // letters from A-Z (uppercase),
+    { regex: /[^A-Za-z0-9]/} // special characters
+]
+
+passwordInp.addEventListener('keyup', () => {
+    validationRegex.forEach((item, i) => {
+
+        let isValid = item.regex.test(passwordInp.value);
+
+        if(isValid) {
+            passwordChecklist[i].classList.add('checked');
+        } else{
+            passwordChecklist[i].classList.remove('checked');
+        }
+
+    })
+})
+    </script>
+</body>
+</html>

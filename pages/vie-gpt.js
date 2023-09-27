@@ -3,7 +3,7 @@ const sendBtn = document.querySelector('#send-button')
 const chatArea = document.querySelector('.history')
 const testBtn = document.querySelector('.send-button')
 
-const sanitizedInput = DOMPurify.sanitize(userInput.value);
+// const sanitizedInput = DOMPurify.sanitize(userInput.value);
 sendBtn.disable = true;
 
 console.log(localStorage.getItem('chats'))
