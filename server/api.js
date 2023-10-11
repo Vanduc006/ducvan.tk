@@ -4,16 +4,38 @@ import morgan from 'morgan';
 import cors from 'cors';
 import { checkLogin } from './routes/LoginRouter.js'
 import { createUser } from './routes/RegisterRouter.js'
+import { userListImage } from './routes/UserImagesRouter.js'
+
 
 const app = express();
 app.use(cors({ origin: 'http://127.0.0.1:5500' }));
 app.use(morgan('combined'))
 
 app.use(express.json());
+
+app.post('/userlistimages', (req, res) => {
+  // Gọi hàm userListImage với tác giả (authors) từ yêu cầu req.body
+  const author = req.body.author; // Đảm bảo rằng bạn đã định nghĩa trường 'author' trong yêu cầu
+  console.log(author)
+  userListImage(author, (result) => {
+    // Xử lý kết quả từ hàm userListImage
+    if (result === 'Connect Error') {
+      res.status(500).json({ message: 'Lỗi kết nối cơ sở dữ liệu' });
+    } else if (result === 'Get User List Images Fail') {
+      res.status(500).json({ message: 'Lỗi khi lấy danh sách hình ảnh của người dùng' });
+    } else {
+      // Chuyển đổi kết quả từ JSON string thành đối tượng JSON và gửi lại cho client
+      const parsedResult = JSON.parse(result);
+      res.status(200).json(parsedResult);
+    }
+  });
+});
+
 app.post('/register', (req,res) => {
   const requestRegister = req.body
   console.log(requestRegister)
 })
+
 app.post('/login', (req, res) => {
   // Lấy dữ liệu JSON từ yêu cầu của client
   const requestLogin = req.body;

@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 * {
-    font-family: 'Inter', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -71,11 +70,11 @@
     justify-content: center;
     align-items: center; 
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Roboto&display=swap');
 .header-content {
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     font-weight: 900;
-
 }
 .header-content span {
     padding: 8px;
@@ -84,6 +83,42 @@
     background-clip: text;
     color: transparent; /* Ẩn màu văn bản ban đầu */
     
+}
+.effect-header-content {
+	color: #18272F;
+  position: relative;
+  text-decoration: none;
+}
+
+.effect-header-content::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 4px;
+  border-radius: 4px;
+  background: hsla(333, 100%, 53%, 1);
+
+background: linear-gradient(135deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+
+background: -moz-linear-gradient(135deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+
+background: -webkit-linear-gradient(135deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff0f7b", endColorstr="#f89b29", GradientType=1 );
+  bottom: 0;
+
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.effect-header-content:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 .header-subcontent {
     font-size: 20px;
@@ -135,42 +170,47 @@
 .color-input {
     background: hsla(138, 82%, 69%, 1);
 
-background: linear-gradient(135deg, hsla(138, 82%, 69%, 1) 0%, hsla(186, 100%, 50%, 1) 100%);
+    background: linear-gradient(135deg, hsla(138, 82%, 69%, 1) 0%, hsla(186, 100%, 50%, 1) 100%);
 
-background: -moz-linear-gradient(135deg, hsla(138, 82%, 69%, 1) 0%, hsla(186, 100%, 50%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(138, 82%, 69%, 1) 0%, hsla(186, 100%, 50%, 1) 100%);
 
-background: -webkit-linear-gradient(135deg, hsla(138, 82%, 69%, 1) 0%, hsla(186, 100%, 50%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(138, 82%, 69%, 1) 0%, hsla(186, 100%, 50%, 1) 100%);
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6ef195", endColorstr="#00e3fd", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6ef195", endColorstr="#00e3fd", GradientType=1 );
 }
 .color-button {
     background: hsla(175, 79%, 63%, 1);
 
-background: linear-gradient(135deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
+    background: linear-gradient(135deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
 
-background: -moz-linear-gradient(135deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
 
-background: -webkit-linear-gradient(135deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#57ebde", endColorstr="#aefb2a", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#57ebde", endColorstr="#aefb2a", GradientType=1 );
 }
 .send-prompt {
     border: none;
     background: hsla(175, 79%, 63%, 1);
 
-background: linear-gradient(135deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
+    background: linear-gradient(135deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
 
-background: -moz-linear-gradient(135deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
 
-background: -webkit-linear-gradient(135deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#57ebde", endColorstr="#aefb2a", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#57ebde", endColorstr="#aefb2a", GradientType=1 );
     border-radius: 10px;
     height: 30px;
-}
 
+}
+.send-prompt:hover {
+    opacity: 0.8;
+    
+}
 .rainbow-5:hover{
     background-image:     linear-gradient(
+
        to right, 
        #E7484F,
        #E7484F 16.65%,
@@ -237,8 +277,12 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#57ebde", en
         font-size: 14px;
         padding: 5px 10px;
     }
+    .effect-header-content::before {
+        width: 250px;
+    }
     .header-content {
         font-size: 20px;
+        font-weight: 900;
     }
     .header-subcontent {
         font-size: 15px;

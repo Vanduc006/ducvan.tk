@@ -8,15 +8,19 @@ function addImage(imageUrl) {
     const imgShow = document.createElement('div');
     imgShow.classList.add('items');
     imgShow.innerHTML = `
-            <img class='imgs' src="${imageUrl}" alt="">
-            <div class="item-bottom">
-                <a class="author-image">
-                    <i class="fa-solid fa-user"></i> Nguyen Van Duc
-                </a>
-                <a class="react">
-                    <i onclick="myFunction(this)" class="fa-regular fa-heart btn-react" style="color: #080808;"></i>
-                </a>
-            </div>   
+    <img class='imgs load-sucess' src="https://pbxt.replicate.delivery/8FHhVn0AQ3YlBVbUS9OMpmPISHfiHHtWki8An8Vfx0WuUIjRA/out-0.png" alt="">
+    <div class="item-bottom load-sucess">
+        <a class="author-image">
+            <i class="fa-solid fa-user"></i> Nguyen Van Duc
+
+        </a>
+        <a class="react">
+          <span></span>
+            <i class="fa-solid fa-circle-info" style="color: #000000;font-size: 20px;margin-right:5px;"></i>
+            <i class="fa-solid fa-download" style="color: #000000;font-size: 20px;margin-right: 5px;"></i>
+            <i onclick="myFunction(this)" class="fa-regular fa-heart btn-react" style="color: #080808;"></i>
+        </a>
+    </div> 
     `;
 
     // Lấy phần tử đầu tiên trong .img-container (nếu có)

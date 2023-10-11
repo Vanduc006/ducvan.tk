@@ -125,19 +125,19 @@
       </div> -->
 
   <!-- Work -->
-  <script src="image-gen.js"></script>
+  <!-- <script src="image-gen.js"></script> -->
   <div class="sections">
     <div class="sections-setup">
       <div class="header">
         <h1 class="header-content">Tạo Ra Bức Ảnh Từ</h1>
-        <h1 class="header-content"><span>Trí Tưởng Tượng Của Bạn</span></h1>
+        <h1 class="header-content effect-header-content"><span>Trí Tưởng Tượng Của Bạn</span></h1>
         <h1 class="header-subcontent">Với Hàng Tỉ Modals Và Loras </h1>
       </div>
       <div class="trending-tag"></div>
       <div class="gen-work">
         <div class="prompt-data">
           <div class="textarea-container">
-            <textarea name="" id="" class="prompt-input" placeholder="Tell we your imagine"></textarea>
+            <textarea name="" id="" class="prompt-input" placeholder="Hãy cho chúng tôi biết ý tưởng của bạn"></textarea>
             <script>
               const textarea = document.querySelector('.prompt-input');
 
@@ -151,7 +151,7 @@
             </div>
         </div>
 
-          <input class="send-prompt rainbow-5" type="submit" value="Let's see your imagine" onclick="callServer()">
+          <input class="send-prompt" type="submit" value="Tạo ảnh" onclick="callServer()">
 
         </div>
       </div>
@@ -176,11 +176,59 @@
                   <i class="fa-solid fa-download" style="color: #000000;font-size: 20px;margin-right: 5px;"></i>
                   <i onclick="myFunction(this)" class="fa-regular fa-heart btn-react" style="color: #080808;"></i>
               </a>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+              </button>
+          </div>
+          
+          
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img class='imgs load-sucess' src="https://pbxt.replicate.delivery/8FHhVn0AQ3YlBVbUS9OMpmPISHfiHHtWki8An8Vfx0WuUIjRA/out-0.png" alt="" height="100%">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
           </div>
         </div>
-        
       </div>
-      <div class="pagination">
+
+      <span>User gallary test</span>
+      <input type="submit" value="get test data" class="test-user-data" onclick="callUserGallery()">
+      <div class="img-container user-gallery-test">
+        <script src="user-gallery.js"></script>
+        
+        <!-- <div class="items">
+          <img class='imgs load-sucess' src="https://pbxt.replicate.delivery/8FHhVn0AQ3YlBVbUS9OMpmPISHfiHHtWki8An8Vfx0WuUIjRA/out-0.png" alt="">
+          <div class="item-bottom load-sucess">
+              <a class="author-image">
+                  <i class="fa-solid fa-user"></i> Nguyen Van Duc
+
+              </a>
+              <a class="react">
+                <span></span>
+                  <i class="fa-solid fa-circle-info" style="color: #000000;font-size: 20px;margin-right:5px;"></i>
+                  <i class="fa-solid fa-download" style="color: #000000;font-size: 20px;margin-right: 5px;"></i>
+                  <i onclick="myFunction(this)" class="fa-regular fa-heart btn-react" style="color: #080808;"></i>
+              </a>
+          </div> -->  
+        </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+
         <!-- Các nút trang sẽ được thêm vào đây -->
     </div>
     
