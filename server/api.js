@@ -14,22 +14,21 @@ app.use(morgan('combined'))
 app.use(express.json());
 
 app.post('/userlistimages', (req, res) => {
-  // Gọi hàm userListImage với tác giả (authors) từ yêu cầu req.body
   const author = req.body.author; // Đảm bảo rằng bạn đã định nghĩa trường 'author' trong yêu cầu
-  console.log(author)
-  userListImage(author, (result) => {
-    // Xử lý kết quả từ hàm userListImage
+  const page = req.body.page || 1; // Mặc định là trang 1 nếu không có giá trị được gửi
+
+  userListImage(author, page, (result) => {
     if (result === 'Connect Error') {
       res.status(500).json({ message: 'Lỗi kết nối cơ sở dữ liệu' });
     } else if (result === 'Get User List Images Fail') {
       res.status(500).json({ message: 'Lỗi khi lấy danh sách hình ảnh của người dùng' });
     } else {
-      // Chuyển đổi kết quả từ JSON string thành đối tượng JSON và gửi lại cho client
       const parsedResult = JSON.parse(result);
       res.status(200).json(parsedResult);
     }
   });
 });
+
 
 app.post('/register', (req,res) => {
   const requestRegister = req.body

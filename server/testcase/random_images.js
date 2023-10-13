@@ -3,7 +3,7 @@ import mysql  from 'mysql'
 // Tạo kết nối đến cơ sở dữ liệu
 
 let i = 0
-while (i < 20) {
+while (i < 200) {
   fetchImageURL()
   i++;
 }

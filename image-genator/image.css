@@ -59,6 +59,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6ef195", en
 }
 .react {
     float: right;
+    cursor: pointer;
     
 }
 .btn-react {
