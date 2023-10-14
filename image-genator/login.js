@@ -33,7 +33,7 @@ function callLogin(json_username_login,json_password_login) {
         password: json_password_login
     }
     console.log(json_username_login)
-    fetch('http://127.0.0.1:5000/login', {
+    fetch('https://ducvan-backend.onrender.com/login', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
