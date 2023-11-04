@@ -136,7 +136,7 @@ function callUserGallery(page) {
     const author = 'Van Duc'; // Đảm bảo bạn thiết lập giá trị tác giả tùy ý
     //http://127.0.0.1:5000/userlistimages
     //https://ducvan-backend.onrender.com/userlistimages
-    fetch('http://127.0.0.1:5000/userlistimages', {
+    fetch('https://ducvan-backend.onrender.com/userlistimages', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
