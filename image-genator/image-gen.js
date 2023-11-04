@@ -42,12 +42,14 @@ function addToGallery(id,authors,urlimages) {
         </a>
         <a class="react">
           <span></span>
-            <i class="fa-solid fa-circle-info" style="color: #000000;font-size: 20px;margin-right:5px;"></i>
+            <i id="${id}" class="fa-solid fa-circle-info" style="color: #000000;font-size: 20px;margin-right:5px;" onclick="infoModal(this.id)"></i> 
             <i class="fa-solid fa-download" style="color: #000000;font-size: 20px;margin-right: 5px;"></i>
             <i onclick="myFunction(this)" class="fa-regular fa-heart btn-react" style="color: #080808;"></i>
         </a>
     </div> 
+    
     `;
+    // 
     const firstItem = imgContainer.querySelector('.items');
 
     // Chèn imgShow trước firstItem (hoặc vào đầu .img-container nếu không có firstItem)
@@ -91,6 +93,17 @@ function hideLoading() {
 }
 
 
+
+
+// const result = findModalAndIdImagesById(data, idToFind);
+
+// if (result) {
+//     console.log("Thông tin với id " + idToFind + ":", result);
+// } else {
+//     console.log("Không tìm thấy thông tin với id " + idToFind);
+// }
+
+
 // Mô phỏng tải dữ liệu (thay thế phần này bằng thực tế)
 function loadData() {
     showLoading(); // Hiển thị hiệu ứng loading trước khi tải dữ liệu
@@ -121,7 +134,9 @@ function loadData() {
 function callUserGallery(page) {
     
     const author = 'Van Duc'; // Đảm bảo bạn thiết lập giá trị tác giả tùy ý
-    fetch('https://ducvan-backend.onrender.com/userlistimages', {
+    //http://127.0.0.1:5000/userlistimages
+    //https://ducvan-backend.onrender.com/userlistimages
+    fetch('http://127.0.0.1:5000/userlistimages', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -130,6 +145,9 @@ function callUserGallery(page) {
     })
     .then(response => response.json())
     .then(json => {
+       
+        localStorage.setItem("current_list", JSON.stringify(json.listimages.images));
+        
         json.listimages.images.forEach((image) => {
             const id = image.id;
             const authors = image.authors;
@@ -149,7 +167,9 @@ function callUserGallery(page) {
             // console.log("Is Delete:", isdelete);
             addToGallery(id, authors, urlimages);
         });
+
     });
+
 }
 callUserGallery(currentPage)
 
@@ -173,5 +193,3 @@ function callServer() {
     const imageFromAPI = 'https://pbxt.replicate.delivery/8FHhVn0AQ3YlBVbUS9OMpmPISHfiHHtWki8An8Vfx0WuUIjRA/out-0.png'
     addImage(imageFromAPI)
 }
-
-

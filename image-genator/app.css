@@ -300,6 +300,13 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff0f7b", en
     .header-subcontent {
         font-size: 15px;
     }
+    .infor-container {
+        margin: 0 20px 0 20px;
+        height: 100%;
+        width: 500px;
+
+    }
+
 }    
 /* Password Check */
 .password-register:focus ~ .password-checklist{

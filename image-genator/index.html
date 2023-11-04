@@ -81,48 +81,7 @@
         </div>
       </div> -->
 
-      <!-- Image Slider-->
-      <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide">
-        
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
 
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="https://images.pexels.com/photos/18093482/pexels-photo-18093482/free-photo-of-thanh-ph-m-c-dem-d-ng-chan-tr-i.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="https://images.pexels.com/photos/6449273/pexels-photo-6449273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.pexels.com/photos/16732092/pexels-photo-16732092/free-photo-of-thanh-ph-dem-d-ng-chan-tr-i-toa-nha-ch-c-tr-i.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div> -->
 
   <!-- Work -->
 
@@ -183,7 +142,40 @@
       </div>
 
       <!--  Image Show-->
- 
+
+      <button type="button" class="open-sheet" aria-controls="sheet" style="display: none;">Open Sheet</button>
+      <div id="sheet" class="sheet" aria-hidden="true" role="dialog">
+        <!-- Dark background for the sheet -->
+        <div class="overlay"></div>
+  
+        <!-- The sheet itself -->
+        <div class="contents">
+          <!-- Sheet controls -->
+          <header class="controls">
+            <!-- The thing to drag if you want to resize the sheet -->
+            <div class="draggable-area">
+              <div class="draggable-thumb"></div>
+            </div>
+            <!-- Button to close the sheet -->
+            <button class="close-sheet" type="button" title="Close the sheet">&times;</button>
+          </header>
+  
+          <!-- Body of the sheet -->
+          <main class="bodysheet">
+            <!-- <h2>Hello, World!</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit explicabo vero quas eligendi, eos cupiditate sint aliquam a omnis commodi quos in libero veniam. Quidem, non a quibusdam consequuntur mollitia officia numquam sit quos dolorum quaerat reprehenderit laboriosam perspiciatis consequatur odit error dolore recusandae iste id quam magnam ut! Sint nulla minus excepturi libero officiis, deleniti, delectus obcaecati saepe natus rerum nesciunt! Nemo quo id ipsum fugiat voluptas ducimus incidunt nulla sed, voluptates modi exercitationem quod obcaecati corporis perspiciatis dolorum ullam provident sint iusto consequatur totam dolorem. Amet, praesentium accusamus dolore hic ad iusto nostrum exercitationem velit ex optio nihil obcaecati provident enim nobis molestiae cupiditate possimus error itaque facilis eligendi placeat eos quam! Consequatur eveniet corporis nam accusantium nemo harum non explicabo accusamus. Voluptatem laborum dolores magni voluptatibus doloribus sunt? Id quae vero, nemo nam dolore ab amet distinctio molestias excepturi blanditiis quia eos et eligendi magnam voluptas iusto.</p>
+  
+            <p>Here is a little form to test this sheet:</p>
+            <form action="" method="get" class="column">
+              <input type="email" placeholder="Email field">
+              <textarea placeholder="Text field"></textarea>
+              <div contenteditable="true">Contenteditable block</div>
+            </form> -->
+          </main>
+        </div>
+      </div>
+      
+      <script src="bottomsheet.js"></script>
       <div class="img-container" id="img-container">
         
 
