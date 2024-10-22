@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Exam Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .correct-answer { background-color: yellow; }
+    .wrong-answer { background-color: red; }
+    .selected-answer { background-color: blue; }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Multiple Choice Exam</h1>
+    <div id="quiz-container"></div>
+  </div>
+
+  <script>
+    const quizData = [
+      {
+        "question": "What is the largest organelle in a eukaryotic cell?",
+        "options": ["Nucleus", "Mitochondria", "Lysosome"],
+        "correct": 0
+      },
+      {
+        "question": "Which macromolecule is involved in catalyzing biological reactions?",
+        "options": ["Lipids", "Proteins", "Nucleic acids"],
+        "correct": 1
+      },
+      {
+        "question": "What is the primary function of ribosomes?",
+        "options": ["Protein synthesis", "Lipid synthesis", "Carbohydrate synthesis"],
+        "correct": 0
+      },
+      {
+        "question": "What kind of molecules form the basic structure of cell membranes?",
+        "options": ["Phospholipids", "Proteins", "Carbohydrates"],
+        "correct": 0
+      },
+      {
+        "question": "What is the smallest cytoskeleton element in a cell?",
+        "options": ["Microfilament", "Microtubule", "Intermediate filament"],
+        "correct": 0
+      },
+      {
+        "question": "Which of the following is a function of the Golgi apparatus?",
+        "options": ["Packaging proteins for export", "Lipid synthesis", "Energy production"],
+        "correct": 0
+      },
+      {
+        "question": "What is the powerhouse of the cell?",
+        "options": ["Mitochondria", "Lysosome", "Chloroplast"],
+        "correct": 0
+      },
+      {
+        "question": "Which phase of the cell cycle involves DNA replication?",
+        "options": ["S phase", "G1 phase", "G2 phase"],
+        "correct": 0
+      },
+      {
+        "question": "Which type of bond is the strongest in biological systems?",
+        "options": ["Covalent bond", "Hydrogen bond", "Ionic bond"],
+        "correct": 0
+      },
+      {
+        "question": "Which of the following is an example of active transport?",
+        "options": ["Sodium-potassium pump", "Diffusion", "Osmosis"],
+        "correct": 0
+      },
+      {
+        "question": "Which part of the cell synthesizes lipids?",
+        "options": ["Smooth ER", "Rough ER", "Golgi apparatus"],
+        "correct": 0
+      },
+      {
+        "question": "What is the function of lysosomes?",
+        "options": ["Break down waste", "Photosynthesis", "Protein synthesis"],
+        "correct": 0
+      },
+      {
+        "question": "What is the primary component of plant cell walls?",
+        "options": ["Cellulose", "Chitin", "Peptidoglycan"],
+        "correct": 0
+      },
+      {
+        "question": "Which organelle is responsible for photosynthesis?",
+        "options": ["Chloroplast", "Mitochondria", "Nucleus"],
+        "correct": 0
+      },
+      {
+        "question": "Which molecule is known as the 'energy currency' of the cell?",
+        "options": ["ATP", "DNA", "RNA"],
+        "correct": 0
+      },
+      {
+        "question": "Which process allows water to move across the cell membrane?",
+        "options": ["Osmosis", "Diffusion", "Endocytosis"],
+        "correct": 0
+      },
+      {
+        "question": "Which of the following has a double membrane?",
+        "options": ["Mitochondria", "Ribosome", "Peroxisome"],
+        "correct": 0
+      },
+      {
+        "question": "What is the primary function of the Rough ER?",
+        "options": ["Protein synthesis", "Lipid synthesis", "Detoxification"],
+        "correct": 0
+      },
+      {
+        "question": "What are the building blocks of proteins?",
+        "options": ["Amino acids", "Nucleotides", "Monosaccharides"],
+        "correct": 0
+      },
+      {
+        "question": "Which molecule forms the backbone of DNA?",
+        "options": ["Phosphate and sugar", "Protein and lipid", "Carbohydrate and lipid"],
+        "correct": 0
+      },
+      {
+        "question": "What type of cells contain chloroplasts?",
+        "options": ["Plant cells", "Animal cells", "Fungal cells"],
+        "correct": 0
+      },
+      {
+        "question": "Which of the following bonds is crucial for secondary protein structure?",
+        "options": ["Hydrogen bonds", "Covalent bonds", "Ionic bonds"],
+        "correct": 0
+      },
+      {
+        "question": "Where does glycolysis take place in the cell?",
+        "options": ["Cytoplasm", "Mitochondria", "Nucleus"],
+        "correct": 0
+      },
+      {
+        "question": "What is the role of telomeres in cell division?",
+        "options": ["Protect chromosome ends", "Encode proteins", "Attach to spindle fibers"],
+        "correct": 0
+      },
+      {
+        "question": "Which phase follows prophase in mitosis?",
+        "options": ["Metaphase", "Anaphase", "Telophase"],
+        "correct": 0
+      },
+      {
+        "question": "Which molecule carries genetic instructions from DNA to the ribosome?",
+        "options": ["mRNA", "tRNA", "rRNA"],
+        "correct": 0
+      },
+      {
+        "question": "What is the final electron acceptor in the electron transport chain?",
+        "options": ["Oxygen", "Water", "Carbon dioxide"],
+        "correct": 0
+      },
+      {
+        "question": "Which organelle stores genetic information?",
+        "options": ["Nucleus", "Ribosome", "Endoplasmic reticulum"],
+        "correct": 0
+      },
+      {
+        "question": "What type of transport involves the movement of large particles into the cell?",
+        "options": ["Endocytosis", "Exocytosis", "Pinocytosis"],
+        "correct": 0
+      },
+      {
+        "question": "Which organelle is involved in detoxification of drugs and poisons?",
+        "options": ["Smooth ER", "Rough ER", "Lysosome"],
+        "correct": 0
+      }
+    ];
+
+    // Function to build the quiz
+     function buildQuiz() {
+    const quizContainer = document.getElementById('quiz-container');
+    quizData.forEach((q, index) => {
+      const questionDiv = document.createElement('div');
+      questionDiv.classList.add('mb-4');
+      const questionText = document.createElement('h5');
+      questionText.textContent = `Question ${index + 1}: ${q.question}`;
+      questionDiv.appendChild(questionText);
+
+      q.options.forEach((option, i) => {
+        const optionButton = document.createElement('button');
+        optionButton.classList.add('btn', 'btn-outline-primary', 'choice', 'me-2', 'mt-2');
+        optionButton.textContent = `${String.fromCharCode(65 + i)}. ${option}`;
+        optionButton.onclick = function () {
+          checkAnswer(this, i === q.correct);
+        };
+        questionDiv.appendChild(optionButton);
+      });
+
+      quizContainer.appendChild(questionDiv);
+    });
+  }
+
+  // Function to check the answer and set background color
+  function checkAnswer(button, isCorrect) {
+    // Reset background color on double click
+    if (button.classList.contains('selected-answer') || button.classList.contains('correct-answer') || button.classList.contains('wrong-answer')) {
+      button.classList.remove('selected-answer', 'correct-answer', 'wrong-answer');
+      button.style.backgroundColor = '';  // Resets to default
+      return;
+    }
+
+    // Apply colors based on the answer
+    if (isCorrect) {
+      button.classList.add('correct-answer');
+    } else {
+      button.classList.add('wrong-answer');
+      const questionDiv = button.parentElement;
+      const correctBtn = questionDiv.querySelectorAll('button')[quizData[Array.from(questionDiv.parentElement.children).indexOf(questionDiv)].correct];
+      correctBtn.classList.add('correct-answer');
+    }
+    button.classList.add('selected-answer');
+  }
+
+  // Build the quiz on page load
+  window.onload = buildQuiz;
+  </script>
+</body>
+</html>
+
+
+<!-- if want shuffle quesions -->
+<!-- // Function to shuffle an array (Fisher-Yates shuffle algorithm)
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+// Function to build the quiz
+function buildQuiz() {
+  const quizContainer = document.getElementById('quiz-container');
+
+  // Shuffle the questions
+  const shuffledQuizData = shuffleArray([...quizData]);
+
+  shuffledQuizData.forEach((q, index) => {
+    const questionDiv = document.createElement('div');
+    questionDiv.classList.add('mb-4');
+    const questionText = document.createElement('h5');
+    questionText.textContent = `Question ${index + 1}: ${q.question}`;
+    questionDiv.appendChild(questionText);
+
+    // Shuffle the options for each question
+    const shuffledOptions = shuffleArray([...q.options]);
+
+    shuffledOptions.forEach((option, i) => {
+      const optionButton = document.createElement('button');
+      optionButton.classList.add('btn', 'btn-outline-primary', 'choice', 'me-2', 'mt-2');
+      optionButton.textContent = `${String.fromCharCode(65 + i)}. ${option}`;
+      optionButton.onclick = function () {
+        // Check if the clicked option is the correct one
+        checkAnswer(this, option === q.options[q.correct]);
+      };
+      questionDiv.appendChild(optionButton);
+    });
+
+    quizContainer.appendChild(questionDiv);
+  });
+}
+
+// Function to check the answer and set background color
+function checkAnswer(button, isCorrect) {
+  // Reset background color on double click
+  if (button.classList.contains('selected-answer') || button.classList.contains('correct-answer') || button.classList.contains('wrong-answer')) {
+    button.classList.remove('selected-answer', 'correct-answer', 'wrong-answer');
+    button.style.backgroundColor = '';  // Resets to default
+    return;
+  }
+
+  // Apply colors based on the answer
+  if (isCorrect) {
+    button.classList.add('correct-answer');
+  } else {
+    button.classList.add('wrong-answer');
+    const questionDiv = button.parentElement;
+    const correctBtn = [...questionDiv.children].find(btn => btn.textContent.includes(q.options[q.correct]));
+    correctBtn.classList.add('correct-answer');
+  }
+  button.classList.add('selected-answer');
+}
+
+// Build the quiz on page load
+window.onload = buildQuiz; -->
